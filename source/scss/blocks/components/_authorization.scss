@@ -1,0 +1,19 @@
+.authorization {
+  display: flex;
+  align-items: center;
+  grid-gap: 12.5px;
+  transition: all 0.3s ease;
+  color: var(--color-blue);
+
+  svg {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: var(--color-blue-text);
+
+    svg {
+      fill: var(--color-blue-text);
+    }
+  }
+}

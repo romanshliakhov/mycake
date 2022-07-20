@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+
+  &__link {
+    transition: all 0.3s ease;
+
+    &:hover {
+      svg {
+        fill: #84A6C2;
+      }
+    }
+  }
+}

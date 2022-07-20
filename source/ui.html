@@ -3,43 +3,66 @@
 @include('partials/head.html',{})
 
 <body>
-    @include('partials/header.html',{})
-
     <main class="main">
-      <h1>Typography</h1>
+      <div class="container">
+        <div class="main__inner">
+          <a class="logo" href="#">MyCake</a>
 
-      <p class="title-1">LargeTitle</p>
-      <p class="title-2">Title1</p>
-      <p class="title-3">Title2</p>
-      <p class="title-4">Title3</p>
-      <p class="title-5">Title4</p>
+          <button class="location text-bold">
+            <svg width='14' height='20'>
+              <use href='img/sprite/sprite.svg#location'></use>
+            </svg>
+            <span>Вся Україна</span>
+          </button>
 
-      <p class="sale-text">Sale-text</p>
-      <p class="headline-text">Headline</p>
-      <p class="menu-text">Menu</p>
-      <p class="text">Text</p>
-      <p class="text-body">Body</p>
+          <button class="authorization">
+            <svg width='30' height='32'>
+            <use href='img/sprite/sprite.svg#forum'></use>
+            </svg>
+          </button>
 
-      <p class="button-1">Button 1</p>
-      <p class="button-2">Button 2</p>
-      <p class="button-filtr">Button Filtr</p>
+          <button class="authorization">
+            <svg width='30' height='30'>
+              <use href='img/sprite/sprite.svg#account'></use>
+            </svg>
+            <span>Увійти</span>
+          </button>
 
-      <p class="text-detail">Detail 1</p>
-      <p class="text-decor">Text_Decor</p>
+          <ul class="footer__btns">
+            <li class="footer__btn">
+              <a class="footer__btn-link footer__btn-link--rules" href="#">Правила користування</a>
+            </li>
+            <li class="footer__btn">
+              <a class="footer__btn-link footer__btn-link--feedback" href="#">Форма зворотнього зв’язку</a>
+            </li>
+          </ul>
 
-      <p class="button-footer">Button_Footer</p>
-
-      <p class="text-calc-name">Name</p>
-      <p class="text-calc-descr">Descriptor Calculator</p>
-      <p class="text-calc-other">Number_Other</p>
-      <p class="text-calc-btn">Button Calculator 1</p>
-      <p class="text-calc-total">Number_Total</p>
-
-      <p class="text-basket">Name_Position_Basket</p>
-
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width='35' height='35'>
+                  <use href='img/sprite/sprite.svg#facebook'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width='35' height='35'>
+                  <use href='img/sprite/sprite.svg#instagram'></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <svg width='35' height='35'>
+                  <use href='img/sprite/sprite.svg#youtube'></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
-
-    @include('partials/footer.html',{})
 
     <script type="text/javascript" src="js/main.js"></script>
 </body>

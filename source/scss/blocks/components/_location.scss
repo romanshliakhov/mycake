@@ -1,0 +1,15 @@
+.location {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+  padding: 8px 20px;
+  background-color: var(--color-pink-bg);
+  border-radius: 36px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  color: var(--color-red-text);
+
+  &:hover {
+    background-color: var(--color-pink-hover);
+  }
+}
