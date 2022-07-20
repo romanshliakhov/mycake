@@ -3,6 +3,10 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
+  font-size: 24px;
+  font-family: var(--font-family-verdana);
+  font-weight: 400;
+
 }
 
 html {
@@ -131,7 +135,7 @@ input[type="number"] {
 }
 
 svg {
-  fill: transparent;
+  fill: var(--color-black);
 }
 
 .body-scroll {
