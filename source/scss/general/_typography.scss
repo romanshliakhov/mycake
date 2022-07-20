@@ -1,0 +1,25 @@
+.title-1 {
+    font-family: var(--font-family);
+    font-size: 90px;
+    line-height: 107%;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-style: normal;
+    color: var(--system-1);
+
+    @media (max-width: 1024px) {
+        font-size: 60px;
+        line-height: 117%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 663px;
+        font-size: 50px;
+        line-height: 120%;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 36px;
+      line-height: 122%;
+    }
+}
