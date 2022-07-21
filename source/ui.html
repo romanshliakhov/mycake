@@ -3,9 +3,9 @@
 @include('partials/head.html',{})
 
 <body>
-    <main class="main">
+    <main>
       <div class="container">
-        <div class="main__inner">
+        <div class="ui">
           <a class="logo" href="#">MyCake</a>
 
           <button class="location text-bold">
@@ -60,6 +60,64 @@
               </a>
             </li>
           </ul>
+
+          <form class="search" action="">
+            <label class="search__label">
+              <input class="search__input" type="text" name="search" placeholder="Шоколадний торт з квітами">
+              <button class="search__btn" type="submit">Шукати</button>
+            </label>
+          </form>
+
+          <ul class="categories">
+            <li class="categories__item">
+              <button class="categories__btn">На день народження</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">З фруктами</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Патріотичні</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Для чоловіків</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Для весілля</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Без глютену</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Веганські</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Без цукру</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Для дівчат</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">З квітами</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn">Класичні рецепти</button>
+            </li>
+            <li class="categories__item">
+              <button class="categories__btn categories__btn--another">Інші варіанти</button>
+            </li>
+          </ul>
+
+          <div class="product">
+            <div class="product__image">
+              <picture>
+                <source type='image/webp' srcset='img/products/cakes.webp'>
+                <img class="product__img" width='152' height='100' src='img/products/cakes.png' alt='cakes'>
+              </picture>
+            </div>
+            <div class="product__title">Торти</div>
+          </div>
+
+
         </div>
       </div>
     </main>

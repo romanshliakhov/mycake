@@ -3,14 +3,171 @@
 @include('partials/head.html',{})
 
 <body>
-  @include('partials/header.html',{})
+  <div class="wrapper">
+    @include('partials/header.html',{})
 
-  <main>
+    <main class="main">
+      <section class="first">
+        <div class="container">
+          <div class="first__wrapper">
+            <div class="first__wrapper-left">
+              <div class="first__content">
+                <div class="first__info">
+                  <h1 class="title">Пошукаємо щось смачненького?</h1>
+                  <p class="text">Ми об’єднали кондитерів з різних міст, щоб необхідні смаколики можна було замовити ще легше</p>
+                </div>
 
-  </main>
+                <form class="search" action="">
+                  <label class="search__label">
+                    <input class="search__input" type="text" name="search" placeholder="Шоколадний торт з квітами">
+                    <button class="search__btn" type="submit">Шукати</button>
+                  </label>
+                </form>
 
-  @include('partials/footer.html',{})
+                <ul class="categories">
+                  <li class="categories__item">
+                    <button class="categories__btn">На день народження</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">З фруктами</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Патріотичні</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Для чоловіків</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Для весілля</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Без глютену</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Веганські</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Без цукру</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Для дівчат</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">З квітами</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Класичні рецепти</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn categories__btn--another">Інші варіанти</button>
+                  </li>
+                </ul>
+              </div>
 
+              <div class="products">
+                <div class="products__slider-btns">
+                  <div class="products__slider-btn products__slider-btn--prev">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                  <div class="products__slider-btn products__slider-btn--next">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="products__slider swiper-container">
+                  <ul class="products__wrapper swiper-wrapper">
+                    <li class="products__slide swiper-slide">
+                      <div class="product">
+                        <div class="product__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/products/cakes.webp'>
+                            <img class="product__img" width='152' height='100' src='img/products/cakes.png' alt='cakes'>
+                          </picture>
+                        </div>
+                        <div class="product__title">Торти</div>
+                      </div>
+                    </li>
+                    <li class="products__slide swiper-slide">
+                      <div class="product">
+                        <div class="product__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/products/candies.webp'>
+                            <img class="product__img" width='152' height='100' src='img/products/candies.png' alt='candies'>
+                          </picture>
+                        </div>
+                        <div class="product__title">Цукерки</div>
+                      </div>
+                    </li>
+                    <li class="products__slide swiper-slide">
+                      <div class="product">
+                        <div class="product__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/products/cupcakes.webp'>
+                            <img class="product__img" width='152' height='100' src='img/products/cupcakes.png' alt='cupcakes'>
+                          </picture>
+                        </div>
+                        <div class="product__title">Капкейки</div>
+                      </div>
+                    </li>
+                    <li class="products__slide swiper-slide">
+                      <div class="product">
+                        <div class="product__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/products/macaroons.webp'>
+                            <img class="product__img" width='152' height='100' src='img/products/macaroons.png' alt='macaroons'>
+                          </picture>
+                        </div>
+                        <div class="product__title">Макаруни</div>
+                      </div>
+                    </li>
+                    <li class="products__slide swiper-slide">
+                      <div class="product">
+                        <div class="product__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/products/cookies.webp'>
+                            <img class="product__img" width='152' height='100' src='img/products/cookies.png' alt='cookies'>
+                          </picture>
+                        </div>
+                        <div class="product__title">Печиво</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="first__wrapper-right">
+              <div class="first__images">
+                <div class="first__image first__image--first">
+                  <picture>
+                    <source type='image/webp' srcset='img/first1.webp'>
+                    <img width='175' height='333' src='img/first1.png' alt='Cake 1'>
+                  </picture>
+                </div>
+                <div class="first__image first__image--second">
+                  <picture>
+                    <source type='image/webp' srcset='img/first2.webp'>
+                    <img width='175' height='333' src='img/first2.png' alt='Cake 2'>
+                  </picture>
+                </div>
+                <div class="first__image first__image--third">
+                  <picture>
+                    <source type='image/webp' srcset='img/first3.webp'>
+                    <img width='354' height='684' src='img/first3.png' alt='Cake 3'>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+  </div>
 
   <script type="text/javascript" src="js/main.js"></script>
 </body>

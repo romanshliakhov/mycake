@@ -1,0 +1,40 @@
+.categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+
+  &__btn {
+    padding: 8.5px 20px;
+    color: #8E4A4E;
+    background-color: var(--color-pink-bg);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-pink-hover);
+    }
+
+    &--another {
+      position: relative;
+      background-color: transparent;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: var(--arrow-another);
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5px;
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
