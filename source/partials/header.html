@@ -26,21 +26,52 @@
         </ul>
       </nav>
 
-      <div class="header__right">
-        <!-- <button class="authorization">
-          <svg width='30' height='32'>
-          <use href='img/sprite/sprite.svg#forum'></use>
-          </svg>
-        </button> -->
+      <div class="header__right authorization">
+        <div class="authorization__forum">
+          <button class="authorization__btn">
+            <svg width='30' height='32'>
+            <use href='img/sprite/sprite.svg#forum'></use>
+            </svg>
+          </button>
+        </div>
 
-        <button class="authorization">
-          <svg width='30' height='30'>
-            <use href='img/sprite/sprite.svg#account'></use>
-          </svg>
-          <span>Увійти</span>
-        </button>
+        <!-- <div class="authorization__login">
+          <button class="authorization__btn">
+            <svg width='30' height='30'>
+              <use href='img/sprite/sprite.svg#account'></use>
+            </svg>
+            <span>Увійти</span>
+          </button>
+        </div> -->
+
+        <div class="authorization__account">
+          <button class="authorization__btn">
+            <svg width='30' height='30'>
+              <use href='img/sprite/sprite.svg#account'></use>
+            </svg>
+            <span>Інна Пономаренко</span>
+          </button>
+
+          <div class="authorization__account-hover">
+            <ul class="authorization__account-details">
+              <li class="authorization__acount-item">
+                <a class="authorization__account-link" href="#">Мій акаунт</a>
+              </li>
+              <li class="authorization__acount-item">
+                <a class="authorization__account-link" href="#">Профіль кондитера</a>
+              </li>
+              <li class="authorization__acount-item">
+                <button class="authorization__account-link authorization__account-link--logout">
+                  <span>Вийти</span>
+                  <svg width='15' height='15'>
+                  <use href='img/sprite/sprite.svg#log-out'></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
     </div>
   </div>
 </header>

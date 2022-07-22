@@ -57,6 +57,11 @@
     text-decoration-line: underline;
     color: var(--color-red);
     z-index: 2;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration-line: none;
+    }
   }
 
   &__descr {

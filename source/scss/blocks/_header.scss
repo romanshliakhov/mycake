@@ -9,6 +9,12 @@ header {
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 1140px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
   &__left {
     display: flex;
     align-items: center;
@@ -19,5 +25,18 @@ header {
     display: flex;
     align-items: center;
     grid-gap: 35px;
+
+    @media (max-width: 1140px) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 1140px) {
+      order: 1;
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
