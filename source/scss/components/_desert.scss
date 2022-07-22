@@ -1,4 +1,4 @@
-.card {
+.desert {
   position: relative;
   max-width: 280px;
   width: 100%;
@@ -26,9 +26,11 @@
   }
 
   &__info {
+    height: 114px;
     padding: 5px 15px 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     grid-gap: 5px;
   }
 
