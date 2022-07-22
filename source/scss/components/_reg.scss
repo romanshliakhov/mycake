@@ -1,0 +1,10 @@
+.reg {
+  padding: 8px 20px;
+  background-color: var(--color-blue);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-blue-text);
+  }
+}

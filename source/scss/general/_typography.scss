@@ -24,7 +24,20 @@
   color: var(--color-black);
 }
 
+.subtitle {
+  font-family: var(--font-family-yesseva);
+  font-size: 35px;
+  color: var(--color-black);
+}
+
 .text {
   line-height: 150%;
   color: var(--color-blue);
+}
+
+.reg {
+  font-size: 14px;
+  line-height: 171%;
+  font-weight: 700;
+  color: var(--color-white);
 }

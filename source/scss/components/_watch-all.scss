@@ -1,0 +1,13 @@
+.watch-all {
+  padding: 5px 20px;
+  background-color: var(--color-blue-border-bg);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 171%;
+  color: #43607C;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-blue-hover);
+  }
+}

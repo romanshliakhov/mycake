@@ -1,7 +1,7 @@
 import Swiper from '../vendor/swiper.js';
 
 // Products slider
-let sliderArticle = new Swiper(".products__slider", {
+let sliderProducts = new Swiper(".products__slider", {
   slidesPerView: 5,
   spaceBetween: 20,
   loop: true,
@@ -25,3 +25,62 @@ let sliderArticle = new Swiper(".products__slider", {
   //     }
   // }
 });
+
+
+// Products slider
+let sliderBestConfectioner = new Swiper(".best__slider", {
+  slidesPerView: 3,
+  spaceBetween: 23.5,
+  loop: true,
+  navigation: {
+      nextEl: ".best__slider-btn--next",
+      prevEl: ".best__slider-btn--prev",
+      clickable: true,
+  },
+  // breakpoints: {
+  //     320: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 20,
+  //       },
+  //     576: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 50,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 40,
+  //     }
+  // }
+});
+
+
+// Default slider
+for (const container of  document.querySelectorAll('.container') ) {
+  let mainSlider = new Swiper(container.querySelector('.slider'), {
+    slidesPerView: 5,
+    spaceBetween: 18,
+    loop: true,
+    navigation: {
+      nextEl: container.querySelector(".slider__btn--next"),
+      prevEl: container.querySelector(".slider__btn--prev"),
+      clickable: true,
+  },
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //       },
+    //     576: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 50,
+    //     },
+    //     768: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 40,
+    //     }
+    // }
+  });
+}
+
+
+

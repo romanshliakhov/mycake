@@ -1,0 +1,16 @@
+.block {
+  margin-bottom: 80px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+}

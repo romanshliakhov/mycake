@@ -1,0 +1,33 @@
+.best {
+  &__slider-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-gap: 5px;
+  }
+
+  &__slider-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-blue-border-bg);
+      border-radius: 2px;
+    }
+
+    &:active {
+      svg {
+        fill: var(--color-blue-text);
+      }
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+}
