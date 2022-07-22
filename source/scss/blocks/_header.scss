@@ -15,6 +15,10 @@ header {
     grid-gap: 20px;
   }
 
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
   &__left {
     display: flex;
     align-items: center;
@@ -29,6 +33,16 @@ header {
     @media (max-width: 1140px) {
       justify-content: flex-end;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__location {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__nav {
@@ -38,5 +52,17 @@ header {
       display: flex;
       justify-content: center;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
+
+  // &__mobile {
+  //   display: none;
+
+  //   @media (max-width: 768px) {
+  //     display: block;
+  //   }
+  // }
 }
