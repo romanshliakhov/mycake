@@ -19,4 +19,18 @@
     flex-direction: column;
     grid-gap: 30px;
   }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+
+  &__tabcontent {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: stretch;
+    grid-gap: 20px;
+
+  }
 }

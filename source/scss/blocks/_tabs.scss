@@ -1,0 +1,16 @@
+.tabs {
+	position: relative;
+}
+
+.tabcontent {
+    display: none;
+
+    &.active {
+        display: grid;
+    }
+}
+
+.tabs__btn {
+    pointer-events: none;
+
+}

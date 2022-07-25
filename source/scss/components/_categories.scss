@@ -5,6 +5,7 @@
   grid-gap: 10px;
 
   &__btn {
+    position: relative;
     padding: 8.5px 20px;
     color: #8E4A4E;
     background-color: var(--color-pink-bg);
@@ -23,8 +24,7 @@
         content: '';
         position: absolute;
         background-image: var(--arrow-another);
-        top: 50%;
-        transform: translateY(-50%);
+        top: 5px;
         right: 5px;
         width: 10px;
         height: 10px;
@@ -34,6 +34,31 @@
 
       &:hover {
         background-color: transparent;
+      }
+    }
+  }
+
+  &__item {
+    &.active {
+      .categories__btn {
+        padding-left: 50px;
+        color: #fff;
+        font-weight: 700;
+        background-color: #A63A50;
+
+        &::before {
+          content: '';
+          position: absolute;
+          background-image: var(--tab-active);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
+          left: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }
