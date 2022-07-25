@@ -1,3 +1,19 @@
+.burger {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-pink-bg);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-pink-hover);
+  }
+}
+
 .burger-menu {
   position: relative;
   display: flex;
@@ -26,6 +42,8 @@
 }
 
 .burger-menu.active {
+  display: flex;
+
   span:nth-child(1) {
     transform: rotate(45deg) translate(3px, 3px);
   }

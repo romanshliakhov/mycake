@@ -1,4 +1,12 @@
 .search {
+  padding: 40px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+  }
+
   &__label {
     display: flex;
     align-items: center;
@@ -30,5 +38,34 @@
     &:hover {
       background-color: var(--color-yellow-hover);
     }
+  }
+
+  &__result {
+    display: flex;
+    align-items: center;
+  }
+
+  &__result-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-blue);
+  }
+
+  &__result-cancel {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-blue-border-bg);
+    border-radius: 33px;
+  }
+
+  &__result-count {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 133%;
+    color: var(--color-blue-text);
   }
 }

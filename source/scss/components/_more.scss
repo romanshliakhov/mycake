@@ -1,0 +1,15 @@
+.more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 15px;
+  border: 1px solid #84A6C2;
+  border-radius: 49px;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #84A6C2;
+  }
+}
