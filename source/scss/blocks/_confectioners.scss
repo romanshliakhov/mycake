@@ -1,0 +1,54 @@
+.confectioners {
+  margin-bottom: 40px;
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+  }
+
+  &__tabcontent.active {
+    grid-gap: 40px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+    grid-gap: 42px;
+  }
+
+  &__cook {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    grid-gap: 20px;
+  }
+
+  &__cook-image {
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__cook-info {
+    align-items: center;
+  }
+
+  &__cook-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 5px;
+  }
+
+  &__details {
+    max-width: 1150px;
+  }
+
+  &__slider {
+    margin: -10px 0;
+    padding: 10px 0;
+  }
+
+}

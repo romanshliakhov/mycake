@@ -49,6 +49,13 @@
     font-size: 18px;
     font-weight: 700;
     color: var(--color-blue);
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 44px;
   }
 
   &__feedback {

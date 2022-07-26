@@ -82,5 +82,33 @@ for (const container of  document.querySelectorAll('.container') ) {
   });
 }
 
+// Confectioners slider
+for (const container of document.querySelectorAll('.confectioners__details') ) {
+  let confectionersSlider = new Swiper(container.querySelector('.confectioners__slider'), {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: container.querySelector(".slider__btn--next"),
+      prevEl: container.querySelector(".slider__btn--prev"),
+      clickable: true,
+  },
+    // breakpoints: {
+    //     320: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //       },
+    //     576: {
+    //       slidesPerView: 2,
+    //       spaceBetween: 50,
+    //     },
+    //     768: {
+    //       slidesPerView: 3,
+    //       spaceBetween: 40,
+    //     }
+    // }
+  });
+}
+
 
 
