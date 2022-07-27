@@ -1,0 +1,33 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__info-head {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-blue);
+  }
+
+  &__datetime {
+    font-size: 14px;
+    color: var(--color-blue-text);
+  }
+
+  &__product {
+    font-size: 14px;
+    color: var(--color-red);
+  }
+}

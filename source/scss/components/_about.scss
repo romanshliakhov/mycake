@@ -1,0 +1,67 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    grid-gap: 50px;
+  }
+
+  &__bot {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__head-info  {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__photo {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  &__photo-img {
+    border-radius: 5px;
+  }
+
+  &__head-title {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__confectioner-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #43607C;
+  }
+
+  &__confectioner-town {
+    font-size: 14px;
+    color: #84A6C2;
+  }
+
+  &__confectioner-link {
+    padding: 10.5px 20px;
+    background-color: var(--color-yellow);
+    border-radius: 50px;
+    color: #5E2D07;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-yellow-hover);
+    }
+  }
+
+  &__desctiption {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+  }
+}

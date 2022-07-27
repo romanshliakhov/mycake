@@ -1,0 +1,18 @@
+.add-review {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  background-color: var(--color-pink-bg);
+  border-radius: 50px;
+  padding: 8px 20px;
+  color: var(--color-red);
+  transition: all 0.3s ease;
+
+  svg {
+    fill: transparent;
+  }
+
+  &:hover {
+    background-color: var(--color-pink-hover);
+  }
+}

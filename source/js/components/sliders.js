@@ -111,4 +111,32 @@ for (const container of document.querySelectorAll('.confectioners__details') ) {
 }
 
 
+// Reviews slider
+let reviewsSlider = new Swiper(".reviews__slider", {
+  slidesPerView: 3,
+  spaceBetween: 40,
+  loop: true,
+  direction: "vertical",
+  autoHeight: true,
+  navigation: {
+    nextEl: ".slider__btn--next",
+    prevEl: ".slider__btn--prev",
+      clickable: true,
+  },
+  // breakpoints: {
+  //     320: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 20,
+  //       },
+  //     576: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 50,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 40,
+  //     }
+  // }
+});
+
 
