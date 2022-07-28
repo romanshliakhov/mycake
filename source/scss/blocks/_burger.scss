@@ -1,7 +1,7 @@
 .burger {
   height: 50px;
   width: 50px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background-color: var(--color-pink-bg);
@@ -12,6 +12,11 @@
   &:hover {
     background-color: var(--color-pink-hover);
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+
 }
 
 .burger-menu {

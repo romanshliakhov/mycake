@@ -33,45 +33,1182 @@
         </div>
       </section>
 
-      <button class="more">
-        <svg width='22' height='19'>
-        <use href='img/sprite/sprite.svg#more'></use>
-        </svg>
-        <span>Більше смаколиків</span>
-      </button>
+      <section class="details">
+        <div class="container">
+          <div class="details__wrapper tabs">
+            <div class="details__wrapper-controls">
+              <ul class="details__controls">
+                <li class="details__controls-btns tablinks active" tabs-btn="confectioner-about">
+                  <button class="details__controls-btn tabs__btn" >
+                    <span>Про кондитера</span>
+                  </button>
+                </li>
+                <li class="details__controls-btns tablinks" tabs-btn="confectioner-products">
+                  <button class="details__controls-btn tabs__btn">
+                      <span>Товари</span>
+                  </button>
+                </li>
+              </ul>
 
-      <div class="pagination">
-        <a class="pagination__nav pagination__nav--prev" href="#">
-          <svg width='24' height='24'>
-            <use href='img/sprite/sprite.svg#arrow-prev'></use>
-          </svg>
-        </a>
-        <ul class="pagination__list">
-          <li class="pagination__list-item">
-            <a class="pagination__list-link" href="#">1</a>
-          </li>
-          <li class="pagination__list-item">
-            <a class="pagination__list-link" href="#">2</a>
-          </li>
-          <li class="pagination__list-item">
-            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
-          </li>
-          <li class="pagination__list-item">
-            <a class="pagination__list-link" href="#">4</a>
-          </li>
-          <li class="pagination__list-item">
-            <span>...</span>
-          </li>
-          <li class="pagination__list-item">
-            <a class="pagination__list-link" href="#">15</a>
-          </li>
-        </ul>
-        <a class="pagination__nav pagination__nav--next" href="#">
-          <svg width='24' height='24'>
-            <use href='img/sprite/sprite.svg#arrow-prev'></use>
-          </svg>
-        </a>
-      </div>
+              <aside class="details__aside aside">
+                <div class="aside__filter filter">
+                  <div class="heading">Шукаєш <br> щось особливе?</div>
+                  <form class="filter__form" action="">
+                    <div class="filter__form-title">Тематика</div>
+                    <ul class="filter__list">
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="girls">
+                          <span class="filter__name">Для дівчат</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="mens">
+                          <span class="filter__name">Для чоловіків</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="patriots">
+                          <span class="filter__name">Патріотичні</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="wedding">
+                          <span class="filter__name">Весільні</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="birthday">
+                          <span class="filter__name">До дня народження</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="corporate">
+                          <span class="filter__name">Корпоративні</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+
+                  <form class="filter__form" action="">
+                    <div class="filter__form-title">Особливості</div>
+                    <ul class="filter__list">
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="classic">
+                          <span class="filter__name">Класичні рецепти</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="gluten">
+                          <span class="filter__name">Без глютену</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="vegans">
+                          <span class="filter__name">Веганські</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="sugar">
+                          <span class="filter__name">Без цукру</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="fruit">
+                          <span class="filter__name">З фруктами</span>
+                        </label>
+                      </li>
+                      <li class="filter__list-item">
+                        <label class="filter__label">
+                          <input class="filter__input" type="checkbox" name="flower">
+                          <span class="filter__name">З квітами</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </aside>
+            </div>
+            <ul class="details__content">
+              <li class="details__tabcontent tabcontent active" tabs-content="confectioner-about">
+                <div class="details__confectioner-about ">
+                  <div class="details__about about">
+                    <div class="about__head">
+                      <div class="about__photo">
+                        <picture>
+                          <source type='image/webp' srcset='img/cook/cook1.webp'>
+                          <img class="about__photo-img" width='200' height='200' src='img/cook/cook1.png' alt='cook 1'>
+                        </picture>
+                      </div>
+                      <div class="details__about-info">
+                        <div class="details__about-title">
+                          <div class="town">Київ</div>
+                          <div class="subtitle">Інна Пономаренко</div>
+                        </div>
+                        <a class="watch-contacts" href="#">Переглянути контакти</a>
+                      </div>
+                    </div>
+
+                    <div class="about__bot">
+                      <div class="about__desctiption">
+                        <p class="text">Уже более 10 лет совершенствую свои навыки.</p>
+                        <p class="text">С 2011 по 2017 — основатель бренда Марципан в Воронеже со штатом 35 человек. Я была шеф кондитером 3 ресторанов. А также, одним из первых кондитеров, который ввел в моду кенди бары в Черноземье и совместно с партнерами придумали коробки цветы и макарон — идея которая разлетелась по всему миру.</p>
+                        <p class="text">Также, я и моя команда занимаемся организацией и запуском кондитерских производств.</p>
+                        <p class="text">У меня большой опыт за плечами. За 10 лет работы я создала тысячи и тысячи тортов.</p>
+                        <p class="text">Пройдя большой путь от домашнего кондитера до бренд-шефа, я с большой радостью и уверенностью делюсь с учениками своими знаниями от выпечки тортов и пирожных до масштабных свадебных тортов.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews">
+                    <div class="subtitle">Відгуки</div>
+
+                    <ul class="details__reviews">
+                      <li class="details__review">
+                        <div class="review">
+                          <div class="review__info">
+                            <div class="review__info-head">
+                              <div class="review__name">Анна Щедріна</div>
+                              <div class="review__datetime">15.11.2020</div>
+                            </div>
+                            <div class="review__product">Торт “Червоний оксамит”</div>
+                          </div>
+                          <p class="text">Заказывали на мой День рождения муссовый торт с маракуйей и остались очень довольны. Тортик получился очень вкусный, с приятной кислинкой за счëт маракуйи и невероятно нежной и лëгкой текстурой. Начинка, на мой вкус, просто шикарная: желе маракуйи, бисквит, хрустящий слой и мусс из манго и маракуйи.
+                          </p>
+                        </div>
+                      </li>
+                      <li class="details__review">
+                        <div class="review">
+                          <div class="review__info">
+                            <div class="review__info-head">
+                              <div class="review__name">Олександр Ольцев</div>
+                              <div class="review__datetime">15.11.2020</div>
+                            </div>
+                            <div class="review__product">Торт весільний з фруктами</div>
+                          </div>
+                          <p class="text">Супер десерты для дома и хореки. Круассаны  волшебные. Торты, кейки и муссовые десерты - это любовь</p>
+                        </div>
+                      </li>
+                      <li class="details__review">
+                        <div class="review">
+                          <div class="review__info">
+                            <div class="review__info-head">
+                              <div class="review__name">Тарас Коломієць</div>
+                              <div class="review__datetime">15.11.2020</div>
+                            </div>
+                            <div class="review__product">Торт для дня народження з квітами, 5 кг</div>
+                          </div>
+                          <p class="text">Самые вкусные торты и пирожные , сказочные эклеры . В восторге от десертов . Кондитера - волшебницы,  доставка всегда на высшем уровне!!!!! Всей семьёй обожаем Вашу кондитерскую , спасибо за ваш труд и вкуснотищу!!!!</p>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="more">
+                      <svg width='22' height='19'>
+                      <use href='img/sprite/sprite.svg#more'></use>
+                      </svg>
+                      <span>Більше смаколиків</span>
+                    </button>
+
+                    <div class="pagination">
+                      <a class="pagination__nav pagination__nav--prev" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                        </svg>
+                      </a>
+                      <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">1</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">2</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">4</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <span>...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">15</a>
+                        </li>
+                      </ul>
+                      <a class="pagination__nav pagination__nav--next" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="details__tabcontent tabcontent" tabs-content="confectioner-products">
+                <div class="details__confectioner-products tabs__inner">
+                  <div class="details__confectioner-name subtitle">Інна Пономаренко</div>
+
+                  <ul class="categories">
+                    <li class="categories__item tablinks" inner-btn="cupcakes">
+                      <button class="categories__btn tabs__btn" >
+                          Капкейки
+                      </button>
+                    </li>
+                    <li class="categories__item tablinks active" inner-btn="cakes">
+                      <button class="categories__btn tabs__btn">
+                          <span>Торти</span>
+                      </button>
+                    </li>
+                    <li class="categories__item tablinks" inner-btn="сakepops">
+                        <button class="categories__btn tabs__btn">
+                            <span>Кейк-попси</span>
+                        </button>
+                    </li>
+                    <li class="categories__item tablinks" inner-btn="macarons">
+                        <button class="categories__btn tabs__btn">
+                            <span>Макаруни</span>
+                        </button>
+                    </li>
+                    <li class="categories__item tablinks" inner-btn="cookies">
+                      <button class="categories__btn tabs__btn">
+                          <span>Печиво</span>
+                      </button>
+                      </li>
+                    <li class="categories__item tablinks" inner-btn="candies">
+                      <button class="categories__btn tabs__btn">
+                          <span>Цукерки</span>
+                      </button>
+                    </li>
+                  </ul>
+
+                  <ul class="content__tabcontents-container">
+                    <li class="content__tabcontents-item tabcontent" inner-content="cupcakes">
+                      <ul class="content__tabcontent" >
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="content__tabcontents-item tabcontent active" inner-content="cakes">
+                      <ul class="content__tabcontent" >
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake2.png' alt='cake 2'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Весільний триярусний торт з фруктами та квітами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake3.png' alt='cake 3'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Бісквітний торт з ягодами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake4.png' alt='cake 4'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Ванільно-карамельний торт з печивом Орео</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 5'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Торт рожевий з макарунами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes5.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes5.png' alt='cupcakes 5'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Чорні капкейки з шоколадом та печивом</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Капкейки з карамеллю 3 шт</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes4.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes4.png' alt='cupcakes 4'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Капкейки з ніжним кремом</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 5'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Торт рожевий з макарунами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake2.png' alt='cake 2'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Весільний триярусний торт з фруктами та квітами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes2.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes2.png' alt='cupcakes 2'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Оригінальні капкейки з кремом та печивом</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes1.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes1.png' alt='cupcakes 1'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Пасхальні капкейки шоколадні та ванільні </div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes4.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes4.png' alt='cupcakes 4'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Капкейки з ніжним кремом</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes5.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes5.png' alt='cupcakes 5'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Чорні капкейки з шоколадом та печивом</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Капкейки з карамеллю 3 шт</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake3.png' alt='cake 3'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Бісквітний торт з ягодами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake4.png' alt='cake 4'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Ванільно-карамельний торт з печивом Орео</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake2.png' alt='cake 2'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Весільний триярусний торт з фруктами та квітами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="content__tabcontent-item">
+                      <a class="desert" href="#">
+                        <div class="desert__image">
+                          <picture>
+                            <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                            <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 5'>
+                          </picture>
+                        </div>
+                        <div class="desert__info">
+                          <div class="desert__price">520 грн</div>
+                          <div class="desert__descr">Торт рожевий з макарунами</div>
+                          <div class="desert__topping">4 варіанти начинок</div>
+                        </div>
+                      </a>
+                    </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="content__tabcontents-item tabcontent" inner-content="сakepops">
+                      <ul class="content__tabcontent" >
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="content__tabcontents-item tabcontent" inner-content="macarons">
+                      <ul class="content__tabcontent" >
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="content__tabcontents-item tabcontent" inner-content="cookies">
+                      <ul class="content__tabcontent" >
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="content__tabcontents-item tabcontent" inner-content="candies">
+                      <ul class="content__tabcontent" >
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="content__tabcontent-item">
+                          <a class="desert" href="#">
+                            <div class="desert__image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                              </picture>
+                            </div>
+                            <div class="desert__info">
+                              <div class="desert__price">520 грн</div>
+                              <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              <div class="desert__topping">4 варіанти начинок</div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section class="block">
         <div class="container">

@@ -1,0 +1,84 @@
+.details {
+  margin-bottom: 80px;
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    grid-gap: 40px;
+  }
+
+  &__wrapper-controls {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  &__controls {
+    margin-bottom: 52px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__controls-btns {
+    &.active {
+      .details__controls-btn {
+        background-color:#43607C;
+        color: #fff;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__controls-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 9px 20px;
+    border: 1px solid #C8E6FF;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #43607C;
+  }
+
+  &__aside {
+    max-width: 100%;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__confectioner-about {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 80px;
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+  }
+
+  &__about-info {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30.5px;
+  }
+
+  &__about-title {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+  }
+
+  &__confectioner-products {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+}
