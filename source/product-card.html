@@ -33,11 +33,143 @@
         </div>
       </section>
 
-      <section class="card">
+      <section class="product-card">
         <div class="container">
-          <div class="card__wrapper">
-            <div class="card__info">
-              2112
+          <div class="product-card__wrapper">
+            <div class="product-card__images">
+              <div class="product-card__small">
+                <div class="product-card__preview-btn product-card__preview-btn--prev">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                  </svg>
+                </div>
+
+                <div class="product-card__preview-slider slider swiper-container">
+                  <ul class="product-card__preview-wrapper swiper-wrapper">
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image1.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image1.png' alt='image 1'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image1.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image2.png' alt='image 2'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image1.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image3.png' alt='image 3'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image4.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image4.png' alt='image 4'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image5.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image5.png' alt='image 5'>
+                        </picture>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="product-card__preview-btn product-card__preview-btn--next">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="product-card__slider slider swiper-container">
+                <ul class="product-card__slider-wrapper swiper-wrapper">
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image1.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image1.png' alt='image 1'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image2.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 2'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image3.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image3.png' alt='image 3'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image4.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 4'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image5.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 5'>
+                      </picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card__details">
+              <ul class="product-card__categories categories">
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">Для дівчат</button>
+                </li>
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">На день народження</button>
+                </li>
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">Класичні рецепти</button>
+                </li>
+              </ul>
+              <div class="product-card__title">Торт “Червоний оксамит”</div>
+              <div class="product-card__price">670 грн</div>
+              <ul class="product-card__info">
+                <li class="product-card__info-item">2 кг</li>
+                <li class="product-card__info-item">Начинка: червоний оксамит</li>
+                <li class="product-card__info-item">Прикраси з мастики</li>
+              </ul>
+              <div class="product-card__description">Цей торт особливо актуальний до Дня святого Валентина. Ви тільки подивіться, який він пристрасний!) І смачний звичайно. І з приготуванням впорається будь-хто! Загалом все, як ми любимо! Тому цей «Червоний оксамит» до приготування обов'язковий. Щоб отримати такий насичений червоний колір, використовуйте або сухі індійські барвники (Roha), або гелевий Americolor Red Red.</div>
+              <div class="product-card__btns">
+                <button class="product-card__btn product-card__btn--parameters">Обрати параметри</button>
+                <button class="product-card__btn product-card__btn--contacts">Переглянути контакти</button>
+                <button class="favorite">
+                  <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -140,3 +140,59 @@ let reviewsSlider = new Swiper(".reviews__slider", {
 });
 
 
+let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  // loop: true,
+  direction: "vertical",
+  navigation: {
+      nextEl: ".product-card__preview-btn--next",
+      prevEl: ".product-card__preview-btn--prev",
+      clickable: true,
+  },
+  // breakpoints: {
+  //     320: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 20,
+  //       },
+  //     576: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 50,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 40,
+  //     }
+  // }
+});
+
+// Product card slider
+let productCardSlider = new Swiper(".product-card__slider", {
+  slidesPerView: 1,
+  spaceBetween: 1,
+  // centeredSlides: true,
+  autoHeight: true,
+  // loop: true,
+  navigation: {
+      clickable: true,
+  },
+  thumbs: {
+    swiper: productCardPreviewSlider,
+  },
+  // breakpoints: {
+  //     320: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 20,
+  //       },
+  //     576: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 50,
+  //     },
+  //     768: {
+  //       slidesPerView: 3,
+  //       spaceBetween: 40,
+  //     }
+  // }
+});
+
+

@@ -24,7 +24,8 @@
         content: '';
         position: absolute;
         background-image: var(--arrow-another);
-        top: 5px;
+        top: 50%;
+        transform: translateY(-50%);
         right: 5px;
         width: 10px;
         height: 10px;
