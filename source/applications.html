@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="En">
+@include('partials/head.html',{})
+
+<body>
+    <div class="wrapper">
+      @include('partials/header.html',{})
+
+      <main>
+        <section class="applications">
+          <div class="container">
+            <div class="details__wrapper tabs">
+              <div class="details__wrapper-controls">
+                <ul class="details__controls">
+                  <li class="details__controls-btns tablinks active" tabs-btn="applications">
+                    <button class="details__controls-btn tabs__btn" >
+                      <span>Мої заявки</span>
+                    </button>
+                  </li>
+                  <li class="details__controls-btns tablinks" tabs-btn="samples">
+                    <button class="details__controls-btn tabs__btn">
+                        <span>Збережені шаблони</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <ul class="details__content">
+                <li class="details__tabcontent tabcontent active" tabs-content="applications">
+                  <div class="applications__information">
+                    <div class="applications__information-head">
+                      <div class="applications__heading heading">
+                        <span>Особиста інформація</span>
+                        <button class="edit">
+                          <svg width='20' height='20'>
+                          <use href='img/sprite/sprite.svg#edit'></use>
+                          </svg>
+                        </button>
+                      </div>
+
+                      <div class="aplications__informational-person">
+
+                      </div>
+                    </div>
+
+                    <div class="applications__list">
+                      <div class="applications__list-heading heading">Мої заявки</div>
+
+                      <ul class="applications__list-items">
+                        <li class="applications__list-item">
+                          <div class="application">
+                            <div class="application__product">
+                              <div class="application__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                                  <img class="application__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                </picture>
+                              </div>
+
+                              <div class="application__product-info">
+                                <div class="application__info-head">
+                                  <div class="application__product-title">Торт</div>
+                                  <div class="application__product-count">5 кг</div>
+                                </div>
+
+                                <div class="application__datetime">21.01.2022</div>
+                              </div>
+                            </div>
+
+                            <div class="application__filling">
+                              <span>Начика</span>
+                              Бісквітна з лохиновим конфітюром
+                            </div>
+
+                            <button class="application__btn">Переглянути</button>
+                          </div>
+                        </li>
+                        <li class="applications__list-item">
+                          <div class="application">
+                            <div class="application__product">
+                              <div class="application__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                                  <img class="application__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                                </picture>
+                              </div>
+
+                              <div class="application__product-info">
+                                <div class="application__info-head">
+                                  <div class="application__product-title">Капкейки</div>
+                                  <div class="application__product-count">12 штг</div>
+                                </div>
+
+                                <div class="application__datetime">02.05.2021</div>
+                              </div>
+                            </div>
+
+                            <div class="application__filling">
+                              <span>Начика</span>
+                              Бісквітна з манговим мусом із дзеркальною глазуррю
+                            </div>
+
+                            <button class="application__btn">Переглянути</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="applications__banner">
+                      <div class="applications__banner-text">
+                        <div class="applications__banner-title">Хочеться ще смачненького? </div>
+                        <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
+                      </div>
+
+                      <div class="applications__banner-btns">
+                        <button class="applications__banner-btn applications__banner-btn--samples">Переглянути збережені шаблони</button>
+                        <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="details__tabcontent tabcontent" tabs-content="samples">
+                  <div class="applications__information">
+                    <div class="applications__list">
+                      <div class="applications__list-heading heading">Збережені шаблони</div>
+
+                      <ul class="applications__list-items">
+                        <li class="applications__list-item">
+                          1
+                        </li>
+                        <li class="applications__list-item">
+                          2
+                        </li>
+                        <li class="applications__list-item">
+                          3
+                        </li>
+                        <li class="applications__list-item">
+                          4
+                        </li>
+                      </ul>
+
+                      <div class="applications__banner">
+                        <div class="applications__banner-text">
+                          <div class="applications__banner-title">Хочеться ще смачненького? </div>
+                          <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
+                        </div>
+
+                        <div class="applications__banner-btns">
+                          <button>Переглянути збережені шаблони</button>
+                          <button>Повернутися на головну</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/footer.html',{})
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
