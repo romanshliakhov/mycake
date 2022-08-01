@@ -29,12 +29,6 @@
     grid-gap: 20px;
   }
 
-  &__list-item {
-    padding: 15px 30px 15px 20px;
-    border: 1px solid var(--color-border);
-    border-radius: 10px;
-  }
-
   &__banner {
     padding: 40px 0;
     display: flex;
@@ -74,15 +68,25 @@
     border-radius: 30px;
     font-size: 14px;
     color: var(--color-blue);
+    transition: all 0.3s ease;
 
-    &--samples {
+    &--samples,
+    &--main {
       font-weight: 700;
       color: #fff;
       background-color: #43607C;
+
+      &:hover {
+        background-color: #84A6C2;
+      }
     }
 
     &--back {
       border: 1px solid #84A6C2;
+
+      &:hover {
+        color: #011936;
+      }
     }
   }
 }

@@ -6,7 +6,7 @@
     <div class="wrapper">
       @include('partials/header.html',{})
 
-      <main>
+      <main class="main">
         <section class="applications">
           <div class="container">
             <div class="details__wrapper tabs">
@@ -105,6 +105,7 @@
                       </ul>
                     </div>
 
+                    <!-- Banner v1 -->
                     <div class="applications__banner">
                       <div class="applications__banner-text">
                         <div class="applications__banner-title">Хочеться ще смачненького? </div>
@@ -116,6 +117,31 @@
                         <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
                       </div>
                     </div>
+
+                    <!-- Banner v2 -->
+                    <!-- <div class="applications__banner">
+                      <div class="applications__banner-text">
+                        <div class="applications__banner-title">Поки нічого не замовили?</div>
+                        <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
+                      </div>
+
+                      <div class="applications__banner-btns">
+                        <button class="applications__banner-btn applications__banner-btn--samples">Переглянути збережені шаблони</button>
+                        <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
+                      </div>
+                    </div> -->
+
+                    <!-- Banner v3 -->
+                    <!-- <div class="applications__banner">
+                      <div class="applications__banner-text">
+                        <div class="applications__banner-title">Ви поки не зберегли жодного шаблону</div>
+                        <div class="applications__banner-descr">Але на сайті стільки крутих пропозицій </div>
+                      </div>
+
+                      <div class="applications__banner-btns">
+                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
+                      </div>
+                    </div> -->
                   </div>
                 </li>
                 <li class="details__tabcontent tabcontent" tabs-content="samples">
@@ -125,29 +151,156 @@
 
                       <ul class="applications__list-items">
                         <li class="applications__list-item">
-                          1
+                          <div class="sample">
+                            <div class="sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__info-head">
+                                  <div class="sample__product-title">Торт</div>
+                                  <div class="sample__product-count">5 кг</div>
+                                </div>
+
+                                <button class="sample__apply">Надіслати заявку</button>
+                              </div>
+                            </div>
+
+                            <div class="sample__filling">
+                              <span>Начика</span>
+                              Бісквітна з лохиновим конфітюром
+                            </div>
+
+                            <div class="sample__btns">
+                              <button class="sample__btn-watch">Переглянути</button>
+                              <button class="sample__btn-delete">
+                                <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#delete'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
                         </li>
                         <li class="applications__list-item">
-                          2
+                          <div class="sample">
+                            <div class="sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__info-head">
+                                  <div class="sample__product-title">Капкейки</div>
+                                  <div class="sample__product-count">12 шт</div>
+                                </div>
+
+                                <button class="sample__apply">Надіслати заявку</button>
+                              </div>
+                            </div>
+
+                            <div class="sample__filling">
+                              <span>Начика</span>
+                              Бісквітна з манговим мусом із дзеркальною глазуррю
+                            </div>
+
+                            <div class="sample__btns">
+                              <button class="sample__btn-watch">Переглянути</button>
+                              <button class="sample__btn-delete">
+                                <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#delete'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
                         </li>
                         <li class="applications__list-item">
-                          3
+                          <div class="sample">
+                            <div class="sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__info-head">
+                                  <div class="sample__product-title">Торт</div>
+                                  <div class="sample__product-count">5 кг</div>
+                                </div>
+
+                                <button class="sample__apply">Надіслати заявку</button>
+                              </div>
+                            </div>
+
+                            <div class="sample__filling">
+                              <span>Начика</span>
+                              Бісквітна з лохиновим конфітюром
+                            </div>
+
+                            <div class="sample__btns">
+                              <button class="sample__btn-watch">Переглянути</button>
+                              <button class="sample__btn-delete">
+                                <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#delete'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
                         </li>
                         <li class="applications__list-item">
-                          4
+                          <div class="sample">
+                            <div class="sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__info-head">
+                                  <div class="sample__product-title">Капкейки</div>
+                                  <div class="sample__product-count">12 шт</div>
+                                </div>
+
+                                <button class="sample__apply">Надіслати заявку</button>
+                              </div>
+                            </div>
+
+                            <div class="sample__filling">
+                              <span>Начика</span>
+                              Бісквітна з манговим мусом із дзеркальною глазуррю
+                            </div>
+
+                            <div class="sample__btns">
+                              <button class="sample__btn-watch">Переглянути</button>
+                              <button class="sample__btn-delete">
+                                <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#delete'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
                         </li>
                       </ul>
+                    </div>
 
-                      <div class="applications__banner">
-                        <div class="applications__banner-text">
-                          <div class="applications__banner-title">Хочеться ще смачненького? </div>
-                          <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
-                        </div>
+                    <div class="applications__banner">
+                      <div class="applications__banner-text">
+                        <div class="applications__banner-title">Це поки всі збережені шаблони</div>
+                        <div class="applications__banner-descr">Але на сайті ще стільки крутих пропозицій!</div>
+                      </div>
 
-                        <div class="applications__banner-btns">
-                          <button>Переглянути збережені шаблони</button>
-                          <button>Повернутися на головну</button>
-                        </div>
+                      <div class="applications__banner-btns">
+                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
                       </div>
                     </div>
                   </div>

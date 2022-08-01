@@ -4,6 +4,7 @@
   &__btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     grid-gap: 12.5px;
     transition: all 0.3s ease;
     color: var(--color-blue);
@@ -79,7 +80,8 @@
 
   &__account-link {
     width: 181px;
-    height: 34px;
+    width: 100%;
+    padding: 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +96,8 @@
       border-radius: 50px;
     }
 
-    &--logout {
+    &--logout,
+    &--kabinet {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -114,6 +117,15 @@
         svg {
           fill: #43607C;
         }
+      }
+    }
+
+    &--kabinet {
+      border-right: 1px solid var(--color-blue-border);
+
+      svg {
+        min-width: 20px;
+        transform: rotate(180deg);
       }
     }
   }

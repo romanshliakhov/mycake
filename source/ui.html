@@ -6,7 +6,7 @@
     <div class="wrapper">
       @include('partials/header.html',{})
 
-      <main>
+      <main class="main">
         <div class="container">
           <div class="ui">
             <a class="logo" href="#">MyCake</a>
@@ -1227,6 +1227,40 @@
               </div>
 
               <button class="application__btn">Переглянути</button>
+            </div>
+
+            <div class="sample">
+              <div class="sample__product">
+                <div class="sample__product-image">
+                  <picture>
+                    <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                    <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                  </picture>
+                </div>
+
+                <div class="sample__product-info">
+                  <div class="sample__info-head">
+                    <div class="sample__product-title">Торт</div>
+                    <div class="sample__product-count">5 кг</div>
+                  </div>
+
+                  <button class="sample__apply">Надіслати заявку</button>
+                </div>
+              </div>
+
+              <div class="sample__filling">
+                <span>Начика</span>
+                Бісквітна з лохиновим конфітюром
+              </div>
+
+              <div class="sample__btns">
+                <button class="sample__btn-watch">Переглянути</button>
+                <button class="sample__btn-delete">
+                  <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#delete'></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -7,37 +7,85 @@
 
   &__menu {
     position: fixed;
-    top: 84px;
+    top: 75px;
     left: 0;
-    width: 100vw;
-    height: calc(100vh - 75px);
     transform: translateX(100%);
-    transition: all .5s;
-    visibility: hidden;
-    z-index: 20;
+    width: 100vw;
+    height: calc(100% - 75px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #FFFFFF;
-    background-color: red;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    grid-gap: 10px;
+    background-color: rgba(67, 96, 124, 0.5);
+    padding: 15px 20px;
+    transition: all .4s;
+    visibility: hidden;
+    overflow-y: auto;
 
     &.active {
-      transform: translateX(0);
+      transform: translate(0);
       visibility: visible;
     }
   }
 
-
   &__menu-wrapp {
-    padding: 30px 20px;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    grid-gap: 30px;
+    align-items: center;
+    grid-gap: 40px;
+  }
+
+  &__location {
+    width: 100%;
+  }
+
+  &__nav-list {
+    flex-direction: column;
+  }
+
+  &__autorization-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+  &__autorization-btn {
+    width: 100%;
+    padding: 7.5px 0;
+    background-color: var(--color-yellow-border);
+    border-radius: 50px;
+    color: var(--color-yellow-text);
+
+    svg {
+      fill: var(--color-yellow-text);
+    }
+  }
+
+  &__account-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__controls-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .authorization__account-link {
+      padding: 13.5px 22px;
+      text-align: left;
+    }
   }
 
 }
