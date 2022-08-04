@@ -1,0 +1,46 @@
+.enter {
+  grid-gap: 60px;
+  text-align: left;
+
+  &__title {
+    margin-bottom: 20px;
+    color: var(--color-black);
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__btn {
+    height: 40px;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 15px;
+    background-color: var(--color-blue-border-bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+      background-color: var(--color-blue-hover);
+    }
+  }
+
+  &__login {
+    font-size: 14px;
+    line-height: 171%;
+    text-decoration-line: underline;
+    color: var(--color-blue-text);
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}

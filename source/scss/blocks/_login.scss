@@ -1,0 +1,74 @@
+.login {
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+    padding: 40px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+      fill: transparent;
+    }
+
+    &--buyer {
+      background-color: var(--color-blue-border-bg);
+
+      &:hover {
+        background-color: var(--color-blue-hover);
+      }
+    }
+
+    &--confectioner {
+      background-color: var(--color-yellow-border);
+
+      .login__btn-title {
+        color: var(--color-yellow-text);
+      }
+
+      .login__link-next {
+        svg {
+          fill: var(--color-yellow-text);
+        }
+      }
+
+      &:hover {
+        background-color: var(--color-yellow-hover);
+      }
+    }
+  }
+
+  &__btn-title {
+    flex-grow: 1;
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--color-blue);
+
+    span {
+      display: block;
+      font-size: 20px;
+      line-height: 120%;
+      font-weight: 700;
+    }
+  }
+
+  &__link-next {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(-180deg);
+
+    svg {
+      fill: var(--color-blue);
+    }
+  }
+}

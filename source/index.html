@@ -387,7 +387,7 @@
               <p class="text">Реєструйся як кондитер, викладай фото своїх смаколиків та отримуй замовлення через MyCake</p>
             </div>
 
-            <button class="reg">Зареєструватися як кондитер</button>
+            <button class="reg" data-path="confectioner">Зареєструватися як кондитер</button>
           </div>
         </div>
       </section>
@@ -618,6 +618,7 @@
     </main>
 
     @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
   </div>
 
   <script type="text/javascript" src="js/main.js"></script>

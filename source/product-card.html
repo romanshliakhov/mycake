@@ -162,8 +162,8 @@
               </ul>
               <div class="product-card__description">Цей торт особливо актуальний до Дня святого Валентина. Ви тільки подивіться, який він пристрасний!) І смачний звичайно. І з приготуванням впорається будь-хто! Загалом все, як ми любимо! Тому цей «Червоний оксамит» до приготування обов'язковий. Щоб отримати такий насичений червоний колір, використовуйте або сухі індійські барвники (Roha), або гелевий Americolor Red Red.</div>
               <div class="product-card__btns">
-                <button class="product-card__btn product-card__btn--parameters">Обрати параметри</button>
-                <button class="product-card__btn product-card__btn--contacts">Переглянути контакти</button>
+                <button class="product-card__btn product-card__btn--parameters" data-path="constructor">Обрати параметри</button>
+                <button class="product-card__btn product-card__btn--contacts" data-path="contacts">Переглянути контакти</button>
                 <button class="favorite">
                   <svg width='24' height='24'>
                   <use href='img/sprite/sprite.svg#heart'></use>
@@ -192,7 +192,7 @@
                     <div class="about__confectioner-name">Інна Пономаренко</div>
                     <div class="about__confectioner-town">Київ</div>
                   </div>
-                  <a class="about__confectioner-link" href="#">Перейти на сторінку</a>
+                  <a class="about__confectioner-link" href="./confectioner.html">Перейти на сторінку</a>
                 </div>
               </div>
 
@@ -227,7 +227,7 @@
               <div class="reviews__head">
                 <div class="reviews__head-btns">
                   <div class="subtitle">Відгуки</div>
-                  <button class="add-review">
+                  <button class="add-review" data-path="feedback">
                     <svg width='24' height='24'>
                     <use href='img/sprite/sprite.svg#circle-plus'></use>
                     </svg>
@@ -599,6 +599,7 @@
     </main>
 
     @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
   </div>
 
   <script type="text/javascript" src="js/main.js"></script>

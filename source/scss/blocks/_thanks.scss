@@ -1,0 +1,22 @@
+.thanks {
+  grid-gap: 30px;
+  align-items: center;
+
+  &__icon {
+    svg {
+      fill: transparent;
+    }
+  }
+
+  &__text {
+    max-width: 345px;
+    font-size: 20px;
+    line-height: 140%;
+    color: #43607C;
+
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+}

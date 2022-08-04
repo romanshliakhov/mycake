@@ -155,7 +155,7 @@
                           <div class="town">Київ</div>
                           <div class="subtitle">Інна Пономаренко</div>
                         </div>
-                        <a class="watch-contacts" href="#">Переглянути контакти</a>
+                        <button class="watch-contacts" data-path="contacts">Переглянути контакти</button>
                       </div>
                     </div>
 
@@ -1426,6 +1426,7 @@
     </main>
 
     @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
   </div>
 
   <script type="text/javascript" src="js/main.js"></script>
