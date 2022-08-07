@@ -1,0 +1,70 @@
+.constructor {
+  &__product-title {
+    font-size: 20px;
+    color: #84A6C2;
+    font-weight: 400;
+  }
+
+  &__form {
+    grid-gap: 40px;
+  }
+
+  &__form-head {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__fieldset {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+  }
+
+  &__form-title {
+    max-width: 220px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--color-blue-text);
+    letter-spacing: -0.03em;
+    text-align: left;
+
+    span {
+      display: block;
+      color: #011936;
+      font-weight: 700;
+    }
+  }
+
+  &__form-bottom {
+    display: flex;
+    align-items: stretch;
+    grid-gap: 30px;
+  }
+
+  &__textarea {
+    min-height: 116px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--color-blue-text);
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 171%;
+      color: var(--color-blue-text);
+    }
+  }
+
+  &__form-mid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    padding: 40px 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+}

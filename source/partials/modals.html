@@ -332,8 +332,6 @@
           </div>
           <textarea class="feedback__textarea" name="feedback-text"></textarea>
         </fieldset>
-
-
       </form>
 
       <div class="modal__btns">
@@ -417,68 +415,253 @@
     </div>
   </div>
 
-
   <div class="modal__container" data-target="contacts">
-    <div class="modal__wrapper feedback">
+    <div class="modal__wrapper contacts">
       <div class="modal__head">
         <div class="modal__title"><span>Інна Пономаренко</span></div>
         <div class="modal__close modal-close">
-          <svg width='18' height='18'>
+          <svg width='30' height='30'>
             <use href='img/sprite/sprite.svg#close'></use>
           </svg>
         </div>
       </div>
 
-      <form class="feedback__form form" action="#">
-        <fieldset class="form__fieldset">
-          <input class="form__input form__input--product" type="text" name="product-name" placeholder="Торт “Червоний оксамит">
-        </fieldset>
+      <ul class="contacts__details">
+        <li class="contacts__details-item">
+          <div class="contacts__detail"><span>Адреса</span>Київ, Симиренка 23а</div>
+          <button class="contacts__btn">
+            <svg width='15' height='15'>
+            <use href='img/sprite/sprite.svg#location'></use>
+            </svg>
+          </button>
+        </li>
+        <li class="contacts__details-item">
+          <div class="contacts__detail"><span>Телефон</span>+56 085 345 76 34</div>
+          <button class="contacts__btn">
+            <svg width='15' height='15'>
+            <use href='img/sprite/sprite.svg#copy'></use>
+            </svg>
+          </button>
+        </li>
+        <li class="contacts__details-item">
+          <div class="contacts__detail"><span>Пошта</span>Mail@example.com</div>
+          <button class="contacts__btn">
+            <svg width='15' height='15'>
+            <use href='img/sprite/sprite.svg#copy'></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
 
-        <fieldset class="form__fieldset">
-          <div class="form__title form__title--spacing">
-            <span>Відгук</span>
-            Опишіть ваші враження від товару, комунікацій з продавцем, процесу покупки, тощо
-          </div>
-          <textarea class="feedback__textarea" name="feedback-text"></textarea>
-        </fieldset>
-      </form>
+      <div class="contacts__info">
+        <div class="contacts__title">Доставка</div>
+        <ul class="contacts__info-list">
+          <li class="contacts__info-item contacts__text">Таксі за тарифами перевізника</li>
+          <li class="contacts__info-item contacts__text">Cамовивіз, Київ, Симиренка 23а</li>
+          <li class="contacts__info-item contacts__text">Власна доставка, 150 грн</li>
+          <li class="contacts__info-item contacts__text">Власна доставка, безкоштовно для замовлення від 1000 грн</li>
+        </ul>
+      </div>
+
+      <div class="contacts__info">
+        <div class="contacts__title">Оплата</div>
+        <p class="contacts__text">Передплата 50%</p>
+      </div>
+
+
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg width='35' height='35'>
+              <use href='img/sprite/sprite.svg#facebook'></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg width='35' height='35'>
+              <use href='img/sprite/sprite.svg#instagram'></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <svg width='35' height='35'>
+              <use href='img/sprite/sprite.svg#youtube'></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+
+
+
 
       <button class="modal__btn modal__btn-red">Написати кондитеру</button>
     </div>
   </div>
 
-
   <div class="modal__container" data-target="constructor">
-    <div class="modal__wrapper feedback">
+    <div class="modal__wrapper constructor">
       <div class="modal__head">
         <div class="modal__title">
           <span>Конструктор</span>
-          Торт “Червоний оксамит”
+          <span class="constructor__product-title">Торт “Червоний оксамит”</span>
         </div>
         <div class="modal__close modal-close">
-          <svg width='18' height='18'>
+          <svg width='30' height='30'>
             <use href='img/sprite/sprite.svg#close'></use>
           </svg>
         </div>
       </div>
 
-      <form class="feedback__form form" action="#">
-        <fieldset class="form__fieldset">
-          <input class="form__input form__input--product" type="text" name="product-name" placeholder="Торт “Червоний оксамит">
-        </fieldset>
+      <form class="constructor__form form" action="#">
+        <div class="constructor__form-head">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Ім’я</span>
+            </div>
+            <input class="form__input" type="text" name="name" placeholder="Анна Василенко">
+          </fieldset>
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Номер телефону</span>
+            </div>
+            <input class="form__input" type="tel" name="phone" placeholder="+56 085 345 76 34">
+          </fieldset>
+        </div>
 
-        <fieldset class="form__fieldset">
-          <div class="form__title form__title--spacing">
-            <span>Відгук</span>
-            Опишіть ваші враження від товару, комунікацій з продавцем, процесу покупки, тощо
+        <div class="constructor__form-mid">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Вага</span>
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Начинка</span>
+              Оберіть 1 варіант
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Додаткові послуги</span>
+              Можна обрати декілька варіантів
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-bottom">
+          <div class="constructor__form-title">
+            <span>Додаткові побажання</span>
           </div>
-          <textarea class="feedback__textarea" name="feedback-text"></textarea>
-        </fieldset>
+          <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+        </div>
       </form>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--send" data-path="thanks-feedback">Відправити відгук</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати</button>
+        <button class="modal__btn modal__btn-red modal__btn--send" data-path="thanks-apply">Надіслати заявку</button>
+        <button class="modal__btn modal__btn--cancel">Зберегти шаблон </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container" data-target="thanks-apply">
+    <div class="modal__wrapper thanks">
+      <div class="modal__close modal__close--thanks modal-close">
+        <svg width='18' height='18'>
+          <use href='img/sprite/sprite.svg#close'></use>
+        </svg>
+      </div>
+      <div class="thanks__icon">
+        <svg width='90' height='90'>
+          <use href='img/sprite/sprite.svg#confirm'></use>
+          </svg>
+      </div>
+
+      <div class="thanks__text">
+        <span>Ваша заявка відправлена</span>
+      </div>
+
+      <div class="modal__btns modal__btns--row">
+        <button class="modal__btn modal__btn--apply">Назад до оголошення</button>
+        <button class="modal__btn modal__btn-red modal__btn--apply">Написати продавцю</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container" data-target="apply">
+    <div class="modal__wrapper constructor">
+      <div class="modal__head">
+        <div class="modal__title">
+          <span>Торт “Червоний оксамит”</span>
+          <span>21.12.2020 13:42</span>
+        </div>
+        <div class="modal__close modal-close">
+          <svg width='30' height='30'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+      </div>
+
+      <form class="constructor__form form" action="#">
+        <div class="constructor__form-head">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Ім’я та прізвище</span>
+            </div>
+            <input class="form__input" type="text" name="name" placeholder="Анна Василенко">
+          </fieldset>
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Номер телефону</span>
+            </div>
+            <input class="form__input" type="tel" name="phone" placeholder="+56 085 345 76 34">
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-mid">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Вага</span>
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Начинка</span>
+              Оберіть 1 варіант
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Додаткові послуги</span>
+              Можна обрати декілька варіантів
+            </div>
+            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-bottom">
+          <div class="constructor__form-title">
+            <span>Додаткові побажання</span>
+          </div>
+          <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+        </div>
+      </form>
+
+      <div class="modal__btns">
+        <button class="modal__btn modal__btn-red modal__btn--send">Написати кондитеру</button>
+        <button class="modal__btn modal__btn--cancel" data-path="feedback">Додати відгук </button>
       </div>
     </div>
   </div>

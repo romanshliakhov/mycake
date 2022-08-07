@@ -122,6 +122,10 @@
     &--left {
       align-items: flex-start;
     }
+
+    &--row {
+      flex-direction: row;
+    }
   }
 
   &__btn {
@@ -138,6 +142,10 @@
     &:hover,
     &:active {
       color: #011936;
+    }
+
+    &--apply {
+      width: 220px;
     }
   }
 
