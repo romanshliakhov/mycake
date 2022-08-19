@@ -1,10 +1,16 @@
 .application {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   grid-gap: 40px;
   padding: 15px 30px 15px 20px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
+
+  &--new {
+    border: none;
+    background-color: #FFF2F2;
+  }
 
   &__product {
     max-width: 310px;
@@ -72,4 +78,31 @@
       background-color: var(--color-pink-hover);
     }
   }
+
+  &__pubtime {
+    text-align: right;
+    line-height: 125%;
+    color: var(--color-blue);
+
+    span {
+      display: block;
+    }
+  }
+
+  &__sample {
+    grid-gap: 30px;
+    box-shadow: 0px 0px 10px rgba(166, 58, 80, 0.1), 0px 2px 5px rgba(166, 58, 80, 0.15);
+  }
+
+  &__sample-product {
+    flex-shrink: 1;
+    max-width: 100%;
+  }
+
+  &__info {
+    svg {
+      fill: transparent;
+    }
+  }
+
 }

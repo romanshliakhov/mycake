@@ -31,6 +31,7 @@
   }
 
   &__info {
+    position: relative;
     padding: 20px 15.8px 15px;
     display: flex;
     flex-grow: 1;
@@ -38,6 +39,16 @@
     grid-gap: 20px;
     overflow: hidden;
     max-height: 223px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: var(--color-white);
+      height: 15px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   &__title {

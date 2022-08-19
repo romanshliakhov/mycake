@@ -1,4 +1,4 @@
-.filter {
+.sort {
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
@@ -17,7 +17,6 @@
     grid-gap: 8px;
   }
 
-
   &__label {
     height: 30px;
     position: relative;
@@ -32,11 +31,11 @@
     opacity: 0;
     transition: all 0.3s ease;
 
-    &:checked ~ .filter__name::after{
+    &:checked ~ .sort__name::after{
       opacity: 1;
     }
 
-    &:checked ~ .filter__name::before{
+    &:checked ~ .sort__name::before{
       background-color: var(--color-white);
     }
   }

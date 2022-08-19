@@ -118,6 +118,7 @@
     align-items: center;
     flex-direction: column;
     grid-gap: 10px;
+    width: 100%;
 
     &--left {
       align-items: flex-start;
@@ -125,6 +126,7 @@
 
     &--row {
       flex-direction: row;
+      justify-content: center;
     }
   }
 
@@ -134,6 +136,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-gap: 10px;
     border: 1px solid var(--color-blue-text);
     border-radius: 50px;
     color: var(--color-blue);
@@ -187,6 +190,31 @@
     &:active {
       color: var(--color-white);
       background-color: var(--color-yellow-hover);
+    }
+  }
+
+  &__btn-ads {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__btn-edit {
+    padding: 10px 31px;
+    border-radius: 50px;
+    background-color: var(--color-pink-bg);
+    color: var(--color-red);
+    transition: all 0.3s ease;
+    border: none;
+
+    svg {
+      fill: var(--color-red);
+    }
+
+    &:active,
+    &:hover {
+      background-color: var(--color-pink-hover);
+      color: var(--color-red);
     }
   }
 

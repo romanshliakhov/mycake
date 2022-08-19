@@ -27,6 +27,10 @@
     display: flex;
     flex-direction: column;
     grid-gap: 20px;
+
+    &--small {
+      grid-gap: 10px;
+    }
   }
 
   &__banner {
@@ -73,20 +77,133 @@
     &--samples,
     &--main {
       font-weight: 700;
-      color: #fff;
-      background-color: #43607C;
+      color: var(--color-white);
+      background-color: var(--color-blue);
 
       &:hover {
-        background-color: #84A6C2;
+        background-color: var(--color-blue-text);
       }
     }
 
     &--back {
-      border: 1px solid #84A6C2;
+      border: 1px solid var(--color-blue-text);
 
       &:hover {
-        color: #011936;
+        color: var(--color-black);
       }
     }
   }
+
+  &__information-list {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 60px;
+  }
+
+  &__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  &__photo-title {
+    span {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-blue-text);
+    }
+  }
+
+  &__photo-details {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+  }
+
+  &__photo-image {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  &__photo-img {
+    border-radius: 5px;
+  }
+
+  &__photo-btns {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
+
+  &__photo-btn {
+    height: 40px;
+    width: 191px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+
+    &--change {
+      border: 2px solid var(--color-red);
+      color: var(--color-red);
+
+      svg {
+        fill: var(--color-red);
+      }
+
+      &:hover {
+        background-color: #FFF2F2;
+      }
+    }
+
+    &--delete {
+      border: 2px solid var(--color-blue-border-bg);
+      color: var(--color-blue);
+
+      svg {
+        fill: var(--color-blue);
+      }
+
+      &:hover {
+        color: var(--color-red-text);
+
+        svg {
+          fill: var(--color-red-text);
+        }
+      }
+    }
+  }
+
+  &__fieldset-title {
+    margin-bottom: 10px;
+    color: var(--color-black);
+  }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+
+    svg {
+      fill: transparent;
+      stroke: #fff;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+  }
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+  }
+
 }

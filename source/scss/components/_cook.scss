@@ -45,6 +45,13 @@
     grid-gap: 20px;
   }
 
+  &__info-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 5px;
+  }
+
   &__title {
     font-size: 18px;
     font-weight: 700;

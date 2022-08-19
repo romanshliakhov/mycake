@@ -30,6 +30,11 @@
     align-items: center;
     grid-gap: 5px;
     margin-bottom: 15px;
+
+    &--column {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__product-title {
@@ -107,6 +112,33 @@
         fill: var(--color-red);
       }
     }
+  }
+
+  &__product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  &__product-status {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 42px;
+    font-size: 14px;
+    color: var(--color-black);
+    border: 1px solid #43607C;
+
+    &--new {
+      border: 1px solid #A63A50;
+      color: #8E4A4E;
+    }
+
+    &--working {
+      background-color: #DCEBF8;
+    }
+
   }
 }
 

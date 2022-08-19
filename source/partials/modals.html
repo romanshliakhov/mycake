@@ -522,13 +522,13 @@
             <div class="constructor__form-title">
               <span>Ім’я</span>
             </div>
-            <input class="form__input" type="text" name="name" placeholder="Анна Василенко">
+            <input class="form__input" type="text" name="name">
           </fieldset>
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
               <span>Номер телефону</span>
             </div>
-            <input class="form__input" type="tel" name="phone" placeholder="+56 085 345 76 34">
+            <input class="form__input" type="tel" name="phone">
           </fieldset>
         </div>
 
@@ -537,23 +537,78 @@
             <div class="constructor__form-title">
               <span>Вага</span>
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <div class="constructor__form-weight">
+              <label class="constructor__weight-label">
+                <input class="form__input" type="text" name="weight">
+              </label>
+              <span>кг</span>
+            </div>
           </fieldset>
 
-          <fieldset class="constructor__fieldset">
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
             <div class="constructor__form-title">
               <span>Начинка</span>
               Оберіть 1 варіант
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <ul class="constructor__form-choose">
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Бісквітна з манговим мусом із дзеркальною глазуррю</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Бісквітна з лохиновим конфітюром</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="constructor__fieldset">
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
             <div class="constructor__form-title">
               <span>Додаткові послуги</span>
               Можна обрати декілька варіантів
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <ul class="constructor__form-choose">
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Прикраси з мастики</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Шоколадні сфери</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Живі квіти</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Святкова упаковка</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Фото на торті</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </div>
 
@@ -562,6 +617,16 @@
             <span>Додаткові побажання</span>
           </div>
           <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+        </div>
+
+        <div class="constructor__form-extra">
+          <label class="constructor__extra-label">
+            <input class="constructor__extra-input" type="checkbox" name="dontcallme">
+            <div class="constructor__extra-info">
+              Не телефонуйте мені
+              <span>Хочу спілкуватися тільки в чаті Mycake</span>
+            </div>
+          </label>
         </div>
       </form>
 
@@ -601,7 +666,7 @@
       <div class="modal__head">
         <div class="modal__title">
           <span>Торт “Червоний оксамит”</span>
-          <span>21.12.2020 13:42</span>
+          <span class="dataset">21.12.2020 13:42</span>
         </div>
         <div class="modal__close modal-close">
           <svg width='30' height='30'>
@@ -616,13 +681,19 @@
             <div class="constructor__form-title">
               <span>Ім’я та прізвище</span>
             </div>
-            <input class="form__input" type="text" name="name" placeholder="Анна Василенко">
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="text" name="name">
+              <span class="form__input-value">Анна Василенко</span>
+            </label>
           </fieldset>
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
               <span>Номер телефону</span>
             </div>
-            <input class="form__input" type="tel" name="phone" placeholder="+56 085 345 76 34">
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="tel" name="phone">
+              <span class="form__input-value">+56 085 345 76 34</span>
+            </label>
           </fieldset>
         </div>
 
@@ -631,31 +702,64 @@
             <div class="constructor__form-title">
               <span>Вага</span>
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <div class="constructor__form-weight">
+              <label class="constructor__form-label">
+                <input class="form__input form__input--disable type="text" name="weight">
+                <span class="form__input-value">2</span>
+              </label>
+              <span>кг</span>
+            </div>
           </fieldset>
 
-          <fieldset class="constructor__fieldset">
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
             <div class="constructor__form-title">
               <span>Начинка</span>
-              Оберіть 1 варіант
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="text" name="filling">
+              <span class="form__input-value">Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям</span>
+            </label>
           </fieldset>
 
-          <fieldset class="constructor__fieldset">
-            <div class="constructor__form-title">
-              <span>Додаткові послуги</span>
-              Можна обрати декілька варіантів
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
+            <div class="constructor__bottom-info">
+              <div class="constructor__form-title">
+                <span>Додаткові послуги</span>
+              </div>
             </div>
-            <input class="form__input" type="text" name="weight" placeholder="2 кг">
+            <ul class="constructor__form-labels">
+              <li class="constructor__labels-item">
+                <label class="constructor__form-label">
+                  <input class="form__input form__input--disable" type="text" name="extra">
+                  <span class="form__input-value">Прикраси з мастики</span>
+                </label>
+              </li>
+              <li class="constructor__labels-item">
+                <label class="constructor__form-label">
+                  <input class="form__input form__input--disable" type="text" name="extra">
+                  <span class="form__input-value">Живі квіти</span>
+                </label>
+              </li>
+            </ul>
           </fieldset>
         </div>
 
         <div class="constructor__form-bottom">
-          <div class="constructor__form-title">
-            <span>Додаткові побажання</span>
+          <div class="constructor__bottom-info">
+            <div class="constructor__form-title">
+              <span>Додаткові побажання</span>
+            </div>
+            <div class="extra">
+              <svg width='17' height='17'>
+                <use href='img/sprite/sprite.svg#extra'></use>
+              </svg>
+              <span>Не телефонуйте мені</span>
+            </div>
           </div>
-          <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+          <label class="constructor__form-label">
+            <textarea class="constructor__textarea" name="constructor-text"></textarea>
+            <span class="form__input-value">Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий</span>
+          </label>
         </div>
       </form>
 
@@ -665,6 +769,262 @@
       </div>
     </div>
   </div>
+
+  <div class="modal__container" data-target="sample">
+    <div class="modal__wrapper constructor">
+      <div class="modal__head">
+        <div class="modal__title">
+          <span>Торт “Червоний оксамит”</span>
+        </div>
+        <div class="modal__close modal-close">
+          <svg width='30' height='30'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+      </div>
+
+      <form class="constructor__form form" action="#">
+        <div class="constructor__form-head">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Ім’я та прізвище</span>
+            </div>
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="text" name="name">
+              <span class="form__input-value">Анна Василенко</span>
+            </label>
+          </fieldset>
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Номер телефону</span>
+            </div>
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="tel" name="phone">
+              <span class="form__input-value">+56 085 345 76 34</span>
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-mid">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Вага</span>
+            </div>
+            <div class="constructor__form-weight">
+              <label class="constructor__form-label">
+                <input class="form__input form__input--disable" type="text" name="weight">
+                <span class="form__input-value">2</span>
+              </label>
+              <span>кг</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
+            <div class="constructor__form-title">
+              <span>Начинка</span>
+            </div>
+            <label class="constructor__form-label">
+              <input class="form__input form__input--disable" type="text" name="filling">
+              <span class="form__input-value">Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
+            <div class="constructor__bottom-info">
+              <div class="constructor__form-title">
+                <span>Додаткові послуги</span>
+              </div>
+            </div>
+            <ul class="constructor__form-labels">
+              <li class="constructor__labels-item">
+                <label class="constructor__form-label">
+                  <input class="form__input form__input--disable" type="text" name="extra">
+                  <span class="form__input-value">Прикраси з мастики</span>
+                </label>
+              </li>
+              <li class="constructor__labels-item">
+                <label class="constructor__form-label">
+                  <input class="form__input form__input--disable" type="text" name="extra">
+                  <span class="form__input-value">Живі квіти</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-bottom">
+          <div class="constructor__bottom-info">
+            <div class="constructor__form-title">
+              <span>Додаткові побажання</span>
+            </div>
+            <div class="extra">
+              <svg width='17' height='17'>
+                <use href='img/sprite/sprite.svg#extra'></use>
+              </svg>
+              <span>Не телефонуйте мені</span>
+            </div>
+          </div>
+          <label class="constructor__form-label">
+            <textarea class="constructor__textarea" name="constructor-text"></textarea>
+            <span class="form__input-value">Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий</span>
+          </label>
+        </div>
+      </form>
+
+      <div class="modal__btns">
+        <div class="modal__btns modal__btns--row">
+          <button class="modal__btn modal__btn-edit" data-path="edit">
+            <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#edit'></use>
+            </svg>
+            <span>Редагувати</span>
+          </button>
+          <a class="modal__btn modal__btn-ads" href="../product-card.html">
+            <span>Сторінка оголошення</span>
+            <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+            </svg>
+          </a>
+        </div>
+        <button class="modal__btn modal__btn-red modal__btn--send" data-path="thanks-apply">Надіслати заявку</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container" data-target="edit">
+    <div class="modal__wrapper constructor">
+      <div class="modal__head">
+        <div class="modal__title">
+          <span>Торт “Червоний оксамит”</span>
+        </div>
+        <div class="modal__close modal-close">
+          <svg width='30' height='30'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+      </div>
+
+      <form class="constructor__form form" action="#">
+        <div class="constructor__form-head">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Ім’я</span>
+            </div>
+            <input class="form__input" type="text" name="name">
+          </fieldset>
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Номер телефону</span>
+            </div>
+            <input class="form__input" type="tel" name="phone">
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-mid">
+          <fieldset class="constructor__fieldset">
+            <div class="constructor__form-title">
+              <span>Вага</span>
+            </div>
+            <div class="constructor__form-weight">
+              <label class="constructor__weight-label">
+                <input class="form__input" type="text" name="weight">
+              </label>
+              <span>кг</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
+            <div class="constructor__form-title">
+              <span>Начинка</span>
+              Оберіть 1 варіант
+            </div>
+            <ul class="constructor__form-choose">
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Бісквітна з манговим мусом із дзеркальною глазуррю</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Бісквітна з лохиновим конфітюром</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="radio" name="filling">
+                  <span class="constructor__choose-info"> Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="constructor__fieldset constructor__fieldset--start">
+            <div class="constructor__form-title">
+              <span>Додаткові послуги</span>
+              Можна обрати декілька варіантів
+            </div>
+            <ul class="constructor__form-choose">
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Прикраси з мастики</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Шоколадні сфери</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Живі квіти</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Святкова упаковка</span>
+                </label>
+              </li>
+              <li class="constructor__choose-item">
+                <label class="constructor__choose-label">
+                  <input class="constructor__choose-input" type="checkbox" name="extra">
+                  <span class="constructor__choose-info"> Фото на торті</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="constructor__form-bottom">
+          <div class="constructor__form-title">
+            <span>Додаткові побажання</span>
+          </div>
+          <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+        </div>
+
+        <div class="constructor__form-extra">
+          <label class="constructor__extra-label">
+            <input class="constructor__extra-input" type="checkbox" name="dontcallme">
+            <div class="constructor__extra-info">
+              Не телефонуйте мені
+              <span>Хочу спілкуватися тільки в чаті Mycake</span>
+            </div>
+          </label>
+        </div>
+      </form>
+
+      <div class="modal__btns modal__btns--row">
+        <button class="modal__btn modal__btn-cancel">Скасувати</button>
+        <button class="modal__btn modal__btn-orange">Зберегти</button>
+      </div>
+    </div>
+  </div>
+
 
 
 </div>
