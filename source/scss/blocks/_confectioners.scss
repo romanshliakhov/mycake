@@ -1,13 +1,9 @@
 .confectioners {
   margin-bottom: 40px;
 
-  &__tabs {
+  &__wrapper {
     display: flex;
     flex-direction: column;
-    grid-gap: 40px;
-  }
-
-  &__tabcontent.active {
     grid-gap: 40px;
   }
 
@@ -49,6 +45,12 @@
   &__slider {
     margin: -10px 0;
     padding: 10px 0;
+  }
+
+  &__products {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
   }
 
 }

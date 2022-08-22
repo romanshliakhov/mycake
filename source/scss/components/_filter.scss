@@ -1,0 +1,60 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, 280px );
+    grid-gap: 20px;
+  }
+
+  &__btn {
+    position: relative;
+    padding: 8.5px 20px;
+    color: #8E4A4E;
+    background-color: var(--color-pink-bg);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-pink-hover);
+    }
+
+    &.active {
+      padding-left: 50px;
+      color: #fff;
+      font-weight: 700;
+      background-color: #A63A50;
+
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: var(--tab-active);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__product {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
