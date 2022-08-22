@@ -68,4 +68,15 @@
     line-height: 133%;
     color: var(--color-blue-text);
   }
+
+  &__btn-icon {
+    padding: 8px 20px;
+    background-color: #FDAD6D;
+    border: 1px solid #FDAD6D;
+    border-radius: 50px;
+
+    svg {
+      fill: #5E2D07;
+    }
+  }
 }

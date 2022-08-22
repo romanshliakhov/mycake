@@ -41,6 +41,13 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--color-black);
+
+    &--ellipsis {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+    }
   }
 
   &__product-count {
@@ -78,6 +85,14 @@
     display: flex;
     align-items: center;
     grid-gap: 15px;
+
+    &--apply {
+      grid-gap: 30px;
+    }
+
+    &--settings {
+      grid-gap: 10px;
+    }
   }
 
   &__btn-watch {
@@ -114,12 +129,78 @@
     }
   }
 
+  &__btn-reviews {
+    min-width: 150px;
+    height: 35px;
+    justify-content: center;
+    background-color: #DCEBF8;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 171%;
+    color: #43607C;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+
+
+    svg {
+      fill: #43607C;
+      transform: rotate(-90deg);
+    }
+
+    // &:hover,
+    // &:active {
+    //   border: 2px solid var(--color-pink-hover);
+
+    //   svg {
+    //     fill: var(--color-red);
+    //   }
+    // }
+  }
+
+  &__btn-apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10.5px 50.5px;
+    grid-gap: 5px;
+    color: #43607C;
+    border: 1px solid #84A6C2;
+    border-radius: 50px;
+  }
+
+  &__btn-saved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+    color: #43607C;
+
+    svg {
+      fill: transparent;
+      stroke: #43607C;
+    }
+  }
+
+  &__btn-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 2px solid #DCEBF8;
+    border-radius: 50px;
+  }
+
   &__product-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     max-width: 400px;
     width: 100%;
+
+    &--full {
+      max-width: 600px;
+    }
   }
 
   &__product-status {
@@ -139,6 +220,23 @@
       background-color: #DCEBF8;
     }
 
+    &--cancel {
+      border: 1px solid #C2C2C2;
+      color: #C2C2C2;
+      background-color: #F9F9F9;
+    }
+
+    &--hide {
+      color: #84A6C2;
+      border: 1px solid #DCEBF8;
+    }
+  }
+
+  &__product-price {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-red);
   }
 }
 

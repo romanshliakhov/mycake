@@ -14,12 +14,12 @@
                 <div class="details__controls-general">
                   <div class="details__controls-title">Загальне</div>
                   <ul class="details__controls">
-                    <li class="details__controls-btns tablinks" tabs-btn="information">
+                    <li class="details__controls-btns tablinks active" tabs-btn="information">
                       <button class="details__controls-btn tabs__btn" >
                         <span>Інформація</span>
                       </button>
                     </li>
-                    <li class="details__controls-btns tablinks active" tabs-btn="applications">
+                    <li class="details__controls-btns tablinks" tabs-btn="applications">
                       <button class="details__controls-btn tabs__btn">
                           <span>Заявки</span>
                       </button>
@@ -66,7 +66,7 @@
                 </div>
               </div>
               <ul class="details__content">
-                <li class="details__tabcontent tabcontent" tabs-content="information">
+                <li class="details__tabcontent tabcontent active" tabs-content="information">
                   <div class="applications__information">
                     <ul class="applications__information-list">
                       <li class="applications__list-item">
@@ -267,7 +267,8 @@
 
                   </div>
                 </li>
-                <li class="details__tabcontent tabcontent active" tabs-content="applications">
+
+                <li class="details__tabcontent tabcontent" tabs-content="applications">
                   <div class="applications__information">
                     <div class="applications__lists">
                       <div class="applications__head">
@@ -282,7 +283,7 @@
 
                       <ul class="applications__list-items applications__list-items--small">
                         <li class="applications__list-item">
-                          <div class="application application__sample application--new">
+                          <div class="application application__sample application__sample--new application--new">
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -342,7 +343,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample application--new">
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -406,6 +407,168 @@
                             </button>
                           </div>
                         </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__sample">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/no-image.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/no-image.png' alt='no image'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--working">В роботі</div>
+                                <div class="sample__product-title">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                              </div>
+                            </div>
+
+                            <div class="application__info">
+                              <svg width='25' height='25'>
+                              <use href='img/sprite/sprite.svg#app-hover'></use>
+                              </svg>
+                            </div>
+
+                            <div class="application__pubtime">
+                              21.12.2020
+                              <span>13:42</span>
+                            </div>
+
+                            <button class="sample__apply" data-path="sample">Переглянути</button>
+                            <button class="sample__btn-delete">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#delete'></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__sample">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--done">Виконано</div>
+                                <div class="sample__product-title">Бісквітний торт з ягодами</div>
+                              </div>
+                            </div>
+
+                            <div class="application__pubtime">
+                              21.12.2020
+                              <span>13:42</span>
+                            </div>
+
+                            <button class="sample__apply" data-path="sample">Переглянути</button>
+                            <button class="sample__btn-delete">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#delete'></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__sample">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--cancel">Скасовано</div>
+                                <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
+                              </div>
+                            </div>
+
+                            <div class="application__pubtime">
+                              21.12.2020
+                              <span>13:42</span>
+                            </div>
+
+                            <button class="sample__apply" data-path="sample">Переглянути</button>
+                            <button class="sample__btn-delete">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#delete'></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__sample">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/no-image.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/no-image.png' alt='no image'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--done">Виконано</div>
+                                <div class="sample__product-title">Весільний триярусний торт з фруктами та квітами</div>
+                              </div>
+                            </div>
+
+                            <div class="application__info">
+                              <svg width='25' height='25'>
+                              <use href='img/sprite/sprite.svg#app-hover'></use>
+                              </svg>
+                            </div>
+
+                            <div class="application__pubtime">
+                              21.12.2020
+                              <span>13:42</span>
+                            </div>
+
+                            <button class="sample__apply" data-path="sample">Переглянути</button>
+                            <button class="sample__btn-delete">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#delete'></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__sample">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake5.png' alt='cake 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--cancel">Скасовано</div>
+                                <div class="sample__product-title">Торт рожевий з макарунами</div>
+                              </div>
+                            </div>
+
+                            <div class="application__pubtime">
+                              21.12.2020
+                              <span>13:42</span>
+                            </div>
+
+                            <button class="sample__apply" data-path="sample">Переглянути</button>
+                            <button class="sample__btn-delete">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#delete'></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </li>
                       </ul>
 
                       <button class="more">
@@ -450,295 +613,769 @@
                     </div>
                   </div>
                 </li>
+
                 <li class="details__tabcontent tabcontent" tabs-content="reviews">
-                  <div class="applications__information">
-                    <div class="applications__list">
-                      <div class="applications__list-heading heading">Збережені шаблони</div>
+                  <div class="reviews__information">
+                    <div class="reviews__head-title subtitle">Заявки</div>
 
-                      <ul class="applications__list-items">
-                        <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Торт</div>
-                                  <div class="sample__product-count">5 кг</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
-                              </div>
+                    <ul class="applications__list-items applications__list-items--small">
+                      <li class="applications__list-item">
+                        <div class="application">
+                          <div class="application__sample-product sample__product">
+                            <div class="sample__product-image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                                <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                              </picture>
                             </div>
 
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
-                            </div>
-
-                            <div class="sample__btns">
-                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
-                                <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
-                                </svg>
-                              </button>
+                            <div class="sample__product-info sample__product-info--full">
+                              <div class="sample__product-title">Весільний триярусний торт з фруктами та квітами</div>
+                              <div class="sample__product-price">520 грн</div>
                             </div>
                           </div>
+
+                          <button class="sample__btn-reviews">
+                            <span>3</span>
+                            <span>відгуки</span>
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+
+                      <li class="applications__list-item">
+                        <div class="application">
+                          <div class="application__sample-product sample__product">
+                            <div class="sample__product-image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                              </picture>
+                            </div>
+
+                            <div class="sample__product-info sample__product-info--full">
+                              <div class="sample__product-title">Бісквітний торт з ягодами</div>
+                              <div class="sample__product-price">520 грн</div>
+                            </div>
+                          </div>
+
+                          <button class="sample__btn-reviews">
+                            <span>1</span>
+                            <span>відгук</span>
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+
+                      <li class="applications__list-item">
+                        <div class="application">
+                          <div class="application__sample-product sample__product">
+                            <div class="sample__product-image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
+                              </picture>
+                            </div>
+
+                            <div class="sample__product-info sample__product-info--full">
+                              <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
+                              <div class="sample__product-price">520 грн</div>
+                            </div>
+                          </div>
+
+                          <button class="sample__btn-reviews ample__btn-reviews--none">
+                            <span>Немає відгуків</span>
+                          </button>
+                        </div>
+                      </li>
+
+                      <li class="applications__list-item">
+                        <div class="application">
+                          <div class="application__sample-product sample__product">
+                            <div class="sample__product-image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                              </picture>
+                            </div>
+
+                            <div class="sample__product-info sample__product-info--full">
+                              <div class="sample__product-title">Торт рожевий з макарунами</div>
+                              <div class="sample__product-price">520 грн</div>
+                            </div>
+                          </div>
+
+                          <button class="sample__btn-reviews">
+                            <span>1</span>
+                            <span>відгук</span>
+                            <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <button class="more">
+                      <svg width='22' height='19'>
+                      <use href='img/sprite/sprite.svg#more'></use>
+                      </svg>
+                      <span>Більше відгуків</span>
+                    </button>
+
+                    <div class="pagination">
+                      <a class="pagination__nav pagination__nav--prev" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                        </svg>
+                      </a>
+                      <ul class="pagination__list">
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">1</a>
                         </li>
-                        <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Капкейки</div>
-                                  <div class="sample__product-count">12 шт</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
-                              </div>
-                            </div>
-
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з манговим мусом із дзеркальною глазуррю
-                            </div>
-
-                            <div class="sample__btns">
-                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
-                                <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">2</a>
                         </li>
-                        <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Торт</div>
-                                  <div class="sample__product-count">5 кг</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
-                              </div>
-                            </div>
-
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
-                            </div>
-
-                            <div class="sample__btns">
-                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
-                                <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
                         </li>
-                        <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Капкейки</div>
-                                  <div class="sample__product-count">12 шт</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
-                              </div>
-                            </div>
-
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з манговим мусом із дзеркальною глазуррю
-                            </div>
-
-                            <div class="sample__btns">
-                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
-                                <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">4</a>
+                        </li>
+                        <li class="pagination__list-item">
+                          <span>...</span>
+                        </li>
+                        <li class="pagination__list-item">
+                          <a class="pagination__list-link" href="#">15</a>
                         </li>
                       </ul>
-                    </div>
-
-                    <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Це поки всі збережені шаблони</div>
-                        <div class="applications__banner-descr">Але на сайті ще стільки крутих пропозицій!</div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
-                      </div>
+                      <a class="pagination__nav pagination__nav--next" href="#">
+                        <svg width='24' height='24'>
+                          <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </li>
+
                 <li class="details__tabcontent tabcontent" tabs-content="all">
                   <div class="applications__information">
-                    <div class="applications__information-head">
-                      <div class="applications__heading heading">
-                        <span>Особиста інформація</span>
-                        <button class="edit">
-                          <svg width='20' height='20'>
-                          <use href='img/sprite/sprite.svg#edit'></use>
-                          </svg>
-                        </button>
+                    <div class="applications__lists">
+                      <div class="applications__top">
+                        <div class="applications__heading-top">
+                          <div class="applications__head">
+                            <div class="applications__head-title subtitle">Всі товари</div>
+                            <button class="applications__add sample__apply">
+                              <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#add-plus'></use>
+                              </svg>
+                              <span>Додати новий товар</span>
+                            </button>
+                          </div>
+
+                          <div class="applications__head-btns">
+                            <div class="applications__search search">
+                              <button class="search__btn-icon">
+                                <svg width='24' height='24'>
+                                <use href='img/sprite/sprite.svg#search'></use>
+                                </svg>
+                              </button>
+
+                              <!-- <div class="search__wrapper">
+                                <form class="search__form">
+                                  <label class="search__label">
+                                    <input class="applications__search-input search__input" type="text" name="search">
+                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
+                                  </label>
+                                </form>
+                              </div> -->
+                            </div>
+
+                            <div class="applications__sort">
+                              <span>За датою публікації</span>
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="applications__heading-bottom">
+                          <!-- <div class="search__result">
+                            <div class="search__result-text">“Шоколадний торт з квітами”</div>
+                            <button class="search__result-cancel">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </button>
+                            <div class="search__result-count">
+                              <span>153</span>
+                              <span>смаколики</span>
+                            </div>
+                          </div> -->
+                        </div>
                       </div>
 
-                      <div class="aplications__informational-person">
-
-                      </div>
-                    </div>
-
-                    <div class="applications__list">
-                      <div class="applications__list-heading heading">Мої заявки</div>
-
-                      <ul class="applications__list-items">
+                      <ul class="applications__list-items applications__list-items--small">
                         <li class="applications__list-item">
-                          <div class="application">
-                            <div class="application__product">
-                              <div class="application__product-image">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
                                 <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="application__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
                                 </picture>
                               </div>
 
-                              <div class="application__product-info">
-                                <div class="application__info-head">
-                                  <div class="application__product-title">Торт</div>
-                                  <div class="application__product-count">5 кг</div>
-                                </div>
-
-                                <div class="application__datetime">21.01.2022</div>
+                              <div class="sample__product-info">
+                                <div class="sample__product-title">Бісквітний торт з ягодами</div>
+                                <div class="sample__product-price">520 грн</div>
                               </div>
                             </div>
 
-                            <div class="application__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
                             </div>
 
-                            <button class="application__btn" data-path="apply">Переглянути</button>
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
                           </div>
                         </li>
+
                         <li class="applications__list-item">
-                          <div class="application">
-                            <div class="application__product">
-                              <div class="application__product-image">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>2</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Весільний триярусний торт з фруктами та квітами...</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>5</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake5.png' alt='cake 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт рожевий з макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes4.png' alt='cupcakes 4'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title">Капкейки з ніжним кремом</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake1.png' alt='cake 1'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes5.png' alt='cupcakes 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title sample__product-title--ellipsis">Чорні капкейки з шоколадом та печивом</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
                                 <picture>
                                   <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
-                                  <img class="application__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
                                 </picture>
                               </div>
 
-                              <div class="application__product-info">
-                                <div class="application__info-head">
-                                  <div class="application__product-title">Капкейки</div>
-                                  <div class="application__product-count">12 штг</div>
-                                </div>
-
-                                <div class="application__datetime">02.05.2021</div>
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Капкейки з карамеллю 3 шт</div>
+                                <div class="sample__product-price">520 грн</div>
                               </div>
                             </div>
 
-                            <div class="application__filling">
-                              <span>Начика</span>
-                              Бісквітна з манговим мусом із дзеркальною глазуррю
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes2.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes2.png' alt='cupcakes 2'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Оригінальні капкейки з кремом та печивом</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
                             </div>
 
-                            <button class="application__btn" data-path="apply">Переглянути</button>
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes1.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes1.png' alt='cupcakes 1'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Пасхальні капкейки шоколадні та ванільні </div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
                           </div>
                         </li>
                       </ul>
+
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
+
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                      </div>
                     </div>
-
-                    <!-- Banner v1 -->
-                    <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Хочеться ще смачненького? </div>
-                        <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--samples">Переглянути збережені шаблони</button>
-                        <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
-                      </div>
-                    </div>
-
-                    <!-- Banner v2 -->
-                    <!-- <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Поки нічого не замовили?</div>
-                        <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--samples">Переглянути збережені шаблони</button>
-                        <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
-                      </div>
-                    </div> -->
-
-                    <!-- Banner v3 -->
-                    <!-- <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Ви поки не зберегли жодного шаблону</div>
-                        <div class="applications__banner-descr">Але на сайті стільки крутих пропозицій </div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
-                      </div>
-                    </div> -->
                   </div>
                 </li>
+
                 <li class="details__tabcontent tabcontent" tabs-content="cakes">
                   <div class="applications__information">
-                    <div class="applications__list">
-                      <div class="applications__list-heading heading">Збережені шаблони</div>
+                    <div class="applications__lists">
+                      <div class="applications__top">
+                        <div class="applications__heading-top">
+                          <div class="applications__head">
+                            <div class="applications__head-title subtitle">Торти</div>
+                            <button class="applications__add sample__apply">
+                              <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#add-plus'></use>
+                              </svg>
+                              <span>Додати новий товар</span>
+                            </button>
+                          </div>
 
-                      <ul class="applications__list-items">
+                          <div class="applications__head-btns">
+                            <div class="applications__search search">
+                              <button class="search__btn-icon">
+                                <svg width='24' height='24'>
+                                <use href='img/sprite/sprite.svg#search'></use>
+                                </svg>
+                              </button>
+
+                              <!-- <div class="search__wrapper">
+                                <form class="search__form">
+                                  <label class="search__label">
+                                    <input class="applications__search-input search__input" type="text" name="search">
+                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
+                                  </label>
+                                </form>
+                              </div> -->
+                            </div>
+
+                            <div class="applications__sort">
+                              <span>За датою публікації</span>
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="applications__heading-bottom">
+                          <!-- <div class="search__result">
+                            <div class="search__result-text">“Шоколадний торт з квітами”</div>
+                            <button class="search__result-cancel">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </button>
+                            <div class="search__result-count">
+                              <span>153</span>
+                              <span>смаколики</span>
+                            </div>
+                          </div> -->
+                        </div>
+                      </div>
+
+                      <ul class="applications__list-items applications__list-items--small">
                         <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title">Бісквітний торт з ягодами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>2</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
                                   <source type='image/webp' srcset='img/cakes/cake2.webp'>
@@ -747,153 +1384,679 @@
                               </div>
 
                               <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Торт</div>
-                                  <div class="sample__product-count">5 кг</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
+                                <div class="sample__product-title sample__product-title--ellipsis">Весільний триярусний торт з фруктами та квітами...</div>
+                                <div class="sample__product-price">520 грн</div>
                               </div>
                             </div>
 
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>5</span>
+                              </button>
                             </div>
 
-                            <div class="sample__btns">
+                            <div class="sample__btns sample__btns--settings">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-edit">
                                 <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake5.png' alt='cake 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт рожевий з макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake1.png' alt='cake 1'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>2</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake5.png' alt='cake 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт рожевий з макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake1.png' alt='cake 1'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Весільний триярусний торт з фруктами та квітами...</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>3</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>5</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title">Бісквітний торт з ягодами</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
                                 </svg>
                               </button>
                             </div>
                           </div>
                         </li>
                       </ul>
-                    </div>
 
-                    <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Це поки всі збережені шаблони</div>
-                        <div class="applications__banner-descr">Але на сайті ще стільки крутих пропозицій!</div>
-                      </div>
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
 
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </li>
+
                 <li class="details__tabcontent tabcontent" tabs-content="macarons">
                   <div class="applications__information">
-                    <div class="applications__list">
-                      <div class="applications__list-heading heading">Збережені шаблони</div>
+                    <div class="applications__lists">
+                      <div class="applications__top">
+                        <div class="applications__heading-top">
+                          <div class="applications__head">
+                            <div class="applications__head-title subtitle">Макаруни</div>
+                            <button class="applications__add sample__apply">
+                              <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#add-plus'></use>
+                              </svg>
+                              <span>Додати новий товар</span>
+                            </button>
+                          </div>
 
-                      <ul class="applications__list-items">
-                        <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Торт</div>
-                                  <div class="sample__product-count">5 кг</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
-                              </div>
-                            </div>
-
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
-                            </div>
-
-                            <div class="sample__btns">
-                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
-                                <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
+                          <div class="applications__head-btns">
+                            <div class="applications__search search">
+                              <button class="search__btn-icon">
+                                <svg width='24' height='24'>
+                                <use href='img/sprite/sprite.svg#search'></use>
                                 </svg>
                               </button>
+
+                              <!-- <div class="search__wrapper">
+                                <form class="search__form">
+                                  <label class="search__label">
+                                    <input class="applications__search-input search__input" type="text" name="search">
+                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
+                                  </label>
+                                </form>
+                              </div> -->
+                            </div>
+
+                            <div class="applications__sort">
+                              <span>За датою публікації</span>
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                              </svg>
                             </div>
                           </div>
-                        </li>
-                      </ul>
-                    </div>
+                        </div>
 
-                    <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Це поки всі збережені шаблони</div>
-                        <div class="applications__banner-descr">Але на сайті ще стільки крутих пропозицій!</div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
+                        <div class="applications__heading-bottom">
+                          <!-- <div class="search__result">
+                            <div class="search__result-text">“Шоколадний торт з квітами”</div>
+                            <button class="search__result-cancel">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </button>
+                            <div class="search__result-count">
+                              <span>153</span>
+                              <span>смаколики</span>
+                            </div>
+                          </div> -->
+                        </div>
                       </div>
                     </div>
                   </div>
                 </li>
+
                 <li class="details__tabcontent tabcontent" tabs-content="cupcakes">
                   <div class="applications__information">
-                    <div class="applications__list">
-                      <div class="applications__list-heading heading">Збережені шаблони</div>
+                    <div class="applications__lists">
+                      <div class="applications__top">
+                        <div class="applications__heading-top">
+                          <div class="applications__head">
+                            <div class="applications__head-title subtitle">Капкейки</div>
+                            <button class="applications__add sample__apply">
+                              <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#add-plus'></use>
+                              </svg>
+                              <span>Додати новий товар</span>
+                            </button>
+                          </div>
 
-                      <ul class="applications__list-items">
+                          <div class="applications__head-btns">
+                            <div class="applications__search search">
+                              <button class="search__btn-icon">
+                                <svg width='24' height='24'>
+                                <use href='img/sprite/sprite.svg#search'></use>
+                                </svg>
+                              </button>
+
+                              <!-- <div class="search__wrapper">
+                                <form class="search__form">
+                                  <label class="search__label">
+                                    <input class="applications__search-input search__input" type="text" name="search">
+                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
+                                  </label>
+                                </form>
+                              </div> -->
+                            </div>
+
+                            <div class="applications__sort">
+                              <span>За датою публікації</span>
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="applications__heading-bottom">
+                          <!-- <div class="search__result">
+                            <div class="search__result-text">“Шоколадний торт з квітами”</div>
+                            <button class="search__result-cancel">
+                              <svg width='20' height='20'>
+                              <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </button>
+                            <div class="search__result-count">
+                              <span>153</span>
+                              <span>смаколики</span>
+                            </div>
+                          </div> -->
+                        </div>
+                      </div>
+
+                      <ul class="applications__list-items applications__list-items--small">
                         <li class="applications__list-item">
-                          <div class="sample">
-                            <div class="sample__product">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes4.png' alt='cupcakes 4'>
                                 </picture>
                               </div>
 
                               <div class="sample__product-info">
-                                <div class="sample__info-head">
-                                  <div class="sample__product-title">Торт</div>
-                                  <div class="sample__product-count">5 кг</div>
-                                </div>
-
-                                <button class="sample__apply" data-path="thanks-apply">Надіслати заявку</button>
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title">Капкейки з ніжним кремом</div>
+                                <div class="sample__product-price">520 грн</div>
                               </div>
                             </div>
 
-                            <div class="sample__filling">
-                              <span>Начика</span>
-                              Бісквітна з лохиновим конфітюром
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all--hide">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes5.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes5.png' alt='cupcakes 5'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-status sample__product-status--hide">Приховане</div>
+                                <div class="sample__product-title sample__product-title--ellipsis">Чорні капкейки з шоколадом та печивом</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
                             </div>
 
-                            <div class="sample__btns">
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-edit">
                                 <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#delete'></use>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes3.png' alt='cupcakes 3'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Капкейки з карамеллю 3 шт</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes2.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes2.png' alt='cupcakes 2'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Оригінальні капкейки з кремом та печивом</div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <!-- <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button> -->
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="applications__list-item">
+                          <div class="application application__all application__all">
+                            <div class="application__sample-product sample__product">
+                              <div class="sample__product-image">
+                                <picture>
+                                  <source type='image/webp' srcset='img/cupcakes/cupcakes1.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cupcakes/cupcakes1.png' alt='cupcakes 1'>
+                                </picture>
+                              </div>
+
+                              <div class="sample__product-info">
+                                <div class="sample__product-title sample__product-title--ellipsis">Пасхальні капкейки шоколадні та ванільні </div>
+                                <div class="sample__product-price">520 грн</div>
+                              </div>
+                            </div>
+
+                            <div class="sample__btns sample__btns--apply">
+                              <button class="sample__btn-apply">
+                                <span>Заявок:</span>
+                                <span>1</span>
+                              </button>
+
+                              <button class="sample__btn-saved">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#heart'></use>
+                                </svg>
+                                <span>8</span>
+                              </button>
+                            </div>
+
+                            <div class="sample__btns sample__btns--settings">
+                              <button class="sample__btn-watch" data-path="sample">Переглянути</button>
+                              <button class="sample__btn-edit">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#edit'></use>
                                 </svg>
                               </button>
                             </div>
                           </div>
                         </li>
                       </ul>
-                    </div>
 
-                    <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Це поки всі збережені шаблони</div>
-                        <div class="applications__banner-descr">Але на сайті ще стільки крутих пропозицій!</div>
-                      </div>
+                      <button class="more">
+                        <svg width='22' height='19'>
+                        <use href='img/sprite/sprite.svg#more'></use>
+                        </svg>
+                        <span>Більше смаколиків</span>
+                      </button>
 
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--main">Повернутися на головну</button>
+                      <div class="pagination">
+                        <a class="pagination__nav pagination__nav--prev" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
+                        <ul class="pagination__list">
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">1</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">2</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">4</a>
+                          </li>
+                          <li class="pagination__list-item">
+                            <span>...</span>
+                          </li>
+                          <li class="pagination__list-item">
+                            <a class="pagination__list-link" href="#">15</a>
+                          </li>
+                        </ul>
+                        <a class="pagination__nav pagination__nav--next" href="#">
+                          <svg width='24' height='24'>
+                            <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </div>
