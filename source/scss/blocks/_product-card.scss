@@ -24,12 +24,16 @@
   &__image {
     position: relative;
     max-width: 350px;
-    max-height: 450px;
+    height: 450px;
+
+    picture,img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  &__img {
 
-  }
 
   &__small {
     max-width: 70px;
@@ -77,17 +81,21 @@
   }
 
   &__preview-wrapper {
-    flex-direction: column;
+    // flex-direction: column;
+    // transform: none !important;
   }
 
   &__preview-image {
-    max-width: 70px;
-    max-height: 70px;
+    picture,
+    img {
+      height: 70px;
+      width: 70px;
+    }
   }
 
-  &__preview-img {
-    height: 100%;
-  }
+  // &__preview-img {
+  //   height: 100%;
+  // }
 
 
 

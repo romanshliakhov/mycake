@@ -15,13 +15,22 @@ function filterInit(filterParrentItem, btns, cards) {
             const filtersPath = this.getAttribute(`${btns}`);
 
             filterParr.querySelector(`[${btns}="${filtersPath}"]`).classList.toggle('active');
+
             filterHandler(filtersPath);
           });
         }
 
-        const filterHandler = (path) => {
-          filterCards.forEach(el => {el.classList.toggle('active')});
-          filterParr.querySelector(`[${cards}="${path}"]`).classList.add('active');
+        const filterHandler = (filterName) => {
+          filterCards.forEach(el => {
+            let filterButtonElement = filterParr.querySelector(`[${btns}="${el.dataset.filterProduct}"]`);
+            let isEnabled = filterButtonElement.classList.contains("active");
+
+            if (isEnabled) {
+              el.classList.add('active');
+            } else {
+              el.classList.remove('active');
+            }
+          });
         };
       });
     }}

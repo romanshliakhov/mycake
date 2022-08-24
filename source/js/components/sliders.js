@@ -113,11 +113,11 @@ for (const container of document.querySelectorAll('.confectioners__details') ) {
 
 // Reviews slider
 let reviewsSlider = new Swiper(".reviews__slider", {
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 40,
   loop: true,
   direction: "vertical",
-  autoHeight: true,
+  freeMode: true,
   navigation: {
     nextEl: ".slider__btn--next",
     prevEl: ".slider__btn--prev",
@@ -140,10 +140,11 @@ let reviewsSlider = new Swiper(".reviews__slider", {
 });
 
 
+
 let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
   slidesPerView: 4,
   spaceBetween: 10,
-  // loop: true,
+  watchSlidesProgress: true,
   direction: "vertical",
   navigation: {
       nextEl: ".product-card__preview-btn--next",
@@ -166,13 +167,12 @@ let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
   // }
 });
 
+// productCardPreviewSlider.changeDirection('vertical', true);
+
 // Product card slider
 let productCardSlider = new Swiper(".product-card__slider", {
   slidesPerView: 1,
   spaceBetween: 1,
-  // centeredSlides: true,
-  autoHeight: true,
-  // loop: true,
   navigation: {
       clickable: true,
   },
