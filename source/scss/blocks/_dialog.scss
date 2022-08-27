@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px 0;
+  height: calc(100vh - 82px - 177px);
 
   &__wrapper {
     max-width: 1210px;

@@ -3,24 +3,26 @@
 @include('partials/head.html',{})
 
 <body>
-  @include('partials/header.html',{})
+  <div class="wrapper">
+    @include('partials/header.html',{})
 
-  <main class="main main__dialog">
-    <section class="dialog">
-      <div class="dialog__wrapper">
-        <div class="dialog__aside">
-          12
+    <main class="main main__dialog">
+      <section class="dialog">
+        <div class="dialog__wrapper">
+          <div class="dialog__aside">
+            12
+          </div>
+          <div class="dialog__chat">
+            34
+          </div>
         </div>
-        <div class="dialog__chat">
-          34
-        </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  @include('partials/footer.html',{})
+    @include('partials/footer.html',{})
+  </div>
 
-    <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
