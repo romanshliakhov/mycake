@@ -69,6 +69,10 @@
     &.active {
       background-color: #F9F9F9;
     }
+
+    &--confectioner {
+      padding: 22px 20px;
+    }
   }
 
   &__chats-wrapper {
@@ -199,4 +203,188 @@
   &__chat-fieldset {
     width: 100%;
   }
+
+  &__chat-window {
+    height: 380px;
+  }
+
+  &__chat-messages {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    grid-gap: 25px;
+    height: 100%;
+    overflow-y: auto;
+    padding: 0 20px 25px;
+  }
+
+  &__files-preview {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+  }
+
+  &__messages {
+    display: flex;
+    grid-gap: 15px;
+    // height: 100%;
+    align-items: flex-end;
+  }
+
+  &__messages-wrapp {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    width: 100%;
+
+    &--send {
+      align-items: flex-end;
+
+      .dialog__message {
+        border: 1px solid #DCEBF8;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__message {
+    max-width: 400px;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #DCEBF8;
+    font-size: 14px;
+    line-height: 171%;
+    color: #43607C;
+  }
+
+  &__messages-divider {
+    border: 1px solid #DCEBF8;
+    position: relative;
+
+    span {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 0 30px;
+      font-size: 14px;
+      line-height: 143%;
+      color: #84A6C2;
+    }
+  }
+
+  &__message-product {
+    max-width: 440px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    grid-gap: 20px;
+    box-shadow: 2px 2px 10px rgba(67, 96, 124, 0.1);
+    border-radius: 10px;
+
+    &--send {
+      max-width: 400px;
+      padding: 12px 15px;
+      border: 1px solid #FFE1E1;
+      align-items: center;
+      grid-gap: 15px;
+
+      .dialog__product-name {
+        display: -webkit-box;
+        max-width: 162px;
+        height: 32px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 133%;
+      }
+
+      .dialog__product-price {
+        color: #A63A50;
+      }
+    }
+  }
+
+  &__product-watch {
+    padding: 9px 15px;
+    background-color: #FFF2F2;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #A63A50;
+  }
+
+  &__product-info {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+  }
+
+  &__product-image {
+    picture,
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+    }
+  }
+
+  &__product-title,
+  &__file-title {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    font-size: 14px;
+    color: #43607C;
+  }
+
+  &__product-name {
+    line-height: 143%;
+  }
+
+  &__product-price {
+    font-weight: 700;
+  }
+
+  &__file-size {
+    font-weight: 400;
+    color: #84A6C2;
+  }
+
+  &__message-file {
+    max-width: max-content;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    grid-gap: 20px;
+    box-shadow: 2px 2px 10px rgba(67, 96, 124, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+
+    &--send {
+      border: 1px solid #FFE1E1;
+      box-shadow: none;
+    }
+  }
+
+  &__file-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DCEBF8;
+    border-radius: 5px;
+    padding: 10px 13px;
+  }
+
+  &__file-info {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+  }
+
+
 }
