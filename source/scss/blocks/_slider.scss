@@ -1,4 +1,19 @@
 .slider {
+  margin: -20px -10px;
+  padding: 20px 10px 70px;
+  z-index: 1;
+
+  @media (max-width: 1440px) {
+    padding: 20px 5px 70px;
+  }
+
+  &__slide {
+    max-width: 280px;
+
+    @media (max-width: 768px) {
+      max-width: 230px;
+    }
+  }
 
   &__btns {
     display: flex;

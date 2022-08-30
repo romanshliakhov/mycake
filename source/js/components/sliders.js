@@ -37,20 +37,17 @@ let sliderBestConfectioner = new Swiper(".best__slider", {
       prevEl: ".best__slider-btn--prev",
       clickable: true,
   },
-  // breakpoints: {
-  //     320: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //       },
-  //     576: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 50,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 40,
-  //     }
-  // }
+  breakpoints: {
+    320: {
+        slidesPerView: 'auto',
+        freeMode: true,
+        spaceBetween: 10,
+      },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 23.5,
+    }
+  }
 });
 
 
@@ -65,20 +62,17 @@ for (const container of  document.querySelectorAll('.container') ) {
       prevEl: container.querySelector(".slider__btn--prev"),
       clickable: true,
   },
-    // breakpoints: {
-    //     320: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20,
-    //       },
-    //     576: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 50,
-    //     },
-    //     768: {
-    //       slidesPerView: 3,
-    //       spaceBetween: 40,
-    //     }
-    // }
+    breakpoints: {
+      320: {
+          slidesPerView: 'auto',
+          freeMode: true,
+          spaceBetween: 10,
+        },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 18,
+      }
+    }
   });
 }
 
