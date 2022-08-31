@@ -55,6 +55,11 @@
     line-height: 150%;
     font-weight: 700;
     color: var(--color-blue);
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 143%;
+    }
   }
 
   &__descr {
@@ -73,6 +78,11 @@
 
     @media (max-width: 1024px) {
       -webkit-line-clamp: 3;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 167%;
     }
   }
 }

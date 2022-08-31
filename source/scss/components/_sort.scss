@@ -20,6 +20,11 @@
     line-height: 133%;
     font-weight: 700;
     color: var(--color-black);
+
+    @media (max-width: 576px) {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
   }
 
   &__list {
@@ -58,6 +63,10 @@
     color: var(--color-black);
     transition: all 0.3s ease;
     cursor: pointer;
+
+    @media (max-width: 576px) {
+      padding-left: 30px;
+    }
 
     &::before {
       content: "";

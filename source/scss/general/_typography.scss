@@ -46,9 +46,17 @@
   color: var(--color-black);
 
   @media (max-width: 1024px) {
-     br {
-      display: none;
-     }
+    br {
+    display: none;
+    }
+
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-blue);
   }
 }
 
