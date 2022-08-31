@@ -57,6 +57,7 @@ for (const container of  document.querySelectorAll('.container') ) {
     slidesPerView: 5,
     spaceBetween: 18,
     loop: true,
+    adaptiveHeight: true,
     navigation: {
       nextEl: container.querySelector(".slider__btn--next"),
       prevEl: container.querySelector(".slider__btn--prev"),

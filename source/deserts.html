@@ -12,8 +12,13 @@
           <div class="search__wrapper">
             <form class="search__form" action="">
               <label class="search__label">
-                <input class="search__input class=" type="text" name="search" placeholder="Шоколадний торт з квітами">
-                <button class="search__btn" type="submit">Шукати</button>
+                <input class="search__input" type="search" name="search" placeholder="Шоколадний торт з квітами">
+                <button class="search__btn" type="submit">
+                  <svg width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                  <span>Шукати</span>
+                </button>
               </label>
             </form>
 
@@ -39,89 +44,92 @@
             <aside class="aside">
               <div class="aside__sort sort">
                 <div class="heading">Шукаєш <br> щось особливе?</div>
-                <form class="sort__form" action="">
-                  <div class="sort__form-title">Тематика</div>
-                  <ul class="sort__list">
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="girls">
-                        <span class="sort__name">Для дівчат</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="mens">
-                        <span class="sort__name">Для чоловіків</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="patriots">
-                        <span class="sort__name">Патріотичні</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="wedding">
-                        <span class="sort__name">Весільні</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="birthday">
-                        <span class="sort__name">До дня народження</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="corporate">
-                        <span class="sort__name">Корпоративні</span>
-                      </label>
-                    </li>
-                  </ul>
-                </form>
 
-                <form class="sort__form" action="">
-                  <div class="sort__form-title">Особливості</div>
-                  <ul class="sort__list">
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="classic">
-                        <span class="sort__name">Класичні рецепти</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="gluten">
-                        <span class="sort__name">Без глютену</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="vegans">
-                        <span class="sort__name">Веганські</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="sugar">
-                        <span class="sort__name">Без цукру</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="fruit">
-                        <span class="sort__name">З фруктами</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="flower">
-                        <span class="sort__name">З квітами</span>
-                      </label>
-                    </li>
-                  </ul>
-                </form>
+                <div class="sort__forms">
+                  <form class="sort__form" action="">
+                    <div class="sort__form-title">Тематика</div>
+                    <ul class="sort__list">
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="girls">
+                          <span class="sort__name">Для дівчат</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="mens">
+                          <span class="sort__name">Для чоловіків</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="patriots">
+                          <span class="sort__name">Патріотичні</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="wedding">
+                          <span class="sort__name">Весільні</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="birthday">
+                          <span class="sort__name">До дня народження</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="corporate">
+                          <span class="sort__name">Корпоративні</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+
+                  <form class="sort__form" action="">
+                    <div class="sort__form-title">Особливості</div>
+                    <ul class="sort__list">
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="classic">
+                          <span class="sort__name">Класичні рецепти</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="gluten">
+                          <span class="sort__name">Без глютену</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="vegans">
+                          <span class="sort__name">Веганські</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="sugar">
+                          <span class="sort__name">Без цукру</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="fruit">
+                          <span class="sort__name">З фруктами</span>
+                        </label>
+                      </li>
+                      <li class="sort__list-item">
+                        <label class="sort__label">
+                          <input class="sort__input" type="checkbox" name="flower">
+                          <span class="sort__name">З квітами</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
               </div>
             </aside>
             <div class="content__inner">
@@ -554,39 +562,39 @@
                   </svg>
                   <span>Більше смаколиків</span>
                 </button>
-              </div>
 
-              <div class="pagination">
-                <a class="pagination__nav pagination__nav--prev" href="#">
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                  </svg>
-                </a>
-                <ul class="pagination__list">
-                  <li class="pagination__list-item">
-                    <a class="pagination__list-link" href="#">1</a>
-                  </li>
-                  <li class="pagination__list-item">
-                    <a class="pagination__list-link" href="#">2</a>
-                  </li>
-                  <li class="pagination__list-item">
-                    <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
-                  </li>
-                  <li class="pagination__list-item">
-                    <a class="pagination__list-link" href="#">4</a>
-                  </li>
-                  <li class="pagination__list-item">
-                    <span>...</span>
-                  </li>
-                  <li class="pagination__list-item">
-                    <a class="pagination__list-link" href="#">15</a>
-                  </li>
-                </ul>
-                <a class="pagination__nav pagination__nav--next" href="#">
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                  </svg>
-                </a>
+                <div class="pagination">
+                  <a class="pagination__nav pagination__nav--prev" href="#">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </a>
+                  <ul class="pagination__list">
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">1</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">2</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link pagination__list-link--active" href="#">3</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">4</a>
+                    </li>
+                    <li class="pagination__list-item">
+                      <span>...</span>
+                    </li>
+                    <li class="pagination__list-item">
+                      <a class="pagination__list-link" href="#">15</a>
+                    </li>
+                  </ul>
+                  <a class="pagination__nav pagination__nav--next" href="#">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

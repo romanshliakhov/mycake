@@ -44,6 +44,12 @@
   font-family: var(--font-family-yesseva);
   font-size: 24px;
   color: var(--color-black);
+
+  @media (max-width: 1024px) {
+     br {
+      display: none;
+     }
+  }
 }
 
 .text {

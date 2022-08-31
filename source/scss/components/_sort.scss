@@ -3,6 +3,17 @@
   flex-direction: column;
   grid-gap: 30px;
 
+  &__forms {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    grid-gap: 30px;
+
+    @media (max-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
   &__form-title {
     margin-bottom: 15px;
     font-size: 18px;

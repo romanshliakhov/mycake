@@ -7,12 +7,62 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+
+    @media (max-width: 1240px) {
+      overflow-x: auto;
+    }
   }
 
   &__products {
     display: grid;
-    grid-template-columns: repeat( auto-fill, 280px );
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+
+    @media (max-width: 1240px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+  }
+
+  &__product {
+    @media (max-width: 576px) {
+      .desert__info {
+        padding: 5px 10px 10px;
+      }
+
+      .desert__price {
+        font-size: 16px;
+      }
+
+      .desert__descr {
+        font-size: 12px;
+        line-height: 143%;
+      }
+
+      .desert__topping {
+        font-size: 12px;
+        line-height: 143%;
+      }
+
+      .desert__card-confectioner {
+        padding: 5.5px;
+        grid-gap: 5px;
+      }
+
+      .desert__confectioner-name {
+        font-size: 10px;
+        line-height: 100%;
+      }
+
+      .desert__confectioner-feedbacks {
+        font-size: 10px;
+        line-height: 120%;
+      }
+    }
   }
 
   &__btn {
@@ -21,6 +71,7 @@
     color: #8E4A4E;
     background-color: var(--color-pink-bg);
     border-radius: 40px;
+    white-space: nowrap;
     transition: all 0.3s ease;
     cursor: pointer;
 
@@ -47,6 +98,10 @@
         top: 50%;
         transform: translateY(-50%);
       }
+    }
+
+    @media (max-width: 1240px) {
+      padding: 8.5px 15px;
     }
   }
 
