@@ -22,6 +22,10 @@
   font-weight: 400;
   font-style: normal;
   color: var(--color-black);
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .subtitle {
@@ -29,6 +33,11 @@
   font-size: 35px;
   line-height: 120%;
   color: var(--color-black);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    line-height: 125%;
+  }
 }
 
 .heading {
@@ -40,6 +49,10 @@
 .text {
   line-height: 150%;
   color: var(--color-blue);
+
+  @media (max-width: 768px) {
+    line-height: 138%;
+  }
 }
 
 .reg {

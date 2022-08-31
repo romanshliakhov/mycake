@@ -1,7 +1,12 @@
 .registration {
   margin-bottom: 80px;
   padding: 60px 0;
-  background-color: #DCEBF8;
+  background-color: var(--color-blue-border-bg);
+
+  @media (max-width: 576px) {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
 
   &__wrapper {
     display: flex;

@@ -23,10 +23,20 @@
     &::placeholder {
       font-size: 18px;
       color: var(--color-placeholder);
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
     }
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
     padding: 14px 30px;
     font-size: 18px;
     color: var(--color-yellow-text);
@@ -37,6 +47,24 @@
 
     &:hover {
       background-color: var(--color-yellow-hover);
+    }
+
+    svg {
+      display: none;
+      fill: #5E2D07;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 10px 12.5px;
+
+      span {
+        display: none;
+      }
+
+      svg {
+        display: block;
+      }
     }
   }
 

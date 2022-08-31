@@ -10,24 +10,24 @@ let sliderProducts = new Swiper(".products__slider", {
       prevEl: ".products__slider-btn--prev",
       clickable: true,
   },
-  // breakpoints: {
-  //     320: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //       },
-  //     576: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 50,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 40,
-  //     }
-  // }
+  breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      576: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      800: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      }
+  }
 });
 
 
-// Products slider
+// Confectioner slider
 let sliderBestConfectioner = new Swiper(".best__slider", {
   slidesPerView: 3,
   spaceBetween: 23.5,

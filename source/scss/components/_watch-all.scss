@@ -6,6 +6,7 @@
   line-height: 171%;
   color: var(--color-blue);
   transition: all 0.3s ease;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--color-blue-hover);

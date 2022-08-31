@@ -6,6 +6,7 @@ import './components/dropdown.js';
 import './components/tabs.js';
 import './components/modals.js';
 import './components/filter.js';
+import './components/imagesblock';
 
 
 
