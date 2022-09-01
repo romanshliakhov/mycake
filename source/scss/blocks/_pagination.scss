@@ -51,6 +51,13 @@
     }
   }
 
+  // Визуальное отображение кнопок пагинации
+  &__list-item:nth-child(4) {
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;

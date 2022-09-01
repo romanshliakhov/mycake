@@ -3,10 +3,20 @@
   flex-direction: column;
   grid-gap: 30px;
 
+  @media (max-width: 768px) {
+    grid-gap: 15px;
+  }
+
   &__head {
+    position: relative;
     display: flex;
     align-items: center;
     grid-gap: 50px;
+
+    @media (max-width: 768px) {
+      grid-gap: 15px;
+      padding-bottom: 50px;
+    }
   }
 
   &__bot {
@@ -22,8 +32,19 @@
   }
 
   &__photo {
-    max-width: 200px;
-    max-height: 200px;
+    width: clamp(100px, 26.042vw, 200px);
+    height: clamp(100px, 26.042vw, 200px);
+
+    picture,
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: 100px;
+      height: 100px
+    }
   }
 
   &__photo-img {

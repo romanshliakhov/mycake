@@ -1,30 +1,104 @@
 import Swiper from '../vendor/swiper.js';
 
 // Products slider
-let sliderProducts = new Swiper(".products__slider", {
-  slidesPerView: 5,
-  spaceBetween: 20,
-  loop: true,
-  navigation: {
-      nextEl: ".products__slider-btn--next",
-      prevEl: ".products__slider-btn--prev",
-      clickable: true,
-  },
-  breakpoints: {
-      320: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      576: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      800: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      }
+for (const sliderProducts of document.querySelectorAll('.products__slider')) {
+  if (sliderProducts) {
+    (function () {
+      "use strict";
+
+      const breakpoint = window.matchMedia("(max-width:576px)");
+      let slider;
+
+      const enableSwiper = function () {
+        slider = new Swiper(sliderProducts, {
+          slidesPerView: 5,
+          spaceBetween: 20,
+          loop: true,
+          navigation: {
+              nextEl: ".products__slider-btn--next",
+              prevEl: ".products__slider-btn--prev",
+              clickable: true,
+          },
+          breakpoints: {
+            576: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            800: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            }
+          }
+        });
+      };
+
+      const breakpointChecker = function () {
+        if (breakpoint.matches === true) {
+          if (slider !== undefined) slider.destroy(true, true);
+
+          return;
+        } else if (breakpoint.matches === false) {
+          return enableSwiper();
+        }
+      };
+
+      breakpoint.addListener(breakpointChecker);
+      breakpointChecker();
+    })();
   }
-});
+
+}
+
+
+
+// let sliderProducts = new Swiper(".products__slider", {
+//   slidesPerView: 5,
+//   spaceBetween: 20,
+//   loop: true,
+//   navigation: {
+//       nextEl: ".products__slider-btn--next",
+//       prevEl: ".products__slider-btn--prev",
+//       clickable: true,
+//   },
+//   breakpoints: {
+//       320: {
+//         slidesPerView: 5,
+//         spaceBetween: 20,
+//       },
+//       576: {
+//         slidesPerView: 4,
+//         spaceBetween: 20,
+//       },
+//       800: {
+//         slidesPerView: 5,
+//         spaceBetween: 20,
+//       }
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Confectioner slider

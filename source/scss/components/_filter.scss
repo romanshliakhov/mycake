@@ -9,8 +9,21 @@
     grid-gap: 10px;
     overflow-x: auto;
 
+    &::-webkit-scrollbar {
+      height: 1px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+
     @media (max-width: 1240px) {
       max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100% + 15px);
     }
   }
 

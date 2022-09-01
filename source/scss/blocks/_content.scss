@@ -8,10 +8,6 @@
     justify-content: space-between;
     grid-gap: var(--gap) 0;
 
-    // @media (max-width: 1240px) {
-    //   grid-template-columns: repeat(2, 1fr);
-    // }
-
     @media (max-width: 1024px) {
       display: flex;
       flex-direction: column;

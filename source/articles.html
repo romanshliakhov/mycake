@@ -44,41 +44,57 @@
             <aside class="aside">
               <div class="aside__sort sort">
                 <div class="heading">Цікаві та корисні статті</div>
-                <form class="sort__form" action="">
-                  <div class="sort__form-title">Тематика</div>
-                  <ul class="sort__list">
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="recipes">
-                        <span class="sort__name">Рецепти</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="advice">
-                        <span class="sort__name">Корисні поради на кухні </span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="compilations">
-                        <span class="sort__name">Підбірки</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="clients">
-                        <span class="sort__name">Робота з клієнтами</span>
-                      </label>
-                    </li>
-                    <li class="sort__list-item">
-                      <label class="sort__label">
-                        <input class="sort__input" type="checkbox" name="stories">
-                        <span class="sort__name">Цікаві історії</span>
-                      </label>
-                    </li>
-                  </ul>
-                </form>
+
+                <div class="sort__filter" data-spollers data-one-spoller>
+                  <div class="sort__filter-item">
+                    <div class="sort__filter-title" tabindex="-1" type="button" data-spoller>
+                      <span>Обрати тематику</span>
+                      <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                      </svg>
+                    </div>
+
+                    <div class="sort__form-body">
+                      <div class="sort__forms">
+                        <form class="sort__form" action="">
+                          <div class="sort__form-title">Тематика</div>
+                          <ul class="sort__list">
+                            <li class="sort__list-item">
+                              <label class="sort__label">
+                                <input class="sort__input" type="checkbox" name="recipes">
+                                <span class="sort__name">Рецепти</span>
+                              </label>
+                            </li>
+                            <li class="sort__list-item">
+                              <label class="sort__label">
+                                <input class="sort__input" type="checkbox" name="advice">
+                                <span class="sort__name">Корисні поради на кухні </span>
+                              </label>
+                            </li>
+                            <li class="sort__list-item">
+                              <label class="sort__label">
+                                <input class="sort__input" type="checkbox" name="compilations">
+                                <span class="sort__name">Підбірки</span>
+                              </label>
+                            </li>
+                            <li class="sort__list-item">
+                              <label class="sort__label">
+                                <input class="sort__input" type="checkbox" name="clients">
+                                <span class="sort__name">Робота з клієнтами</span>
+                              </label>
+                            </li>
+                            <li class="sort__list-item">
+                              <label class="sort__label">
+                                <input class="sort__input" type="checkbox" name="stories">
+                                <span class="sort__name">Цікаві історії</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </aside>
             <div class="content__inner">

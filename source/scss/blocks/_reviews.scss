@@ -3,6 +3,10 @@
   flex-direction: column;
   grid-gap: 40px;
 
+  @media (max-width: 768px) {
+    grid-gap: 25px;
+  }
+
   &__head {
     display: flex;
     align-items: center;

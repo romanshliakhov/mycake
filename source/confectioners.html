@@ -7,13 +7,18 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <section class="search">
+      <section class="search__mob search">
         <div class="container">
           <div class="search__wrapper">
             <form class="search__form" action="">
               <label class="search__label">
-                <input class="search__input class=" type="text" name="search" placeholder="Шоколадний торт з квітами">
-                <button class="search__btn" type="submit">Шукати</button>
+                <input class="search__input" type="search" name="search" placeholder="Шоколадний торт з квітами">
+                <button class="search__btn" type="submit">
+                  <svg width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                  <span>Шукати</span>
+                </button>
               </label>
             </form>
 
@@ -36,6 +41,13 @@
       <section class="confectioners">
         <div class="container">
           <div class="confectioners__wrapper">
+            <button class="location__mob location text-bold">
+              <svg width='14' height='20'>
+                <use href='img/sprite/sprite.svg#location'></use>
+              </svg>
+              <span>Вся Україна</span>
+            </button>
+
             <div class="filter">
               <ul class="filter__list">
                 <li class="filter__list-item">

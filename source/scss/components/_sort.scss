@@ -3,6 +3,53 @@
   flex-direction: column;
   grid-gap: 30px;
 
+  @media (max-width: 1024px) {
+    grid-gap: 5px;
+  }
+
+  &__filter-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+    color: #43607C;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 400;
+    cursor: pointer;
+
+    svg {
+      transform: rotate(-90deg);
+    }
+
+    &._active {
+      svg {
+        transform: rotate(90deg);
+      }
+
+      .sort__form-body {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      line-height: 120%;
+    }
+  }
+
+  &__form-body {
+    margin-top: 20px;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+  }
+
   &__forms {
     display: flex;
     align-items: stretch;
@@ -110,4 +157,6 @@
       }
     }
   }
+
+
 }
