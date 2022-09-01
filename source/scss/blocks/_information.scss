@@ -4,7 +4,11 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 80px;
+    grid-gap: clamp(20px, 4.167vw, 80px);
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 100%;
+    }
 
     &--empty {
       grid-template-columns: 1fr;

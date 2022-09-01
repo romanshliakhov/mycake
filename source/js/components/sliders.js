@@ -50,57 +50,6 @@ for (const sliderProducts of document.querySelectorAll('.products__slider')) {
 }
 
 
-
-// let sliderProducts = new Swiper(".products__slider", {
-//   slidesPerView: 5,
-//   spaceBetween: 20,
-//   loop: true,
-//   navigation: {
-//       nextEl: ".products__slider-btn--next",
-//       prevEl: ".products__slider-btn--prev",
-//       clickable: true,
-//   },
-//   breakpoints: {
-//       320: {
-//         slidesPerView: 5,
-//         spaceBetween: 20,
-//       },
-//       576: {
-//         slidesPerView: 4,
-//         spaceBetween: 20,
-//       },
-//       800: {
-//         slidesPerView: 5,
-//         spaceBetween: 20,
-//       }
-//   }
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Confectioner slider
 let sliderBestConfectioner = new Swiper(".best__slider", {
   slidesPerView: 3,
@@ -211,26 +160,29 @@ let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
   slidesPerView: 4,
   spaceBetween: 10,
   watchSlidesProgress: true,
+  observer: true,
   direction: "vertical",
   navigation: {
       nextEl: ".product-card__preview-btn--next",
       prevEl: ".product-card__preview-btn--prev",
       clickable: true,
   },
-  // breakpoints: {
-  //     320: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //       },
-  //     576: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 50,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 40,
-  //     }
-  // }
+  breakpoints: {
+      320: {
+        direction: "horizontal",
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+          loop: true,
+          freeMode: true,
+        },
+      1025: {
+        direction: "vertical",
+        loop: true,
+        freeMode: true,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+      }
+  }
 });
 
 // productCardPreviewSlider.changeDirection('vertical', true);
@@ -239,26 +191,24 @@ let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
 let productCardSlider = new Swiper(".product-card__slider", {
   slidesPerView: 1,
   spaceBetween: 1,
+  loop: true,
+  freeMode: true,
   navigation: {
       clickable: true,
   },
   thumbs: {
     swiper: productCardPreviewSlider,
   },
-  // breakpoints: {
-  //     320: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //       },
-  //     576: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 50,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 40,
-  //     }
-  // }
+  breakpoints: {
+      320: {
+          slidesPerView: 'auto',
+          spaceBetween: 10,
+        },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      }
+  }
 });
 
 
