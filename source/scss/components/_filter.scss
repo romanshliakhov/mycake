@@ -7,9 +7,10 @@
     display: flex;
     align-items: center;
     grid-gap: 10px;
+    overflow-x: auto;
 
     @media (max-width: 1240px) {
-      overflow-x: auto;
+      max-width: 100%;
     }
   }
 
@@ -22,8 +23,16 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
+    @media (max-width: 1024px) {
+      .desert,
+      .desert__image {
+        max-width: 100%;
+        max-height: initial;
+      }
+    }
+
     @media (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
       grid-gap: 10px;
     }
   }

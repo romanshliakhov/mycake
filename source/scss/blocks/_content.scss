@@ -2,11 +2,11 @@
   margin-bottom: 80px;
 
   &__wrapper {
-    display: flex;
-    align-items: stretch;
-    // display: grid;
-    // grid-template-columns: 252px auto;
-    grid-gap: clamp(20px, 3.226vw, 40px);
+    --gap: clamp(20px, 2.796vw, 40px);
+    display: grid;
+    grid-template-columns: 252px  calc(100% - var(--gap) - 252px);
+    justify-content: space-between;
+    grid-gap: var(--gap) 0;
 
     // @media (max-width: 1240px) {
     //   grid-template-columns: repeat(2, 1fr);

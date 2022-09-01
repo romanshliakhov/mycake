@@ -8,17 +8,20 @@
   }
 
   &__list {
-    display: flex;
-    align-items: stretch;
-    grid-gap: 42px;
+    --gap: clamp(20px, 2.796vw, 42px);
+    display: grid;
+    grid-template-columns: 280px calc(100% - var(--gap) - 280px);
+    width: 100%;
+    grid-gap: var(--gap) 0;
+    justify-content: space-between;
 
     @media (max-width: 768px) {
+      display: flex;
       flex-direction: column;
       grid-gap: 10px;
     }
 
-    // display: grid;
-    // grid-template-columns: 280px auto;
+
   }
 
   &__cook {
@@ -72,6 +75,22 @@
 
   &__details {
     max-width: 1150px;
+
+    .block__head {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-gap: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .block__btns {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
 
     @media (max-width: 768px) {
       .block__head {

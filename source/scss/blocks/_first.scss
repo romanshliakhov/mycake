@@ -6,17 +6,21 @@
   }
 
   &__wrapper {
-    // display: flex;
-    // align-items: center;
     grid-gap: clamp(40px, 4.167vw, 80px);
     display: grid;
-    grid-template-columns: auto 550px;
+    align-items: flex-start;
+    grid-template-columns: 58% 1fr;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__wrapper-left {
-    max-width: 842px;
     width: 100%;
     padding-top: 49px;
+
+
 
     @media (max-width: 768px) {
       padding-top: 0;
@@ -24,10 +28,13 @@
   }
 
   &__wrapper-right {
-    max-width: 550px;
     width: 100%;
-    height: 100%;
-    max-height: var(--images-max-height);
+    height: var(--images-max-height);
+
+    @media (max-width: 1024px) {
+      order: -1;
+      height: auto;
+    }
   }
 
   &__content {
@@ -60,13 +67,16 @@
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     height: 100%;
-    // max-height: var(--images-max-height);
 
     @media (max-width: 1440px) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 30% calc(70% - 20px);
-      // max-height: 746px;
-      // max-height: var(--images-max-height);
+    }
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: initial;
+      grid-gap: Min(1.389vw, 20px);
     }
   }
 
@@ -85,11 +95,10 @@
 
       picture,
       img {
-        border-radius: 0px 70px 70px 0px;
+        border-radius: 0px Min(6.836vw, 70px) Min(6.836vw, 70px) 0px;
       }
 
       @media (max-width: 1440px) {
-        // grid-row: initial;
         grid-column: 2;
       }
     }
@@ -97,7 +106,7 @@
     &--second {
       picture,
       img {
-        border-radius: 0px 70px;
+        border-radius: 0px Min(6.836vw, 70px);
       }
 
       @media (max-width: 1440px) {
@@ -111,7 +120,7 @@
 
       picture,
       img {
-        border-radius: 100px 0px;
+        border-radius: Min(9.766vw, 100px) 0px;
       }
 
 
@@ -119,6 +128,11 @@
         grid-row: initial;
       }
     }
-  }
 
+    @media (max-width: 1024px) {
+      grid-row: initial;
+      grid-column: initial;
+      height: Min(33.333vw, 300px);
+    }
+  }
 }
