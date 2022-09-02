@@ -2,6 +2,10 @@
   grid-gap: 60px;
   text-align: left;
 
+  @media (max-width: 768px) {
+    grid-gap: 20px;
+  }
+
   &__title {
     margin-bottom: 20px;
     color: var(--color-black);
@@ -34,6 +38,7 @@
   &__login {
     font-size: 14px;
     line-height: 171%;
+    text-align: left;
     text-decoration-line: underline;
     color: var(--color-blue-text);
     transition: all 0.3s ease;
@@ -41,6 +46,12 @@
     &:hover,
     &:active {
       text-decoration: none;
+    }
+  }
+
+  &__form {
+    @media (max-width: 768px) {
+      margin-bottom: 50px;
     }
   }
 }

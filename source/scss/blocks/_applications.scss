@@ -1,10 +1,14 @@
 .applications {
   margin: 50px 0 65px;
 
+  @media (max-width: 768px) {
+    margin: 0 0 35px;
+  }
+
   &__information {
     display: flex;
     flex-direction: column;
-    grid-gap: 50px;
+    grid-gap: clamp(3.906vw, 6.51vw, 50px);
   }
 
   &__infromation-head {
@@ -16,7 +20,6 @@
   &__top {
     display: flex;
     flex-direction: column;
-    // grid-gap: 30px;
   }
 
   &__heading {
@@ -42,6 +45,10 @@
 
   &__list-heading {
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__list-items {

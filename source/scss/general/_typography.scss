@@ -23,7 +23,7 @@
   font-style: normal;
   color: var(--color-black);
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     font-size: 30px;
   }
 }
@@ -34,7 +34,7 @@
   line-height: 120%;
   color: var(--color-black);
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     font-size: 24px;
     line-height: 125%;
   }
@@ -64,7 +64,7 @@
   line-height: 150%;
   color: var(--color-blue);
 
-  @media (max-width: 768px) {
+  @media (max-width: 576px) {
     line-height: 138%;
   }
 }
@@ -85,6 +85,11 @@
   font-size: 30px;
   line-height: 120%;
   color: var(--color-black);
+
+  // @media (max-width: 576px) {
+  //   font-family: var(--font-family-verdana);
+  //   font-size: 20px;
+  // }
 }
 
 .dataset {
@@ -92,6 +97,14 @@
   font-size: 16px;
   line-height: 125%;
   color: var(--color-blue);
+
+  @media (max-width: 576px) {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 120%;
+    color: #84A6C2;
+    font-weight: 400;
+  }
 }
 
 

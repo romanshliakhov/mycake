@@ -46,7 +46,7 @@
   </div>
 
   <div class="modal__container" data-target="buyer">
-    <div class="modal__wrapper enter">
+    <div class="modal__wrapper enter modal__wrapper--tal">
       <div class="modal__head">
         <div class="modal__title">Реєстрація</div>
         <div class="modal__close modal-close">
@@ -103,7 +103,7 @@
   </div>
 
   <div class="modal__container" data-target="confectioner">
-    <div class="modal__wrapper enter">
+    <div class="modal__wrapper enter modal__wrapper--tal">
       <div class="modal__head">
         <div class="modal__title">Реєстрація</div>
         <div class="modal__close modal-close">
@@ -117,6 +117,16 @@
         <fieldset class="form__fieldset">
           <div class="form__title">
             <span>Ім’я або назва компанії</span>
+          </div>
+          <label class="form__label">
+            <input class="form__input" type="text">
+          </label>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <div class="form__title">
+            <span>Номер телефону</span>
+            На вказаний номер вам прийде СМС-повідомлення з кодом
           </div>
           <label class="form__label">
             <input class="form__input form__input-tel" type="tel" placeholder="+38 0">
@@ -201,7 +211,7 @@
   </div>
 
   <div class="modal__container" data-target="enter">
-    <div class="modal__wrapper enter">
+    <div class="modal__wrapper enter modal__wrapper--tal">
       <div class="modal__head">
         <div class="modal__title">Вхід</div>
         <div class="modal__close modal-close">
@@ -522,13 +532,18 @@
             <div class="constructor__form-title">
               <span>Ім’я</span>
             </div>
-            <input class="form__input" type="text" name="name">
+            <label class="constructor__form-label">
+              <input class="form__input" type="text" name="name" placeholder="Анна Василенко">
+            </label>
+
           </fieldset>
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
               <span>Номер телефону</span>
             </div>
-            <input class="form__input" type="tel" name="phone">
+            <label class="constructor__form-label">
+              <input class="form__input" type="tel" name="phone" placeholder="+56 085 345 76 34">
+            </label>
           </fieldset>
         </div>
 
@@ -539,7 +554,7 @@
             </div>
             <div class="constructor__form-weight">
               <label class="constructor__weight-label">
-                <input class="form__input" type="text" name="weight">
+                <input class="form__input" type="text" name="weight" placeholder="2">
               </label>
               <span>кг</span>
             </div>
@@ -616,7 +631,9 @@
           <div class="constructor__form-title">
             <span>Додаткові побажання</span>
           </div>
-          <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+          <label class="constructor__form-label">
+            <textarea class="constructor__textarea" name="constructor-text" placeholder="Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий"></textarea>
+          </label>
         </div>
 
         <div class="constructor__form-extra">
@@ -757,7 +774,7 @@
             </div>
           </div>
           <label class="constructor__form-label">
-            <textarea class="constructor__textarea" name="constructor-text"></textarea>
+            <textarea class="constructor__textarea constructor__textarea--disable" name="constructor-text"></textarea>
             <span class="form__input-value">Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий</span>
           </label>
         </div>
@@ -865,7 +882,7 @@
             </div>
           </div>
           <label class="constructor__form-label">
-            <textarea class="constructor__textarea" name="constructor-text"></textarea>
+            <textarea class="constructor__textarea constructor__textarea--disable" name="constructor-text"></textarea>
             <span class="form__input-value">Хочу торт на 3 яруси з фігурками котиків, що цілуються зверху. Торт має бути трохи солодкий, трохи кислий, дуже смачний і великий</span>
           </label>
         </div>
