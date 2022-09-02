@@ -7,392 +7,395 @@
     @include('partials/header.html',{})
 
     <main class="main main__dialog">
+
       <!-- Діалог-->
       <section class="dialog">
-        <div class="dialog__wrapper">
-          <div class="dialog__aside">
-            <div class="dialog__search">
-              <label class="dialog__label">
-                <input class="dialog__input" type="search" placeholder="Пошук">
-                <button class="dialog__search-btn">
-                  <svg width='20' height='20'>
-                  <use href='img/sprite/sprite.svg#search'></use>
-                  </svg>
-                </button>
-              </label>
-            </div>
-
-            <!-- default -->
-            <ul class="dialog__chats">
-              <li class="dialog__chats-item active">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook1.webp'>
-                      <img width='60' height='60' src='img/cook/cook1.png' alt='cook 1'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Інна Пономаренко</div>
-                      <div class="dialog__receive-messages">+<span>2</span></div>
-                    </div>
-                    <p class="dialog__preview-text">Підкажіть, будь ласка, яку начинку ви обрали?</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">19:15</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook2.webp'>
-                      <img width='60' height='60' src='img/cook/cook2.png' alt='cook 2'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Home Bakery</div>
-                      <div class="dialog__receive-messages">+<span>1</span></div>
-                    </div>
-                    <p class="dialog__preview-text">Такий торт буде коштувати 770 гривень</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">09:23</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook3.webp'>
-                      <img width='60' height='60' src='img/cook/cook3.png' alt='cook 3'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Іванна Марченко</div>
-                    </div>
-                    <p class="dialog__preview-text">Ок</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">Вчора</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook4.webp'>
-                      <img width='60' height='60' src='img/cook/cook4.png' alt='cook 4'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Ангеліна Колеснікова</div>
-                    </div>
-                    <p class="dialog__preview-text">Дякую</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">П'ятниця</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook5.webp'>
-                      <img width='60' height='60' src='img/cook/cook5.png' alt='cook 5'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Кондитерська Blossom: торти, капкейки</div>
-                    </div>
-                    <p class="dialog__preview-text">Доставка буде безкоштовною</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">23.12.21</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook6.webp'>
-                      <img width='60' height='60' src='img/cook/cook6.png' alt='cook 6'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Ірина Кравцова</div>
-                    </div>
-                    <p class="dialog__preview-text">Дякую</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">П'ятниця</div>
-                </div>
-              </li>
-            </ul>
-
-            <!-- Пошук -->
-            <!-- <ul class="dialog__chats">
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook3.webp'>
-                      <img width='60' height='60' src='img/cook/cook3.png' alt='cook 3'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Іванна Марченко</div>
-                    </div>
-                    <p class="dialog__preview-text"><b>Тортики</b> та капкейки</p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">Вчора</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook4.webp'>
-                      <img width='60' height='60' src='img/cook/cook4.png' alt='cook 4'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Ангеліна Колеснікова</div>
-                    </div>
-                    <p class="dialog__preview-text">... <b>тортик </b>вже готовий, через декілька годин </p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">П'ятниця</div>
-                </div>
-              </li>
-              <li class="dialog__chats-item">
-                <div class="dialog__chats-wrapper">
-                  <div class="dialog__chats-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook5.webp'>
-                      <img width='60' height='60' src='img/cook/cook5.png' alt='cook 5'>
-                    </picture>
-                  </div>
-
-                  <div class="dialog__chats-preview">
-                    <div class="dialog__preview-head">
-                      <div class="dialog__nickname">Кондитерська Blossom: торти, капкейки</div>
-                    </div>
-                    <p class="dialog__preview-text">... ваш <b>тортик</b> буде доставлено за адресою </p>
-                  </div>
-
-                  <div class="dialog__chats-pubtime">23.12.21</div>
-                </div>
-              </li>
-            </ul> -->
-          </div>
-          <div class="dialog__chat">
-            <div class="dialog__chat-head">
-              <div class="dialog__chat-heading">
-                <div class="dialog__chat-avatar">
-                  <picture>
-                    <source type='image/webp' srcset='img/cook/cook1.webp'>
-                    <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
-                  </picture>
-                </div>
-                <div class="dialog__nickname">Інна Пономаренко</div>
-              </div>
-
-              <div class="dialog__chat-settings">
-                <div class="diaglog__settings-btn">
-                  <svg width='24' height='24'>
-                    <use href='img/sprite/sprite.svg#chat-settings'></use>
-                    </svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="dialog__chat-window">
-              <!-- default -->
-              <div class="dialog__chat-messages">
-                <div class="dialog__messages">
-                  <div class="dialog__chat-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook1.webp'>
-                      <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
-                    </picture>
-                  </div>
-                  <div class="dialog__messages-wrapp">
-                    <div class="dialog__message">Доброго дня, ви залишили заявку на торт</div>
-                    <div class="dialog__message">Розкажіть детальніше, яким він має бути?</div>
-                  </div>
-                </div>
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
-                    <p class="dialog__message">Мені потрібен торт на день народження доньки</p>
-                    <p class="dialog__message">Вона любить єдинорогів та принцес</p>
-                  </div>
-                </div>
-                <div class="dialog__messages-divider">
-                  <span>20.05</span>
-                </div>
-                <div class="dialog__messages">
-                  <div class="dialog__chat-avatar">
-                    <picture>
-                      <source type='image/webp' srcset='img/cook/cook1.webp'>
-                      <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
-                    </picture>
-                  </div>
-                  <div class="dialog__messages-wrapp">
-                    <div class="dialog__message">Можна зробити фігурки з мастики, такий тортик буде трохи дорожчим, приклади можна глянути в моїх оголошеннях</div>
-                    <div class="dialog__message">Підкажіть, будь ласка, яку начинку ви обрали?</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Зі сторінки товару -->
-              <!-- <div class="dialog__chat-messages">
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp">
-                    <div class="dialog__message-product">
-                      <div class="dialog__product-info">
-                        <div class="dialog__product-image">
-                          <picture>
-                            <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                            <img width='50' height='50' src='img/cakes/cake2.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="dialog__product-title">
-                          <span class="dialog__product-name">Весільний триярусний торт з фруктами та квітами</span>
-                          <span class="dialog__product-price">520 грн</span>
-                        </div>
-                      </div>
-                      <button class="dialog__product-cancel">
-                        <svg width='20' height='20'>
-                          <use href='img/sprite/sprite.svg#close'></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- Зі сторінки товару відправлено-->
-              <!-- <div class="dialog__chat-messages">
-                <div class="dialog__messages-divider">
-                  <span>20.05</span>
-                </div>
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
-                    <div class="dialog__message-product dialog__message-product--send">
-                      <div class="dialog__product-info">
-                        <div class="dialog__product-image">
-                          <picture>
-                            <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                            <img width='50' height='50' src='img/cakes/cake2.png' alt=''>
-                          </picture>
-                        </div>
-                        <div class="dialog__product-title">
-                          <span class="dialog__product-name">Весільний триярусний торт з фруктами та квітами</span>
-                          <span class="dialog__product-price">520 грн</span>
-                        </div>
-                      </div>
-                      <button class="dialog__product-watch">Переглянути</button>
-                    </div>
-                    <div class="dialog__message">Доброго дня, хочу замовити такий торт, але на 5 ярусів з різними начинками</div>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- Додати файл -->
-              <!-- <div class="dialog__chat-messages">
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp">
-                    <div class="dialog__message-file">
-                      <div class="dialog__file-info">
-                        <div class="dialog__file-image">
-                          <svg width='24' height='30'>
-                          <use href='img/sprite/sprite.svg#file'></use>
-                          </svg>
-                        </div>
-                        <div class="dialog__file-title">
-                          <span class="dialog__file-name">CписокПобожань.docx</span>
-                          <span class="dialog__file-size">15 Kb</span>
-                        </div>
-                      </div>
-                      <button class="dialog__product-cancel">
-                        <svg width='20' height='20'>
-                          <use href='img/sprite/sprite.svg#close'></use>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
-              <!-- Відправленний файл -->
-              <!-- <div class="dialog__chat-messages">
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
-                    <div class="dialog__message-file dialog__message-file--send">
-                      <div class="dialog__file-info">
-                        <div class="dialog__file-image">
-                          <svg width='24' height='30'>
-                          <use href='img/sprite/sprite.svg#file'></use>
-                          </svg>
-                        </div>
-                        <div class="dialog__file-title">
-                          <span class="dialog__file-name">CписокПобожань.docx</span>
-                          <span class="dialog__file-size">15 Kb</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="dialog__messages">
-                  <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
-                    <p class="dialog__message">Ось список моїх побажань. Зорієнтуйте, будь ласка, по ціні</p>
-                  </div>
-                </div>
-              </div> -->
-            </div>
-
-            <div class="dialog__chat-bottom">
-              <fieldset class="dialog__chat-fieldset">
+        <div class="container container--mode">
+          <div class="dialog__wrapper">
+            <div class="dialog__aside">
+              <div class="dialog__search">
                 <label class="dialog__label">
-                  <input class="dialog__input" type="text">
-                  <button class="dialog__smiles-btn">
+                  <input class="dialog__input" type="search" placeholder="Пошук">
+                  <button class="dialog__search-btn">
                     <svg width='20' height='20'>
-                    <use href='img/sprite/sprite.svg#smiles'></use>
+                    <use href='img/sprite/sprite.svg#search'></use>
                     </svg>
                   </button>
-                  <label class="dialog__label-paperclip">
-                    <input class="dialog__input-file" type="file">
-                    <span>
-                      <svg width='20' height='20'>
-                      <use href='img/sprite/sprite.svg#paperclip'></use>
-                      </svg>
-                    </span>
-                  </label>
                 </label>
-              </fieldset>
-              <button class="dialog__send-message">
-                <svg width='20' height='20'>
-                <use href='img/sprite/sprite.svg#navigation'></use>
-                </svg>
-              </button>
+              </div>
+
+              <!-- default -->
+              <ul class="dialog__chats">
+                <li class="dialog__chats-item active">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook1.webp'>
+                        <img width='60' height='60' src='img/cook/cook1.png' alt='cook 1'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Інна Пономаренко</div>
+                        <div class="dialog__receive-messages">+<span>2</span></div>
+                      </div>
+                      <p class="dialog__preview-text">Підкажіть, будь ласка, яку начинку ви обрали?</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">19:15</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook2.webp'>
+                        <img width='60' height='60' src='img/cook/cook2.png' alt='cook 2'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Home Bakery</div>
+                        <div class="dialog__receive-messages">+<span>1</span></div>
+                      </div>
+                      <p class="dialog__preview-text">Такий торт буде коштувати 770 гривень</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">09:23</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook3.webp'>
+                        <img width='60' height='60' src='img/cook/cook3.png' alt='cook 3'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Іванна Марченко</div>
+                      </div>
+                      <p class="dialog__preview-text">Ок</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">Вчора</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook4.webp'>
+                        <img width='60' height='60' src='img/cook/cook4.png' alt='cook 4'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Ангеліна Колеснікова</div>
+                      </div>
+                      <p class="dialog__preview-text">Дякую</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">П'ятниця</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook5.webp'>
+                        <img width='60' height='60' src='img/cook/cook5.png' alt='cook 5'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Кондитерська Blossom: торти, капкейки</div>
+                      </div>
+                      <p class="dialog__preview-text">Доставка буде безкоштовною</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">23.12.21</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook6.webp'>
+                        <img width='60' height='60' src='img/cook/cook6.png' alt='cook 6'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Ірина Кравцова</div>
+                      </div>
+                      <p class="dialog__preview-text">Дякую</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">П'ятниця</div>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Пошук -->
+              <!-- <ul class="dialog__chats">
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook3.webp'>
+                        <img width='60' height='60' src='img/cook/cook3.png' alt='cook 3'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Іванна Марченко</div>
+                      </div>
+                      <p class="dialog__preview-text"><b>Тортики</b> та капкейки</p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">Вчора</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook4.webp'>
+                        <img width='60' height='60' src='img/cook/cook4.png' alt='cook 4'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Ангеліна Колеснікова</div>
+                      </div>
+                      <p class="dialog__preview-text">... <b>тортик </b>вже готовий, через декілька годин </p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">П'ятниця</div>
+                  </div>
+                </li>
+                <li class="dialog__chats-item">
+                  <div class="dialog__chats-wrapper">
+                    <div class="dialog__chats-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook5.webp'>
+                        <img width='60' height='60' src='img/cook/cook5.png' alt='cook 5'>
+                      </picture>
+                    </div>
+
+                    <div class="dialog__chats-preview">
+                      <div class="dialog__preview-head">
+                        <div class="dialog__nickname">Кондитерська Blossom: торти, капкейки</div>
+                      </div>
+                      <p class="dialog__preview-text">... ваш <b>тортик</b> буде доставлено за адресою </p>
+                    </div>
+
+                    <div class="dialog__chats-pubtime">23.12.21</div>
+                  </div>
+                </li>
+              </ul> -->
+            </div>
+            <div class="dialog__chat">
+              <div class="dialog__chat-head">
+                <div class="dialog__chat-heading">
+                  <div class="dialog__chat-avatar">
+                    <picture>
+                      <source type='image/webp' srcset='img/cook/cook1.webp'>
+                      <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
+                    </picture>
+                  </div>
+                  <div class="dialog__nickname">Інна Пономаренко</div>
+                </div>
+
+                <div class="dialog__chat-settings">
+                  <div class="diaglog__settings-btn">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#chat-settings'></use>
+                      </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="dialog__chat-window">
+                <!-- default -->
+                <div class="dialog__chat-messages">
+                  <div class="dialog__messages">
+                    <div class="dialog__chat-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook1.webp'>
+                        <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
+                      </picture>
+                    </div>
+                    <div class="dialog__messages-wrapp">
+                      <div class="dialog__message">Доброго дня, ви залишили заявку на торт</div>
+                      <div class="dialog__message">Розкажіть детальніше, яким він має бути?</div>
+                    </div>
+                  </div>
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
+                      <p class="dialog__message">Мені потрібен торт на день народження доньки</p>
+                      <p class="dialog__message">Вона любить єдинорогів та принцес</p>
+                    </div>
+                  </div>
+                  <div class="dialog__messages-divider">
+                    <span>20.05</span>
+                  </div>
+                  <div class="dialog__messages">
+                    <div class="dialog__chat-avatar">
+                      <picture>
+                        <source type='image/webp' srcset='img/cook/cook1.webp'>
+                        <img width='30' height='30' src='img/cook/cook1.png' alt='cook 1'>
+                      </picture>
+                    </div>
+                    <div class="dialog__messages-wrapp">
+                      <div class="dialog__message">Можна зробити фігурки з мастики, такий тортик буде трохи дорожчим, приклади можна глянути в моїх оголошеннях</div>
+                      <div class="dialog__message">Підкажіть, будь ласка, яку начинку ви обрали?</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Зі сторінки товару -->
+                <!-- <div class="dialog__chat-messages">
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp">
+                      <div class="dialog__message-product">
+                        <div class="dialog__product-info">
+                          <div class="dialog__product-image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                              <img width='50' height='50' src='img/cakes/cake2.png' alt=''>
+                            </picture>
+                          </div>
+                          <div class="dialog__product-title">
+                            <span class="dialog__product-name">Весільний триярусний торт з фруктами та квітами</span>
+                            <span class="dialog__product-price">520 грн</span>
+                          </div>
+                        </div>
+                        <button class="dialog__product-cancel">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#close'></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Зі сторінки товару відправлено-->
+                <!-- <div class="dialog__chat-messages">
+                  <div class="dialog__messages-divider">
+                    <span>20.05</span>
+                  </div>
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
+                      <div class="dialog__message-product dialog__message-product--send">
+                        <div class="dialog__product-info">
+                          <div class="dialog__product-image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                              <img width='50' height='50' src='img/cakes/cake2.png' alt=''>
+                            </picture>
+                          </div>
+                          <div class="dialog__product-title">
+                            <span class="dialog__product-name">Весільний триярусний торт з фруктами та квітами</span>
+                            <span class="dialog__product-price">520 грн</span>
+                          </div>
+                        </div>
+                        <button class="dialog__product-watch">Переглянути</button>
+                      </div>
+                      <div class="dialog__message">Доброго дня, хочу замовити такий торт, але на 5 ярусів з різними начинками</div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Додати файл -->
+                <!-- <div class="dialog__chat-messages">
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp">
+                      <div class="dialog__message-file">
+                        <div class="dialog__file-info">
+                          <div class="dialog__file-image">
+                            <svg width='24' height='30'>
+                            <use href='img/sprite/sprite.svg#file'></use>
+                            </svg>
+                          </div>
+                          <div class="dialog__file-title">
+                            <span class="dialog__file-name">CписокПобожань.docx</span>
+                            <span class="dialog__file-size">15 Kb</span>
+                          </div>
+                        </div>
+                        <button class="dialog__product-cancel">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#close'></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Відправленний файл -->
+                <!-- <div class="dialog__chat-messages">
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
+                      <div class="dialog__message-file dialog__message-file--send">
+                        <div class="dialog__file-info">
+                          <div class="dialog__file-image">
+                            <svg width='24' height='30'>
+                            <use href='img/sprite/sprite.svg#file'></use>
+                            </svg>
+                          </div>
+                          <div class="dialog__file-title">
+                            <span class="dialog__file-name">CписокПобожань.docx</span>
+                            <span class="dialog__file-size">15 Kb</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dialog__messages">
+                    <div class="dialog__messages-wrapp dialog__messages-wrapp--send">
+                      <p class="dialog__message">Ось список моїх побажань. Зорієнтуйте, будь ласка, по ціні</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+
+              <div class="dialog__chat-bottom">
+                <fieldset class="dialog__chat-fieldset">
+                  <label class="dialog__label">
+                    <input class="dialog__input" type="text">
+                    <button class="dialog__smiles-btn">
+                      <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#smiles'></use>
+                      </svg>
+                    </button>
+                    <label class="dialog__label-paperclip">
+                      <input class="dialog__input-file" type="file">
+                      <span>
+                        <svg width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#paperclip'></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </label>
+                </fieldset>
+                <button class="dialog__send-message">
+                  <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#navigation'></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
