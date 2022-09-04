@@ -75,6 +75,8 @@
   }
 
   &__product-title {
+    grid-column: 2;
+    align-self: start;
     font-size: 14px;
     font-weight: 700;
     color: var(--color-black);
@@ -93,8 +95,8 @@
   }
 
   &__apply {
-    padding: 8px 0;
-    width: 100%;
+    padding: 10.5px 30px;
+    // width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--color-red);
@@ -113,6 +115,10 @@
 
     @media (max-width: 1024px) {
       font-size: 14px;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
     }
   }
 
@@ -187,7 +193,7 @@
   }
 
   &__btn-delete {
-    padding: 10px;
+    padding: 8px;
     border: 2px solid var(--color-blue-border-bg);
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -205,9 +211,15 @@
         fill: var(--color-red);
       }
     }
+
+    @media (max-width: 1024px) {
+      order: 1;
+    }
   }
 
   &__btn-reviews {
+    grid-row: span 2;
+    align-self: center;
     min-width: 150px;
     height: 35px;
     justify-content: center;
@@ -226,14 +238,9 @@
       transform: rotate(-90deg);
     }
 
-    // &:hover,
-    // &:active {
-    //   border: 2px solid var(--color-pink-hover);
-
-    //   svg {
-    //     fill: var(--color-red);
-    //   }
-    // }
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   &__btn-apply {
@@ -282,7 +289,9 @@
   }
 
   &__product-status {
-    margin-bottom: 10px;
+    grid-column: 2;
+    align-self: end;
+    width: fit-content;
     padding: 5px 10px;
     border-radius: 42px;
     font-size: 14px;
@@ -311,10 +320,26 @@
   }
 
   &__product-price {
-    margin-top: 10px;
+    // margin-top: 10px;
+    grid-column: 2;
+    align-self: start;
     font-size: 18px;
     font-weight: 700;
     color: var(--color-red);
+  }
+
+  &__review {
+    @media (max-width: 576px) {
+      grid-template-columns: 100px 1fr
+    }
+  }
+
+  &__review-head {
+    @media (max-width: 576px) {
+      align-self: end;
+      margin-bottom: 0;
+    }
+
   }
 }
 

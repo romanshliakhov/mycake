@@ -134,4 +134,10 @@
       display: block;
     }
   }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+  }
 }
