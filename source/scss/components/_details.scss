@@ -10,6 +10,11 @@
     justify-content: space-between;
     grid-gap: var(--gap) 0;
 
+    &--registration {
+      --gap: clamp(20px, 2.796vw, 30px);
+      grid-template-columns: 290px calc(100% - var(--gap) - 290px);
+    }
+
     @media (max-width: 1024px) {
       display: flex;
       flex-direction: column;

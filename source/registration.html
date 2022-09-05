@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="En">
+@include('partials/head.html',{})
+
+<body>
+    <div class="wrapper">
+      @include('partials/regitstration-header.html',{})
+
+      <main class="main">
+        <section class="applications">
+          <div class="container">
+            <div class="details__wrapper details__wrapper--registration">
+              <div class="aside">
+                <div class="registration__greeating">
+                  <div class="registration__greeating-title">Привіт, тепер це твій магазин!</div>
+                  <div class="registration__greeating-description">Розкажи про себе як можна більше. Це допоможе клієнту сформувати довіру до тебе.</div>
+                </div>
+              </div>
+
+              <ul class="details__content">
+                <div class="registration__information applications__information-list">
+                  <div class="applications__list-wrapper">
+                    <div class="applications__photo-title heading">
+                      Фото
+                      <span>Додайте сюди своє фото або логотип компанії. Кондитерів з фото обирають частіше</span>
+                    </div>
+
+                    <div class="applications__photo-details">
+                      <div class="applications__photo-btns">
+                        <button class="applications__photo-btn applications__photo-btn--new">
+                          <svg width='20' height='20'>
+                            <use href='img/sprite/sprite.svg#add-photo-alternate'></use>
+                          </svg>
+                          <span>Завантажити фото</span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="applications__list-wrapper">
+                    <div class="applications__heading heading">
+                      <span>Загальне</span>
+                    </div>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Ім’я кондитера або назва кондитерської</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="text" name="name">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Опис</div>
+                      <div class="constructor__form-descr">Допоможіть клієнтам більше дізнатися про вас. Тут можна написати про свій досвід, навички та досягнення.</div>
+                      <label class="constructor__form-label">
+                        <textarea class="registration__textarea registration__textarea--payment" name="payment"></textarea>
+                      </label>
+                    </fieldset>
+                  </div>
+
+                  <div class="applications__list-wrapper">
+                    <div class="applications__heading heading">
+                      <span>Контакти</span>
+                    </div>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Адреса</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="text" name="adress">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Номер телефону</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="tel" name="tel">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Пошта</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="email" name="email">
+                      </label>
+                    </fieldset>
+
+                    <button class="add-review">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#circle-plus'></use>
+                      </svg>
+                      <span>Додати контакт</span>
+                    </button>
+                  </div>
+
+                  <div class="applications__list-wrapper">
+                    <div class="applications__heading heading">
+                      <span>Доставка</span>
+                    </div>
+                    <div class="constructor__form-descr">Опишіть доступні способи доставки, їх вартість та умови. <br> Наприклад: “Власна доставка, безкоштовно для замовлення від 1000 грн”, “Таксі за тарифами перевізника”</div>
+
+                    <fieldset class="applications__fieldset">
+                      <label class="constructor__form-label">
+                        <textarea class="registration__textarea registration__textarea--shipping" name="shipping"></textarea>
+                      </label>
+                    </fieldset>
+                  </div>
+
+                  <div class="applications__list-wrapper">
+                    <div class="applications__heading heading">
+                      <span>Оплата</span>
+                    </div>
+                    <div class="constructor__form-descr">Опишіть доступні способи оплати. <br> Наприклад: “Передплата 30%”, “Оплата терміналом кур’єру”</div>
+
+                    <fieldset class="applications__fieldset">
+                      <label class="constructor__form-label">
+                        <textarea class="registration__textarea registration__textarea--payment" name="payment"></textarea>
+                      </label>
+                    </fieldset>
+                  </div>
+
+                  <div class="applications__list-wrapper">
+                    <div class="applications__heading heading">
+                      <span>Соціальні мережі</span>
+                    </div>
+                    <div class="constructor__form-descr">Вставте посилання на свої соцмережі в цих полях</div>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Instagram</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="text" name="instagram">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Facebook</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="text" name="facebook">
+                      </label>
+                    </fieldset>
+
+                    <fieldset class="applications__fieldset">
+                      <div class="applications__fieldset-title">Youtube</div>
+                      <label class="constructor__form-label">
+                        <input class="form__input form__input--registration" type="text" name="youtube">
+                      </label>
+                    </fieldset>
+                  </div>
+
+                  <div class="registration__save-btn">
+                    <button class="registration__save sample__apply">Зберегти </button>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      @include('partials/modals.html',{})
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

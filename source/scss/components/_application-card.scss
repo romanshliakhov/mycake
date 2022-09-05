@@ -26,6 +26,7 @@
   }
 
   &__all {
+    grid-template-columns: 1fr auto auto;
     grid-gap: 42px;
     border: none;
     box-shadow: 0px 0px 10px rgba(67, 96, 124, 0.1), 0px 2px 5px rgba(67, 96, 124, 0.15);
@@ -213,4 +214,9 @@
     }
   }
 
+  &__info-category {
+    display: flex;
+    align-items: center;
+    grid-gap: 47px;
+  }
 }

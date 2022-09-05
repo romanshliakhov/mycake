@@ -33,6 +33,11 @@
       align-items: stretch;
     }
 
+    &--column {
+      flex-wrap: wrap;
+      grid-gap: 10px;
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: flex-start;
@@ -129,6 +134,9 @@
   &__form-label {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
   }
 
   &__form-choose {
@@ -291,5 +299,32 @@
       flex-direction: column;
       align-items: flex-start;
     }
+  }
+
+  &__apply {
+    grid-gap: 20px;
+  }
+
+  &__form-descr {
+    margin: 5px 0 10px;
+    font-size: 14px;
+    line-height: 120%;
+    color: #84A6C2;
+    text-align: left;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 133%;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__status {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
   }
 }
