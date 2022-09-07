@@ -1,7 +1,16 @@
 .step {
   width: fit-content;
   padding: 10.5px 20px;
-  background: #FFEEE1;
+  background: var(--color-pink-hover);
   border-radius: 50px;
-  color: #5E2D07;
+  color: var(--color-yellow-text);
+
+  span {
+    &:first-child {
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+  }
 }
