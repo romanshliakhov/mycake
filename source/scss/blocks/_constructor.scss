@@ -327,4 +327,10 @@
     flex-direction: column;
     grid-gap: 10px;
   }
+
+  &__form-bot {
+    display: flex;
+    flex-direction: column;
+
+  }
 }

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="Ua">
+@include('partials/head.html',{})
+
+<body>
+  <div class="wrapper">
+    @include('partials/header.html',{})
+
+    <main class="main">
+      <section class="back">
+        <div class="container">
+          <a class="back__link" href="#">
+            <svg width='24' height='24'>
+            <use href='img/sprite/sprite.svg#arrow-left'></use>
+            </svg>
+            <span>Повернутися назад</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="search__mob search">
+        <div class="container">
+          <div class="search__wrapper">
+            <form class="search__form" action="">
+              <label class="search__label">
+                <input class="search__input" type="search" name="search" placeholder="Шоколадний торт з квітами">
+                <button class="search__btn" type="submit">
+                  <svg width='25' height='25'>
+                  <use href='img/sprite/sprite.svg#search'></use>
+                  </svg>
+                  <span>Шукати</span>
+                </button>
+              </label>
+            </form>
+
+            <!-- <div class="search__result">
+              <div class="search__result-text">“Шоколадний торт з квітами”</div>
+              <button class="search__result-cancel">
+                <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#close'></use>
+                </svg>
+              </button>
+              <div class="search__result-count">
+                <span>153</span>
+                <span>смаколики</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="container">
+          <div class="product-card__wrapper">
+            <div class="product-card__images">
+              <div class="product-card__small">
+                <div class="product-card__preview-btn product-card__preview-btn--prev">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                  </svg>
+                </div>
+
+                <div class="product-card__preview-slider  swiper-container">
+                  <ul class="product-card__preview-wrapper swiper-wrapper">
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image1.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image1.png' alt='image 1'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image2.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image2.png' alt='image 2'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image3.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image3.png' alt='image 3'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image4.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image4.png' alt='image 4'>
+                        </picture>
+                      </div>
+                    </li>
+                    <li class="product-card__preview swiper-slide">
+                      <div class="product-card__preview-image">
+                        <picture>
+                          <source type='image/webp' srcset='img/product-card/image5.webp'>
+                          <img class="product-card__preview-img" width='70' height='70' src='img/product-card/image5.png' alt='image 5'>
+                        </picture>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="product-card__preview-btn product-card__preview-btn--next">
+                  <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="product-card__slider swiper-container">
+                <ul class="product-card__slider-wrapper swiper-wrapper">
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image1.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image1.png' alt='image 1'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image2.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 2'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image3.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image3.png' alt='image 3'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image4.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 4'>
+                      </picture>
+                    </div>
+                  </li>
+                  <li class="product-card__slide swiper-slide">
+                    <div class="product-card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/product-card/image5.webp'>
+                        <img class="product-card__img" width='350' height='450' src='img/product-card/image2.png' alt='image 5'>
+                      </picture>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-card__details">
+              <ul class="product-card__categories categories">
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">Для дівчат</button>
+                </li>
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">На день народження</button>
+                </li>
+                <li class="product-card__categories-item categories__item">
+                  <button class="product-card__categories-btn categories__btn">Класичні рецепти</button>
+                </li>
+              </ul>
+              <div class="product-card__title">Торт “Червоний оксамит”</div>
+              <div class="product-card__price">670 грн</div>
+              <ul class="product-card__info">
+                <li class="product-card__info-item">2 кг</li>
+                <li class="product-card__info-item">Начинка: червоний оксамит</li>
+                <li class="product-card__info-item">Прикраси з мастики</li>
+              </ul>
+              <div class="product-card__description">Цей торт особливо актуальний до Дня святого Валентина. Ви тільки подивіться, який він пристрасний!) І смачний звичайно. І з приготуванням впорається будь-хто! Загалом все, як ми любимо! Тому цей «Червоний оксамит» до приготування обов'язковий. Щоб отримати такий насичений червоний колір, використовуйте або сухі індійські барвники (Roha), або гелевий Americolor Red Red.</div>
+              <div class="product-card__btns">
+                <button class="product-card__btn product-card__btn--parameters" data-path="constructor">Обрати параметри</button>
+                <button class="product-card__btn product-card__btn--contacts" data-path="contacts">Переглянути контакти</button>
+                <button class="favorite">
+                  <svg width='24' height='24'>
+                  <use href='img/sprite/sprite.svg#heart'></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="information">
+        <div class="container">
+          <!-- Information full -->
+          <div class="information__wrapper">
+            <div class="about">
+              <div class="about__head">
+                <div class="about__photo">
+                  <picture>
+                    <source type='image/webp' srcset='img/cook/cook1.webp'>
+                    <img class="about__photo-img" width='200' height='200' src='img/cook/cook1.png' alt='cook 1'>
+                  </picture>
+                </div>
+                <div class="about__head-info">
+                  <div class="about__head-title">
+                    <div class="about__confectioner-name">Інна Пономаренко</div>
+                    <div class="about__confectioner-town">Київ</div>
+                  </div>
+                  <a class="about__confectioner-link" href="./confectioner.html">Перейти на сторінку</a>
+                </div>
+              </div>
+
+              <div class="about__bot">
+                <ul class="about__categories categories">
+                  <li class="categories__item">
+                    <button class="categories__btn">Торти</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Цукерки</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Печиво</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Капкейки</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Макаруни</button>
+                  </li>
+                </ul>
+
+                <div class="about__desctiption">
+                  <p class="text">Уже более 10 лет совершенствую свои навыки.</p>
+                  <p class="text">С 2011 по 2017 — основатель бренда Марципан в Воронеже со штатом 35 человек. Я была шеф кондитером 3 ресторанов. А также, одним из первых кондитеров, который ввел в моду кенди бары в Черноземье и совместно с партнерами придумали коробки цветы и макарон — идея которая разлетелась по всему миру.</p>
+                  <p class="text">Также, я и моя команда занимаемся организацией и запуском кондитерских производств. </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews">
+              <div class="reviews__head">
+                <div class="reviews__head-btns">
+                  <div class="subtitle">Відгуки</div>
+                  <button class="add-review" data-path="feedback">
+                    <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#circle-plus'></use>
+                    </svg>
+                    <span>Додати відгук</span>
+                  </button>
+                </div>
+                <div class="reviews__head-btns">
+                  <a class="watch-all" href="#">Переглянути всі</a>
+
+                  <div class="slider__btns">
+                    <div class="slider__btn slider__btn--prev">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                      </svg>
+                    </div>
+                    <div class="slider__btn slider__btn--next">
+                      <svg width='24' height='24'>
+                        <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__info">
+                <div class="reviews__slider swiper-container">
+                  <ul class="reviews__slider-wrapper swiper-wrapper">
+                    <li class="reviews__slide swiper-slide">
+                      <div class="review">
+                        <div class="review__info">
+                          <div class="review__info-head">
+                            <div class="review__name">Анна Щедріна</div>
+                            <div class="review__datetime">15.11.2020</div>
+                          </div>
+                        </div>
+                        <p class="text">Заказывали на мой День рождения муссовый торт с маракуйей и остались очень довольны. Тортик получился очень вкусный, с приятной кислинкой за счëт маракуйи и невероятно нежной и лëгкой текстурой. Начинка, на мой вкус, просто шикарная: желе маракуйи, бисквит, хрустящий слой и мусс из манго и маракуйи.
+                        </p>
+                      </div>
+                    </li>
+                    <li class="reviews__slide swiper-slide">
+                      <div class="review">
+                        <div class="review__info">
+                          <div class="review__info-head">
+                            <div class="review__name">Олександр Ольцев</div>
+                            <div class="review__datetime">15.11.2020</div>
+                          </div>
+                        </div>
+                        <p class="text">Супер десерты для дома и хореки. Круассаны  волшебные. Торты, кейки и муссовые десерты - это любовь
+                        </p>
+                      </div>
+                    </li>
+                    <li class="reviews__slide swiper-slide">
+                      <div class="review">
+                        <div class="review__info">
+                          <div class="review__info-head">
+                            <div class="review__name">Тарас Коломієць</div>
+                            <div class="review__datetime">15.11.2020</div>
+                          </div>
+                        </div>
+                        <p class="text">Самые вкусные торты и пирожные , сказочные эклеры . В восторге от десертов . Кондитера - волшебницы,  доставка всегда на высшем уровне!!!!! Всей семьёй обожаем Вашу кондитерскую , спасибо за ваш труд и вкуснотищу!!!!
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Information without all -->
+          <!-- <div class="information__wrapper information__wrapper--empty">
+            <div class="about">
+              <div class="about__head">
+                <div class="about__photo">
+                  <picture>
+                    <source type='image/webp' srcset='img/cook/cook1.webp'>
+                    <img class="about__photo-img" width='200' height='200' src='img/cook/cook1.png' alt='cook 1'>
+                  </picture>
+                </div>
+                <div class="about__head-info">
+                  <div class="about__head-title">
+                    <div class="about__confectioner-name">Інна Пономаренко</div>
+                    <div class="about__confectioner-town">Київ</div>
+                  </div>
+                  <ul class="about__categories categories">
+                    <li class="categories__item">
+                      <button class="categories__btn">Торти</button>
+                    </li>
+                    <li class="categories__item">
+                      <button class="categories__btn">Цукерки</button>
+                    </li>
+                    <li class="categories__item">
+                      <button class="categories__btn">Печиво</button>
+                    </li>
+                    <li class="categories__item">
+                      <button class="categories__btn">Капкейки</button>
+                    </li>
+                    <li class="categories__item">
+                      <button class="categories__btn">Макаруни</button>
+                    </li>
+                  </ul>
+                  <a class="about__confectioner-link" href="#">Перейти на сторінку</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Information without reviews -->
+          <!-- <div class="information__wrapper information__wrapper--empty">
+            <div class="about">
+              <div class="about__head">
+                <div class="about__photo">
+                  <picture>
+                    <source type='image/webp' srcset='img/cook/cook1.webp'>
+                    <img class="about__photo-img" width='200' height='200' src='img/cook/cook1.png' alt='cook 1'>
+                  </picture>
+                </div>
+                <div class="about__head-info">
+                  <div class="about__head-title">
+                    <div class="about__confectioner-name">Інна Пономаренко</div>
+                    <div class="about__confectioner-town">Київ</div>
+                  </div>
+                  <a class="about__confectioner-link" href="#">Перейти на сторінку</a>
+                </div>
+              </div>
+
+              <div class="about__bot">
+                <ul class="about__categories categories">
+                  <li class="categories__item">
+                    <button class="categories__btn">Торти</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Цукерки</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Печиво</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Капкейки</button>
+                  </li>
+                  <li class="categories__item">
+                    <button class="categories__btn">Макаруни</button>
+                  </li>
+                </ul>
+
+                <div class="about__desctiption">
+                  <p class="text">Уже более 10 лет совершенствую свои навыки.</p>
+                  <p class="text">С 2011 по 2017 — основатель бренда Марципан в Воронеже со штатом 35 человек. Я была шеф кондитером 3 ресторанов. А также, одним из первых кондитеров, который ввел в моду кенди бары в Черноземье и совместно с партнерами придумали коробки цветы и макарон — идея которая разлетелась по всему миру.</p>
+                  <p class="text">Также, я и моя команда занимаемся организацией и запуском кондитерских производств. </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapper">
+            <div class="block__head">
+              <div class="subtitle">Інші вироби кондитера</div>
+
+              <div class="block__btns">
+                <a class="watch-all" href="./deserts.html">Переглянути всі</a>
+
+                <div class="slider__btns">
+                  <div class="slider__btn slider__btn--prev">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                  <div class="slider__btn slider__btn--next">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider swiper-container">
+              <ul class="slider__wrapper swiper-wrapper">
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cupcakes/cupcakes1.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes1.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Пасхальні капкейки шоколадні та ванільні </div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cupcakes/cupcakes2.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes2.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Оригінальні капкейки з кремом та печивом</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cupcakes/cupcakes3.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes3.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Капкейки з карамеллю 3 шт</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cupcakes/cupcakes4.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes4.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Капкейки з ніжним кремом</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cupcakes/cupcakes5.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cupcakes/cupcakes5.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Чорні капкейки з шоколадом та печивом</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="container">
+          <div class="block__wrapper">
+            <div class="block__head">
+              <div class="subtitle">Схожі торти</div>
+
+              <div class="block__btns">
+                <a class="watch-all" href="./deserts.html">Переглянути всі</a>
+
+                <div class="slider__btns">
+                  <div class="slider__btn slider__btn--prev">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                  <div class="slider__btn slider__btn--next">
+                    <svg width='24' height='24'>
+                      <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider swiper-container">
+              <ul class="slider__wrapper swiper-wrapper">
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake1.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cakes/cake1.png' alt='cake 1'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Торт “Літнє бажання” з шоколадом та макарунами</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake2.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cakes/cake2.png' alt='cake 2'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Весільний триярусний торт з фруктами та квітами</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake3.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cakes/cake3.png' alt='cake 3'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Бісквітний торт з ягодами</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cakes/cake4.png' alt='cake 4'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Ванільно-карамельний торт з печивом Орео</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__slide swiper-slide">
+                  <div class="desert">
+                    <div class="desert__card-body">
+                      <div class="desert__card-inner">
+                        <a class="desert__card-info" href="./product-card.html">
+                          <div class="desert__image">
+                            <picture>
+                              <source type='image/webp' srcset='img/cakes/cake5.webp'>
+                              <img class="desert__img" width='280' height='300' src='img/cakes/cake5.png' alt='cake 5'>
+                            </picture>
+                          </div>
+                          <div class="desert__info">
+                            <div class="desert__price">520 грн</div>
+                            <div class="desert__descr">Торт рожевий з макарунами</div>
+                            <div class="desert__topping">4 варіанти начинок</div>
+                          </div>
+                        </a>
+                        <a class="desert__card-confectioner" href="./confectioner.html">
+                          <div class="desert__confectioner-avatar">
+                            <picture>
+                              <source type='image/webp' srcset='img/cook/Irina.webp'>
+                              <img width='45' height='45' src='img/cook/Irina.png' alt='Irina'>
+                            </picture>
+                          </div>
+                          <div class="desert__confectioner-details">
+                            <span class="desert__confectioner-name">Інна Пономаренко</span>
+                            <span class="desert__confectioner-feedbacks">3 відгуки</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
+  </div>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
