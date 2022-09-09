@@ -12,14 +12,16 @@ let elementName = {
   sortingBtn : '.application__product-info',
   formParentBtn: '.application__product-image',
   mobileSiblingstBtn: '.application__filling',
+  // -----------------------------
+  sampleBtn: '.sample__apply',
+  sampleBtnDesktop: '.sample__product',
+  sampleBtnMobile: '.sample__btns',
+
   // ---------------------------
   sampleTitle: '.sample__info-head',
   sampleDesctop: '.sample__product-image',
   sampleMobile: '.sample__filling',
-  // -----------------------------
-  sampleBtn: '.sample__apply',
-  sampleBtnDesktop: '.sample__product',
-  sampleBtnMobile: '.sample__btns'
+
 }
 
 let items = [...document.querySelectorAll('.applications__list-item')];
@@ -33,9 +35,11 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
     const myMobile = item.querySelector(mobileClass);
 
     (function() {
-      containerWidth <= breakpointSetting ?
-      myMobile && myMobile.insertAdjacentElement(mobileSetting, myElement) :
-      myDesktop && myDesktop.insertAdjacentElement(desktopSetting, myElement);
+      if (myDesktop && myElement && myMobile) {
+        containerWidth <= breakpointSetting ?
+        myMobile.insertAdjacentElement(mobileSetting, myElement) :
+        myDesktop.insertAdjacentElement(desktopSetting, myElement);
+      }
     }());
   });
 }

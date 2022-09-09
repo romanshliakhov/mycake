@@ -13,8 +13,8 @@
     justify-content: center;
     grid-gap: 5px;
     color: #43607C;
-    font-size: 20px;
-    line-height: 150%;
+    font-size: 16px;
+    line-height: 120%;
     font-weight: 400;
     cursor: pointer;
 
@@ -36,10 +36,10 @@
       display: none;
     }
 
-    @media screen and (max-width: 576px) {
-      font-size: 16px;
-      line-height: 120%;
-    }
+    // @media screen and (max-width: 576px) {
+    //   font-size: 16px;
+    //   line-height: 120%;
+    // }
   }
 
   &__form-body {
@@ -54,6 +54,7 @@
     display: flex;
     align-items: stretch;
     flex-direction: column;
+    justify-content: center;
     grid-gap: 30px;
 
     @media (max-width: 1024px) {
@@ -158,5 +159,13 @@
     }
   }
 
-
+  &__filter-counter {
+    padding: 2.5px 5.5px;
+    background-color: #FDAD6D;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    color: #fff;
+  }
 }

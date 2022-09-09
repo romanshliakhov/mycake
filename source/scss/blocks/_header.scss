@@ -25,10 +25,18 @@ header {
     display: flex;
   }
 
+  &__logo-center {
+    margin: 0 auto;
+  }
+
   &__left {
     display: flex;
     align-items: center;
     grid-gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-grow: 1;
+    }
   }
 
   &__right {
@@ -40,9 +48,9 @@ header {
       justify-content: flex-end;
     }
 
-    @media (max-width: 768px) {
-      display: none;
-    }
+    // @media (max-width: 768px) {
+    //   display: none;
+    // }
   }
 
   &__location {
@@ -63,4 +71,6 @@ header {
       display: none;
     }
   }
+
+
 }

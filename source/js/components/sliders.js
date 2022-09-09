@@ -138,20 +138,6 @@ let reviewsSlider = new Swiper(".reviews__slider", {
     prevEl: ".slider__btn--prev",
       clickable: true,
   },
-  // breakpoints: {
-  //     320: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 20,
-  //       },
-  //     576: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 50,
-  //     },
-  //     768: {
-  //       slidesPerView: 3,
-  //       spaceBetween: 40,
-  //     }
-  // }
 });
 
 
@@ -185,8 +171,6 @@ let productCardPreviewSlider = new Swiper(".product-card__preview-slider", {
   }
 });
 
-// productCardPreviewSlider.changeDirection('vertical', true);
-
 // Product card slider
 let productCardSlider = new Swiper(".product-card__slider", {
   slidesPerView: 1,
@@ -210,5 +194,38 @@ let productCardSlider = new Swiper(".product-card__slider", {
       }
   }
 });
+
+// Edit product page slider
+let sliderProductPageEdit = new Swiper(".creating__slider", {
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+  loop: true,
+  observer: true,
+  freeMode: true,
+  loop: true,
+  navigation: {
+      nextEl: ".products__slider-btn--next",
+      prevEl: ".products__slider-btn--prev",
+      clickable: true,
+  },
+
+
+  on: {
+    init: function() {
+      let creatingSlides = document.querySelectorAll('.creating__slide');
+
+      for (const creatingSlide of creatingSlides) {
+        creatingSlide.querySelector('.creating__img-remove').addEventListener('click', function(){
+          sliderProductPageEdit.removeSlide(creatingSlide.dataset.swiperSlideIndex);
+        });
+      }
+    }
+  }
+});
+
+
+
+
+
 
 

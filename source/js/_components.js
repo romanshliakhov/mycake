@@ -8,6 +8,9 @@ import './components/modals.js';
 import './components/filter.js';
 import './components/imagesblock.js';
 import './components/replaceEl.js';
+import './components/editInputValue.js';
+import './components/filterCounter';
+
 
 
 

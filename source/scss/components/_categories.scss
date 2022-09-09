@@ -7,7 +7,9 @@
   &__btn {
     position: relative;
     padding: 8.5px 20px;
-    color: #8E4A4E;
+    color: var(--color-red-text);
+    font-size: 16px;
+    line-height: 120%;
     background-color: var(--color-pink-bg);
     border-radius: 40px;
     transition: all 0.3s ease;
@@ -99,4 +101,65 @@
     line-height: 143%;
     color: var(--color-blue);
   }
+
+  &__choose-label {
+    position: relative;
+  }
+
+  &__choose-input {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+
+    &:checked ~ .categories__choose-btn {
+      background-color: var(--color-red);
+      padding-left: 50px;
+      color: var(--color-white);
+      font-weight: 700;
+
+      &::before {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &__choose-btn {
+    display: block;
+    position: relative;
+    padding: 8.5px 20px;
+    color: var(--color-red-text);
+    font-size: 16px;
+    line-height: 120%;
+    background-color: var(--color-pink-bg);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    color:  var(--color-red-text);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: var(--tab-active);
+      background-size: cover;
+      background-repeat: no-repeat;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 5;
+    }
+
+    @media (max-width: 768px) {
+      line-height: 133%;
+    }
+  }
+
 }

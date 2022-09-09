@@ -89,9 +89,14 @@
   &__title {
     text-align: left;
     flex-grow: 1;
+    display: flex;
+    align-items: center;
+    grid-gap: 0 20px;
+    flex-wrap: wrap;
 
     span {
       display: block;
+      width: 100%;
     }
   }
 
@@ -282,10 +287,6 @@
     grid-gap: 20px;
     background-color: #DCEBF8;
     border-radius: 10px;
-  }
-
-  &__ads-title {
-
   }
 }
 

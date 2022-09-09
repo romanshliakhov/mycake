@@ -4,7 +4,7 @@
 
 <body>
     <div class="wrapper">
-      @include('partials/header.html',{})
+      @include('partials/header-account.html',{})
 
       <main class="main">
         <section class="applications">
@@ -23,7 +23,7 @@
                       <li class="details__controls-btns tablinks" tabs-btn="applications">
                         <button class="details__controls-btn tabs__btn">
                             <span>Заявки</span>
-                            <span>+2</span>
+                            <span class="apply-count">+2</span>
                         </button>
                       </li>
                       <li class="details__controls-btns tablinks" tabs-btn="reviews">
@@ -33,6 +33,7 @@
                       </li>
                     </ul>
                   </div>
+
                   <div class="details__controls-categories">
                     <div class="details__controls-title">Категорії</div>
                     <ul class="details__controls">
@@ -74,10 +75,10 @@
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Загальне</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -86,27 +87,34 @@
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Ім’я кондитера або назва кондитерської</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="name">
-                              <span class="form__input-value">Інна Пономаренко</span>
+
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" value="Інна Пономаренко">
                             </label>
                           </fieldset>
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Опис</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="description">
-                              <span class="form__input-value"></span>
+
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="description">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Контакти</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -115,19 +123,25 @@
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Номер телефону</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="tel" name="tel">
-                              <span class="form__input-value">+56 085 345 76 34</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="tel" name="phone" value="+56 085 345 76 34">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
                         <div class="applications__list-wrapper">
                           <div class="applications__heading heading">
                             <span>Доставка</span>
-                            <button class="edit">
+                            <button class="edit__icon">
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#plus'></use>
                               </svg>
@@ -140,7 +154,7 @@
                         <div class="applications__list-wrapper">
                           <div class="applications__heading heading">
                             <span>Оплата</span>
-                            <button class="edit">
+                            <button class="edit__icon">
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#plus'></use>
                               </svg>
@@ -153,7 +167,7 @@
                         <div class="applications__list-wrapper">
                           <div class="applications__heading heading">
                             <span>Соціальні мережі</span>
-                            <button class="edit">
+                            <button class="edit__icon">
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#plus'></use>
                               </svg>

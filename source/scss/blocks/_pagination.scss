@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 20px;
+  grid-gap: clamp(10px, 1.736vw, 20px);
 
   &__list {
     display: flex;
     align-items: flex-end;
-    grid-gap: 10px;
+    grid-gap: clamp(5px, 0.868vw, 10px);
   }
 
   &__list-link {
@@ -48,6 +48,11 @@
         background-color: #FFE2CA;
         font-weight: 400;
       }
+    }
+
+    @media (max-width: 576px) {
+      width: 45px;
+      height: 45px;
     }
   }
 
