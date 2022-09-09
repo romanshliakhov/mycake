@@ -4,7 +4,7 @@
 
 <body>
   <div class="wrapper">
-    @include('partials/header.html',{})
+    @include('partials/header-deserts.html',{})
 
     <main class="main">
       <section class="search__mob search">
@@ -13,7 +13,7 @@
             <form class="search__form" action="">
               <label class="search__label">
                 <input class="search__input" type="search" name="search" placeholder="Шоколадний торт з квітами">
-                <button class="search__btn" type="submit">
+                <button class="search__btn">
                   <svg width='25' height='25'>
                   <use href='img/sprite/sprite.svg#search'></use>
                   </svg>
@@ -22,7 +22,7 @@
               </label>
             </form>
 
-            <!-- <div class="search__result">
+            <div class="search__result">
               <div class="search__result-text">“Шоколадний торт з квітами”</div>
               <button class="search__result-cancel">
                 <svg width='20' height='20'>
@@ -33,7 +33,7 @@
                 <span>153</span>
                 <span>смаколики</span>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>

@@ -200,4 +200,12 @@
       white-space: nowrap;
     }
   }
+
+  &__controls-btns.active {
+    .categories__settings-btn {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }

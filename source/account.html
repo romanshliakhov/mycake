@@ -23,7 +23,7 @@
                       <li class="details__controls-btns tablinks" tabs-btn="applications">
                         <button class="details__controls-btn tabs__btn">
                             <span>Заявки</span>
-                            <span>+2</span>
+                            <span class="apply-count">+2</span>
                         </button>
                       </li>
                       <li class="details__controls-btns tablinks" tabs-btn="reviews">
@@ -43,17 +43,35 @@
                       </li>
                       <li class="details__controls-btns tablinks" tabs-btn="cakes">
                         <button class="details__categories-btn tabs__btn">
-                            <span>Торти</span>
+                          <span>Торти</span>
+                        </button>
+                        <button class="categories__settings-btn" data-path="edit-category">
+                          <svg width='15' height='15'>
+                            <use href='img/sprite/sprite.svg#settings'></use>
+                          </svg>
+                          <span>Налаштування Категорії</span>
                         </button>
                       </li>
                       <li class="details__controls-btns tablinks" tabs-btn="macarons">
                         <button class="details__categories-btn tabs__btn">
-                            <span>Макаруни</span>
+                          <span>Макаруни</span>
+                        </button>
+                        <button class="categories__settings-btn" data-path="edit-category">
+                          <svg width='15' height='15'>
+                            <use href='img/sprite/sprite.svg#settings'></use>
+                          </svg>
+                          <span>Налаштування Категорії</span>
                         </button>
                       </li>
-                      <li class="details__controls-btns tablinks" tabs-btn="cupcakes">
+                      <li class="details__controls-btns tablinks active" tabs-btn="cupcakes">
                         <button class="details__categories-btn tabs__btn">
-                            <span>Капкейки</span>
+                          <span>Капкейки</span>
+                        </button>
+                        <button class="categories__settings-btn" data-path="edit-category">
+                          <svg width='15' height='15'>
+                            <use href='img/sprite/sprite.svg#settings'></use>
+                          </svg>
+                          <span>Налаштування Категорії</span>
                         </button>
                       </li>
                       <li class="details__controls-btns tablinks">
@@ -107,10 +125,10 @@
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Загальне</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -119,27 +137,34 @@
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Ім’я кондитера або назва кондитерської</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="name">
-                              <span class="form__input-value">Інна Пономаренко</span>
+
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" value="Інна Пономаренко">
                             </label>
                           </fieldset>
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Опис</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="description">
-                              <span class="form__input-value"></span>
+
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="description">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Контакти</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -148,35 +173,39 @@
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Адреса</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="adress">
-                              <span class="form__input-value">Київ, Правди 15</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="adress" value="Київ, Правди 15">
                             </label>
                           </fieldset>
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Номер телефону</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="tel" name="tel">
-                              <span class="form__input-value">+56 085 345 76 34</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="tel" name="phone" value="+56 085 345 76 34">
                             </label>
                           </fieldset>
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Пошта</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="email" name="email">
-                              <span class="form__input-value">Mail@example.com</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="email" name="email" value="Mail@example.com">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Доставка</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -184,21 +213,26 @@
                           </div>
 
                           <fieldset class="applications__fieldset">
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="adress">
-                              <span class="form__input-value">
-                                ● Cамовивіз, Київ, Симиренка 23а<br>
-                                ● Власна доставка, 150 грн</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="adress" value="● Cамовивіз, Київ, Симиренка 23а ● Власна доставка, 150 грн">
+                              <!-- <textarea class="" name="delivery">● Cамовивіз, Київ, Симиренка 23а ● Власна доставка, 150 грн </textarea> -->
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Оплата</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -206,19 +240,25 @@
                           </div>
 
                           <fieldset class="applications__fieldset">
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="pay">
-                              <span class="form__input-value">● Передплата 50%</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="pay" value="● Передплата 50%">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Соціальні мережі</span>
-                            <button class="edit">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
                               <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
@@ -227,20 +267,25 @@
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Instagram</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="instagram">
-                              <span class="form__input-value">www.instagram.com</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="instagram" value="www.instagram.com">
                             </label>
                           </fieldset>
 
                           <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Facebook</div>
-                            <label class="constructor__form-label">
-                              <input class="form__input form__input--disable" type="text" name="facebook">
-                              <span class="form__input-value">www.facebook.com</span>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="facebook" value="www.facebook.com">
                             </label>
                           </fieldset>
-                        </div>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">

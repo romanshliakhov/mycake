@@ -39,6 +39,10 @@
     flex-direction: column;
     align-items: center;
     grid-gap: 30px;
+
+    .registration__greeating::before {
+      display: none;
+    }
   }
 
   &__location {
@@ -93,4 +97,20 @@
     }
   }
 
+  &__add-category {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  &__nav-controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 10px;
+
+    .details__controls-btn {
+      justify-content: center;
+    }
+  }
 }

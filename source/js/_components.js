@@ -9,7 +9,8 @@ import './components/filter.js';
 import './components/imagesblock.js';
 import './components/replaceEl.js';
 import './components/editInputValue.js';
-import './components/filterCounter';
+import './components/filterCounter.js';
+import './components/search.js';
 
 
 

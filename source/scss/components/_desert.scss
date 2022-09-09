@@ -45,6 +45,17 @@
     align-items: center;
     grid-gap: 14.5px;
     z-index: 10;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: var(--color-white);
+      z-index: 10;
+    }
   }
 
   &__confectioner-avatar {
