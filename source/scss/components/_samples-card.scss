@@ -19,7 +19,7 @@
     grid-template-columns: minmax(270px, 40%) 1fr;
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     grid-template-columns: auto 1fr;
   }
 
@@ -104,7 +104,6 @@
 
   &__apply {
     padding: 10.5px 30px;
-    // width: 100%;
     display: flex;
     justify-content: center;
     background-color: var(--color-red);
@@ -123,9 +122,6 @@
 
     @media (max-width: 1024px) {
       font-size: 14px;
-    }
-
-    @media (max-width: 576px) {
       width: 100%;
     }
   }
@@ -237,6 +233,7 @@
   }
 
   &__btn-reviews {
+    position: relative;
     grid-row: span 2;
     align-self: center;
     min-width: 150px;
@@ -257,9 +254,19 @@
       transform: rotate(-90deg);
     }
 
-    @media (max-width: 576px) {
+    &--none {
+      color: #84A6C2;
+      background-color: #F9F9F9;
+      border: 1px solid #DFDFDF;
+    }
+
+    @media (max-width: 768px) {
       width: 100%;
     }
+  }
+
+  &__reviews-body {
+    position: absolute;
   }
 
   &__btn-apply {

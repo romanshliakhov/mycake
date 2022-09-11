@@ -12,8 +12,9 @@ let elementName = {
   sortingBtn : '.application__product-info',
   formParentBtn: '.application__product-image',
   mobileSiblingstBtn: '.application__filling',
+
   // -----------------------------
-  sampleBtn: '.sample__apply',
+  sampleBtn: '.application__sample-info',
   sampleBtnDesktop: '.sample__product',
   sampleBtnMobile: '.sample__btns',
 
@@ -21,6 +22,16 @@ let elementName = {
   sampleTitle: '.sample__info-head',
   sampleDesctop: '.sample__product-image',
   sampleMobile: '.sample__filling',
+
+  // ---------------------------
+  pubtimeDate: '.application__pubtime',
+  pubtimeDesctop: '.application__sample-info',
+  pubtimeMobile: '.application__sample-product',
+
+  // ---------------------------
+  // applicationsSort: '.applications__search',
+  // applicationsSortDesctop: '.applications__filling',
+  // applicationsSortMobile: '.applications__add',
 
 }
 
@@ -48,10 +59,12 @@ window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
+  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
+  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
 });

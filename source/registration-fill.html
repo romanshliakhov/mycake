@@ -215,32 +215,17 @@
 
                       <li class="applications__list-item">
                         <div class="applications__banner">
-                          <div class="applications__banner-text">
-                            <div class="applications__banner-title applications__banner-title--bold">Ваш профіль заповнений на 29% </div>
-                            <div class="applications__banner-progressbar"></div>
+                          <div class="applications__banner-info">
+                            <div class="applications__banner-title applications__banner-title--bold">Ваш профіль заповнений на <span>29</span>% </div>
+                            <div class="applications__progressbar progressbar">
+                              <div class="progressbar__done" data-progressbar-done="29"></div>
+                            </div>
                             <div class="applications__banner-descr">Розкажіть про себе все, що може бути цікаво користувачам <br> Заповнені профілі користуються більшою популярністю </div>
                           </div>
                           <button class="reg">Заповнити поле “Опис”</button>
                         </div>
                       </li>
                     </ul>
-
-                    <!-- Banner v1 -->
-
-
-                    <!-- Banner v2 -->
-                    <!-- <div class="applications__banner">
-                      <div class="applications__banner-text">
-                        <div class="applications__banner-title">Поки нічого не замовили?</div>
-                        <div class="applications__banner-descr">Давайте переглянемо те, що вже сподобалось </div>
-                      </div>
-
-                      <div class="applications__banner-btns">
-                        <button class="applications__banner-btn applications__banner-btn--samples">Переглянути збережені шаблони</button>
-                        <button class="applications__banner-btn applications__banner-btn--back">Повернутися на головну</button>
-                      </div>
-                    </div> -->
-
                   </div>
                 </li>
 
@@ -666,7 +651,7 @@
                         </div>
 
                         <div class="filter__product active" data-filter-product="cakes">
-                          <div class="application application__sample">
+                          <div class="application application__sample accordion" data-spollers data-one-spoller>
                             <div class="sample__review sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -682,13 +667,16 @@
                               <div class="sample__product-price">520 грн</div>
                             </div>
 
-                            <button class="sample__btn-reviews">
-                              <span>3</span>
-                              <span>відгуки</span>
-                              <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
-                            </button>
+                            <div class="sample__btn-accordion" >
+                              <button class="sample__btn-reviews" data-spoller>
+                                <span>3</span>
+                                <span>відгуки</span>
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                                </svg>
+                              </button>
+                              <div class="sample__reviews-body">text</div>
+                            </div>
                           </div>
                         </div>
 
@@ -709,7 +697,7 @@
                               <div class="sample__product-price">520 грн</div>
                             </div>
 
-                            <button class="sample__btn-reviews ample__btn-reviews--none">
+                            <button class="sample__btn-reviews sample__btn-reviews--none">
                               <span>Немає відгуків</span>
                             </button>
                           </div>
@@ -853,31 +841,34 @@
                               </svg>
                               <span>Додати новий товар</span>
                             </button>
-                          </div>
 
-                          <div class="applications__head-btns">
                             <div class="applications__search search">
                               <button class="search__btn-icon">
                                 <svg width='24' height='24'>
                                 <use href='img/sprite/sprite.svg#search'></use>
                                 </svg>
                               </button>
-
-                              <!-- <div class="search__wrapper">
-                                <form class="search__form">
-                                  <label class="search__label">
-                                    <input class="applications__search-input search__input" type="text" name="search">
-                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
-                                  </label>
-                                </form>
-                              </div> -->
                             </div>
 
-                            <div class="applications__sort">
-                              <span>За датою публікації</span>
-                              <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
+                            <div class="applications__sort select">
+                              <div class="applications__sort-header select__header">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#sort'></use>
+                                </svg>
+                                <span class="applications__select-current select__current">
+                                  За датою публікації
+                                </span>
+                                <svg width='25' height='25'>
+                                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                                </svg>
+                              </div>
+
+                              <ul class="applications__select-body select__body">
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дорогих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дешевих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За алфавітом</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За кількістю заявок</li>
+                              </ul>
                             </div>
                           </div>
                         </div>
@@ -1342,31 +1333,34 @@
                               </svg>
                               <span>Додати новий товар</span>
                             </button>
-                          </div>
 
-                          <div class="applications__head-btns">
                             <div class="applications__search search">
                               <button class="search__btn-icon">
                                 <svg width='24' height='24'>
                                 <use href='img/sprite/sprite.svg#search'></use>
                                 </svg>
                               </button>
-
-                              <!-- <div class="search__wrapper">
-                                <form class="search__form">
-                                  <label class="search__label">
-                                    <input class="applications__search-input search__input" type="text" name="search">
-                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
-                                  </label>
-                                </form>
-                              </div> -->
                             </div>
 
-                            <div class="applications__sort">
-                              <span>За датою публікації</span>
-                              <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
+                            <div class="applications__sort select">
+                              <div class="applications__sort-header select__header">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#sort'></use>
+                                </svg>
+                                <span class="applications__select-current select__current">
+                                  За датою публікації
+                                </span>
+                                <svg width='25' height='25'>
+                                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                                </svg>
+                              </div>
+
+                              <ul class="applications__select-body select__body">
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дорогих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дешевих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За алфавітом</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За кількістю заявок</li>
+                              </ul>
                             </div>
                           </div>
                         </div>
@@ -1608,31 +1602,34 @@
                               </svg>
                               <span>Додати новий товар</span>
                             </button>
-                          </div>
 
-                          <div class="applications__head-btns">
                             <div class="applications__search search">
                               <button class="search__btn-icon">
                                 <svg width='24' height='24'>
                                 <use href='img/sprite/sprite.svg#search'></use>
                                 </svg>
                               </button>
-
-                              <!-- <div class="search__wrapper">
-                                <form class="search__form">
-                                  <label class="search__label">
-                                    <input class="applications__search-input search__input" type="text" name="search">
-                                    <button class="applications__search-btn search__btn" type="submit">Шукати</button>
-                                  </label>
-                                </form>
-                              </div> -->
                             </div>
 
-                            <div class="applications__sort">
-                              <span>За датою публікації</span>
-                              <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
+                            <div class="applications__sort select">
+                              <div class="applications__sort-header select__header">
+                                <svg width='24' height='24'>
+                                  <use href='img/sprite/sprite.svg#sort'></use>
+                                </svg>
+                                <span class="applications__select-current select__current">
+                                  За датою публікації
+                                </span>
+                                <svg width='25' height='25'>
+                                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
+                                </svg>
+                              </div>
+
+                              <ul class="applications__select-body select__body">
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дорогих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>Починаючи з більш дешевих</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За алфавітом</li>
+                                <li class="applications__select-item select__item" data-choice='choosen'>За кількістю заявок</li>
+                              </ul>
                             </div>
                           </div>
                         </div>

@@ -1,0 +1,13 @@
+.progressbar {
+  height: 10px;
+  border: 2px solid #84A6C2;
+  border-radius: 100px;
+
+  &__done {
+    height: 100%;
+    // width: 29%;
+    background-color: #011936;
+    border-radius: 170px;
+    opacity: 0;
+  }
+}
