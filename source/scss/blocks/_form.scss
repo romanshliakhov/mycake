@@ -310,4 +310,27 @@
       fill: #84A6C2;
     }
   }
+
+  &__textarea {
+    position: relative;
+    height: fit-content;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--color-blue);
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 171%;
+      color: var(--color-blue);
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
+    }
+  }
 }

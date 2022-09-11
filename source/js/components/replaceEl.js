@@ -25,7 +25,7 @@ let elementName = {
 
   // ---------------------------
   pubtimeDate: '.application__pubtime',
-  pubtimeDesctop: '.application__sample-info',
+  pubtimeDesctop: '.sample__apply',
   pubtimeMobile: '.application__sample-product',
 
   // ---------------------------
@@ -59,12 +59,12 @@ window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.beforebegin, replaceSettings.smallTablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.afterbegin, replaceSettings.smallTablet);
+  replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.beforebegin, replaceSettings.smallTablet);
 });

@@ -2,5 +2,8 @@
 let progressbar = document.querySelector('.progressbar__done');
 // let progressbarWidth = document.querySelector('[data-progressbar]');
 
-progressbar.style.opacity = 1;
-progressbar.style.width = progressbar.getAttribute('data-progressbar-done') + '%';
+if (progressbar) {
+  progressbar.style.opacity = 1;
+  progressbar.style.width = progressbar.getAttribute('data-progressbar-done') + '%';
+}
+

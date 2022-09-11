@@ -12,6 +12,7 @@ import './components/editInputValue.js';
 import './components/filterCounter.js';
 import './components/search.js';
 import './components/progressbar.js';
+import './components/searchBox';
 
 
 

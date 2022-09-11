@@ -253,4 +253,58 @@
       grid-row: span 2;
     }
   }
+
+  &__info {
+    position: relative;
+
+    &:hover {
+      .application__info-hover {
+        opacity: 1;
+        overflow: visible;
+      }
+    }
+  }
+
+  &__info-hover {
+    position: absolute;
+    bottom: 45px;
+    left: -10px;
+    padding: 10px 15px;
+    background-color: #DCEBF8;
+    font-size: 14px;
+    line-height: 143%;
+    color: #43607C;
+    z-index: 10;
+    max-width: 350px;
+    width: max-content;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: 5px;
+
+    @media (max-width: 768px) {
+      max-width: 310px;
+      left: initial;
+      right: -60px;
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 167%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      bottom: -11px;
+      width: 34px;
+      height: 24px;
+      background-image: var(--greeatings-triangle);
+      background-repeat: no-repeat;
+
+      @media (max-width: 768px) {
+        left: initial;
+        right: 55px;
+      }
+    }
+  }
 }

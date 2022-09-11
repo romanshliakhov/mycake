@@ -42,6 +42,11 @@
 
   &__head-title {
     margin-right: 20px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
   &__head-btns {
@@ -304,7 +309,7 @@
     }
 
     @media (max-width: 576px) {
-      max-width: 100%;
+      max-width: calc(100% - 64px - 10px);
     }
   }
 
@@ -313,16 +318,6 @@
     align-items: center;
     flex-wrap: wrap;
     grid-gap: 10px;
-
-    @media (max-width: 1440px) {
-      // flex-direction: column;
-      // align-items: flex-start;
-    }
-
-    @media (max-width: 576px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
   }
 
   &__lists {
@@ -332,6 +327,8 @@
   }
 
   &__search {
+    position: relative;
+    // max-width: 327px;
     flex-grow: 1;
     padding: 0;
     display: flex;
@@ -346,17 +343,54 @@
     @media (max-width: 576px) {
       display: none;
     }
+
+    &.active {
+      .applications__search-input {
+        opacity: 1;
+        z-index: 1;
+      }
+
+      .applications__search-btn {
+        display: block;
+        opacity: 1;
+        z-index: 1;
+      }
+
+      .search__svg-icon {
+        display: none;
+      }
+    }
   }
 
   &__search-input {
+    position: absolute;
     border: 1px solid #DFDFDF;
-    border-radius: 50px 0px 0px 50px;
-    padding: 8px 20px;
+    border-radius: 50px;
+    padding: 11px 20px;
+    font-size: 14px;
+    color: #43607C;
+    z-index: 4;
+    opacity: 0;
+    z-index: -1;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+
+    &::placeholder {
+      font-size: 14px;
+      color: #43607C;
+    }
   }
 
   &__search-btn {
-    padding: 9px 20px;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+    padding: 8px 20px;
     border-radius: 0px 50px 50px 0px;
+    background-color: #FDAD6D;
+    appearance: none;
+    opacity: 0;
+    z-index: -1;
   }
 
   &__edit-btns {
@@ -431,6 +465,10 @@
         display: none;
       }
     }
+
+    @media (max-width: 576px) {
+      background-color: #FDAD6D;
+    }
   }
 
   &__select-current {
@@ -453,6 +491,8 @@
     @media (max-width: 576px) {
       top: 50px;
       width: calc(100vw - 30px);
+      left: initial;
+      right: 0;
     }
   }
 

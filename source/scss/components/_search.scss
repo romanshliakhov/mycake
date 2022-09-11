@@ -83,10 +83,15 @@
   }
 
   &__result {
+    margin-top: 30px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     display: none;
+
+    &.show {
+      display: flex;
+    }
   }
 
   &__result-text {
@@ -127,6 +132,26 @@
     background-color: #FDAD6D;
     border: 1px solid #FDAD6D;
     border-radius: 50px;
+
+    svg {
+      fill: #5E2D07;
+    }
+  }
+
+  &__svg-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 40px;
+    background-color: #FDAD6D;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-yellow-hover);
+    }
 
     svg {
       fill: #5E2D07;
