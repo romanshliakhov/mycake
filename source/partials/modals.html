@@ -1807,8 +1807,6 @@
     </div>
   </div>
 
-
-
   <div class="modal__container" data-target="apply-creating">
     <div class="modal__wrapper constructor">
       <div class="modal__head">
@@ -2120,6 +2118,215 @@
       <div class="modal__btns">
         <button class="modal__btn modal__btn-red modal__btn--save">Додати замовлення</button>
         <button class="modal__btn modal__btn--cancel">Скасувати </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__container" data-target="edit-categories">
+    <div class="modal__wrapper constructor">
+      <div class="modal__head">
+        <div class="modal__title">
+          <span>Нова категорія</span>
+        </div>
+        <div class="modal__close modal-close">
+          <svg width='30' height='30'>
+            <use href='img/sprite/sprite.svg#close'></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal__registration-ads">
+        <div class="modal__ads-title">Налаштування категорії - найважливіший етап</div>
+        <div class="modal__ads-descr">Коли покупець обирає тортик, він не завжди хоче саме такий, як на фото. Можливо він хоче іншу начинку, чи оздоблення. Для цього, при створенні товару, кондитери MyCake формують конструктор.</div>
+        <div class="modal__ads-descr">Дані, вказані в налаштуваннях категорії допоможуть як тобі, при створенні товару, так і покупцю, при формуванні замовлення.</div>
+      </div>
+
+      <div class="modal__select">
+        <div class="constructor__form-title">
+          <span>Оберіть категорію</span>
+        </div>
+
+        <div class="form__select select">
+          <div class="form__select-header select__header">
+            <span class="form__select-current select__current">
+              Оберіть категорію
+            </span>
+            <svg width='25' height='25'>
+              <use href='img/sprite/sprite.svg#arrow-prev'></use>
+            </svg>
+          </div>
+
+          <ul class="form__select-body select__body">
+            <li class="form__select-item select__item" data-choice='choosen'>Макаруни</li>
+            <li class="form__select-item select__item" data-choice='choosen'>Торти</li>
+            <li class="form__select-item select__item" data-choice='choosen'>Кейк-попси</li>
+            <li class="form__select-item select__item" data-choice='choosen'>Капкейки</li>
+            <li class="form__select-item select__item" data-choice='choosen'>Паски</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form__categories">
+        <div class="form__categories-fieldsets">
+          <fieldset class="constructor__fieldset constructor__fieldset--column">
+            <div class="constructor__form-title">
+              <span>Мінімальна кількість для замовлення</span>
+            </div>
+            <div class="constructor__form-weight">
+              <label class="constructor__form-label">
+                <input class="form__input" type="text" name="weight">
+              </label>
+              <span>шт</span>
+            </div>
+          </fieldset>
+
+          <fieldset class="constructor__fieldset constructor__fieldset--column">
+            <div class="constructor__form-title">
+              <span>Мінімальна кількість для замовлення</span>
+            </div>
+            <div class="constructor__form-weight">
+              <label class="constructor__form-label">
+                <input class="form__input" type="text" name="weight">
+              </label>
+              <span>шт</span>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="modal__registration-ads">
+          <div class="modal__ads-title">Укажи тут усі можливі начинки, смаки чи послуги, що можуть бути втілені в замовленні.</div>
+          <div class="modal__ads-descr">Не хвилюйся, ти зможеш додавати інші пізніше в налаштуваннях категорії та при створенні товару</div>
+        </div>
+
+        <div class="form__categories-info">
+          <div class="constructor__form-title">
+            <span>Смаки</span>
+          </div>
+          <div class="constructor__form-descr">Додайте усі варіанти смаків макарунів, які ви пропонуєте</div>
+
+          <ul class="form__categories-list">
+            <li class="form__categories-item">
+              <label class="constructor__form-label">
+                <input class="form__input" type="text" name="taste">
+
+                <button class="form__categories-delete sample__btn-delete">
+                  <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#delete'></use>
+                  </svg>
+                </button>
+
+                <div class="form__categories-mob">
+                  <button class="sample__btn-mob">
+                    <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#hover'></use>
+                    </svg>
+                  </button>
+
+                  <div class="form__categories-hover">
+                    <button class="form__categories-controls">
+                      <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#delete'></use>
+                      </svg>
+                      <span>Видалити</span>
+                    </button>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="form__categories-item">
+              <button class="add-review">
+                <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#circle-plus'></use>
+                </svg>
+                <span>Додати варіант смаку</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal__registration-ads">
+          <div class="modal__ads-descr">В налаштуваннях категорії можна буде приховати <b>начинку чи додаткові послуги</b>, якщо тимчасово недоступні якісь інгредієнти чи матеріали</div>
+          <div class="modal__ads-descr">Приховані смаки та додаткові послуги не будуть відображатися в оголошеннях</div>
+        </div>
+
+        <div class="form__categories-info">
+          <div class="constructor__form-title">
+            <span>Додаткові послуги</span>
+          </div>
+          <div class="constructor__form-descr">Укажіть усі додаткові послуги, що можуть впливати на ціну <br> Наприклад: “Святкове пакування”, “Прикраси з мастики”, тощо</div>
+
+          <ul class="form__categories-list">
+            <li class="form__categories-item">
+              <label class="constructor__form-label">
+                <input class="form__input" type="text" name="service">
+
+                <button class="form__categories-delete sample__btn-delete">
+                  <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#delete'></use>
+                  </svg>
+                </button>
+
+                <div class="form__categories-mob">
+                  <button class="sample__btn-mob">
+                    <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#hover'></use>
+                    </svg>
+                  </button>
+
+                  <div class="form__categories-hover">
+                    <button class="form__categories-controls">
+                      <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#delete'></use>
+                      </svg>
+                      <span>Видалити</span>
+                    </button>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="form__categories-item">
+              <label class="constructor__form-label">
+                <input class="form__input" type="text" name="service">
+
+                <button class="form__categories-delete sample__btn-delete">
+                  <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#delete'></use>
+                  </svg>
+                </button>
+
+                <div class="form__categories-mob">
+                  <button class="sample__btn-mob">
+                    <svg width='24' height='24'>
+                    <use href='img/sprite/sprite.svg#hover'></use>
+                    </svg>
+                  </button>
+
+                  <div class="form__categories-hover">
+                    <button class="form__categories-controls">
+                      <svg width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#delete'></use>
+                      </svg>
+                      <span>Видалити</span>
+                    </button>
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="form__categories-item">
+              <button class="add-review">
+                <svg width='20' height='20'>
+                  <use href='img/sprite/sprite.svg#circle-plus'></use>
+                </svg>
+                <span>Додати послугу</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal__btns">
+          <button class="modal__btn modal__btn-red modal__btn--save">Створити категорію</button>
+          <button class="modal__btn modal__btn--cancel">Скасувати </button>
+        </div>
       </div>
     </div>
   </div>
