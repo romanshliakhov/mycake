@@ -52,5 +52,10 @@
     flex-direction: column;
     grid-gap: 30px;
     overflow-x: auto;
+
+    @media (max-width: 576px) {
+      grid-gap: 15px;
+    }
+
   }
 }

@@ -37,10 +37,10 @@
     }
 
     @media (max-width: 576px) {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      overflow-x: auto;
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
+      // overflow-x: auto;
 
       &::-webkit-scrollbar {
         height: 0;
@@ -91,6 +91,21 @@
 
     @media (max-width: 576px) {
       white-space: nowrap;
+      justify-content: center;
+    }
+
+    &--desctop {
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: 576px) {
+        display: block;
+      }
     }
   }
 

@@ -11,5 +11,7 @@ if (menuBtn) {
   });
 }
 
+export { menuBtn, menu, disableScroll };
+
 
 

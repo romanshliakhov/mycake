@@ -12,7 +12,9 @@ import './components/editInputValue.js';
 import './components/filterCounter.js';
 import './components/search.js';
 import './components/progressbar.js';
-import './components/searchBox';
+import './components/searchBox.js';
+import './components/mobileAccountNav.js';
+import './components/reviews.js';
 
 
 

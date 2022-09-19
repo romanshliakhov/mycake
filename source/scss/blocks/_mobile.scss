@@ -113,4 +113,20 @@
       justify-content: center;
     }
   }
+
+  &__account-controls {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    // grid-column: span 2;
+
+    .details__categories-btn {
+      justify-content: center;
+    }
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+      flex-wrap: wrap;
+    }
+  }
 }

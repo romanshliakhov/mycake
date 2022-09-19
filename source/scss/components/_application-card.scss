@@ -307,4 +307,29 @@
       }
     }
   }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all 0.1s;
+    // display: none;
+
+    @media (max-width: 576px) {
+      grid-gap: 20px;
+      padding: 20px 0;
+    }
+
+    &.active {
+      // display: flex;
+      margin-top: 10px;
+      grid-gap: 40px;
+      padding: 40px 0;
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+  }
 }

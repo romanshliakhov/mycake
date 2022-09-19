@@ -252,6 +252,7 @@
     svg {
       fill: #43607C;
       transform: rotate(-90deg);
+      transition: all 0.3s ease;
     }
 
     &--none {
@@ -262,6 +263,12 @@
 
     @media (max-width: 768px) {
       width: 100%;
+    }
+
+    &.show {
+      svg {
+        transform: rotate(90deg);
+      }
     }
   }
 

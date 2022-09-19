@@ -86,10 +86,9 @@
   line-height: 120%;
   color: var(--color-black);
 
-  // @media (max-width: 576px) {
-  //   font-family: var(--font-family-verdana);
-  //   font-size: 20px;
-  // }
+  @media (max-width: 576px) {
+    font-size: 20px;
+  }
 }
 
 .dataset {
@@ -98,6 +97,7 @@
   color: var(--color-blue);
 
   @media (max-width: 576px) {
+    font-family: var(--font-family-verdana);
     margin-top: 0;
     font-size: 14px;
     line-height: 120%;

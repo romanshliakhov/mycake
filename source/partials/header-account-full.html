@@ -26,21 +26,15 @@
         </ul>
       </nav>
 
-      <button class="header__search-btn search__btn">
-        <svg width='25' height='25'>
-        <use href='img/sprite/sprite.svg#search'></use>
-        </svg>
-      </button>
-
       <div class="header__right authorization">
-        <!-- <div class="authorization__forum">
+        <div class="authorization__forum">
           <a class="authorization__btn" href="../dialog.html">
             <svg width='30' height='32'>
             <use href='img/sprite/sprite.svg#forum'></use>
             </svg>
           </a>
           <span class="messages-count">2</span>
-        </div> -->
+        </div>
 
         <!-- <div class="authorization__login">
           <button class="authorization__btn" data-animation="fade" data-speed="300" data-path="log-in">
@@ -90,62 +84,7 @@
     </div>
 
     <div class="mobile__menu">
-
-      <!-- Unlogged -->
-      <!-- <div class="mobile__menu-wrapp">
-        <button class="mobile__location location">
-          <svg width='14' height='20'>
-            <use href='img/sprite/sprite.svg#location'></use>
-          </svg>
-          <span>Вся Україна</span>
-        </button>
-
-        <nav class="mobile__nav nav">
-          <ul class="mobile__nav-list nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="../deserts.html">Десерти</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="../confectioners.html">Кращі кондитери</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="../articles.html">Корисні статті</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button class="mobile__autorization-btn authorization__btn" data-animation="fade" data-speed="300" data-path="log-in">
-          <svg width='30' height='30'>
-            <use href='img/sprite/sprite.svg#account'></use>
-          </svg>
-          <span>Увійти</span>
-        </button>
-      </div> -->
-
-      <!-- Logged In -->
-      <div class="mobile__menu-wrapp">
-        <button class="mobile__location location">
-          <svg width='14' height='20'>
-            <use href='img/sprite/sprite.svg#location'></use>
-          </svg>
-          <span>Вся Україна</span>
-        </button>
-
-        <nav class="mobile__nav nav">
-          <ul class="mobile__nav-list nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="../deserts.html">Десерти</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="../confectioners.html">Кращі кондитери</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="../articles.html">Корисні статті</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
+      <!-- Profile -->
       <div class="mobile__menu-wrapp">
         <div class="mobile__autorization-btns">
           <button class="authorization__btn">
@@ -155,7 +94,7 @@
             <span>Анна Василенко</span>
           </button>
 
-          <a href="../dialog.html" class="mobile__autorization-btn authorization__btn">
+          <a class="mobile__autorization-btn authorization__btn" href="../dialog.html">
             <svg width='30' height='32'>
               <use href='img/sprite/sprite.svg#forum'></use>
             </svg>
@@ -163,18 +102,59 @@
           </a>
         </div>
 
-        <ul class="mobile__account-details">
-          <li class="mobile__acount-item">
-            <a class="authorization__account-link" href="../applications.html">Мої заявки</a>
+        <ul class="mobile__nav-controls">
+          <li class="details__controls-btns">
+            <button class="details__controls-btn" data-mobile-tabs="information">
+              <span>Інформація</span>
+            </button>
           </li>
-          <li class="mobile__acount-item">
-            <a class="authorization__account-link" href="../applications.html">Збережені шаблони</a>
+          <li class="details__controls-btns">
+            <button class="details__controls-btn" data-mobile-tabs="applications">
+                <span>Заявки</span>
+                <span class="apply-count">+2</span>
+            </button>
+          </li>
+          <li class="details__controls-btns">
+            <button class="details__controls-btn" data-mobile-tabs="reviews">
+                <span>Відгуки</span>
+            </button>
+          </li>
+        </ul>
+
+        <ul class="mobile__account-controls details__controls">
+          <li class="details__controls-btns tablinks" data-mobile-tabs="all">
+            <button class="details__categories-btn tabs__btn" >
+              <span>Всі товари</span>
+            </button>
+          </li>
+          <li class="details__controls-btns tablinks" data-mobile-tabs="cakes">
+            <button class="details__categories-btn tabs__btn">
+              <span>Торти</span>
+            </button>
+          </li>
+          <li class="details__controls-btns tablinks" data-mobile-tabs="macarons">
+            <button class="details__categories-btn tabs__btn">
+              <span>Макаруни</span>
+            </button>
+          </li>
+          <li class="details__controls-btns tablink" data-mobile-tabs="cupcakes">
+            <button class="details__categories-btn tabs__btn">
+              <span>Капкейки</span>
+            </button>
+          </li>
+          <li class="details__controls-btns tablinks">
+            <button class="details__categories-btn details__categories-btn--add tabs__btn" data-path="add-categories">
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#add-plus'></use>
+              </svg>
+              <span>Додати категорію</span>
+            </button>
           </li>
         </ul>
 
         <div class="mobile__controls-btns">
           <button class="authorization__account-link authorization__account-link--kabinet">
-            <span>Кабінет кондитера</span>
+            <span>Кабінет покупця</span>
             <svg width='20' height='20'>
             <use href='img/sprite/sprite.svg#arrow-prev'></use>
             </svg>
@@ -188,16 +168,6 @@
           </button>
         </div>
       </div>
-
-      <!-- Without Confectioner cabinet -->
-      <!-- <div class="mobile__controls-btns">
-        <button class="authorization__account-link authorization__account-link--logout">
-          <span>Вийти</span>
-          <svg width='15' height='15'>
-          <use href='img/sprite/sprite.svg#log-out'></use>
-          </svg>
-        </button>
-      </div> -->
     </div>
   </div>
 </header>
