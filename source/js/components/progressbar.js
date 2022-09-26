@@ -1,6 +1,4 @@
-// const progressbar = document.querySelector('.progressbar');
 let progressbar = document.querySelector('.progressbar__done');
-// let progressbarWidth = document.querySelector('[data-progressbar]');
 
 if (progressbar) {
   progressbar.style.opacity = 1;

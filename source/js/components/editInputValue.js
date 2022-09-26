@@ -12,7 +12,6 @@ dataFormParent.forEach(function(parent){
 
       editLabels.forEach(function( item ){
         item.classList.toggle('label-disable');
-        console.log('123')
       })
 
       editBtns && editBtns.classList.toggle('show');

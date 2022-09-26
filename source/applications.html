@@ -167,7 +167,7 @@
 
                       <ul class="applications__list-items">
                         <li class="applications__list-item">
-                          <div class="sample">
+                          <div class="sample" data-delete-item>
                             <div class="sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -191,7 +191,7 @@
 
                             <div class="sample__btns">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -200,7 +200,7 @@
                           </div>
                         </li>
                         <li class="applications__list-item">
-                          <div class="sample">
+                          <div class="sample" data-delete-item>
                             <div class="sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -224,7 +224,7 @@
 
                             <div class="sample__btns">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -233,7 +233,7 @@
                           </div>
                         </li>
                         <li class="applications__list-item">
-                          <div class="sample">
+                          <div class="sample" data-delete-item>
                             <div class="sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -257,7 +257,7 @@
 
                             <div class="sample__btns">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -266,7 +266,7 @@
                           </div>
                         </li>
                         <li class="applications__list-item">
-                          <div class="sample">
+                          <div class="sample" data-delete-item>
                             <div class="sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -290,7 +290,7 @@
 
                             <div class="sample__btns">
                               <button class="sample__btn-watch" data-path="sample">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -321,6 +321,12 @@
 
       @include('partials/footer.html',{})
       @include('partials/modals.html',{})
+
+      <div class="delete-popup" data-delete-alert>
+        <span class="delete-popup__count">1</span>
+        <p class="delete-popup__text">Шаблон видалено</p>
+        <button class="delete-popup__cancel" data-delete-cancel>Скасувати</button>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>

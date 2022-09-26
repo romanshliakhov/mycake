@@ -1,0 +1,13 @@
+.edit-categories {
+
+  &__title {
+    display: flex;
+    flex-wrap: initial;
+    grid-gap: 5px;
+  }
+
+  &__current {
+
+    color: #A63A50;
+  }
+}

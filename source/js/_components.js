@@ -15,6 +15,8 @@ import './components/progressbar.js';
 import './components/searchBox.js';
 import './components/mobileAccountNav.js';
 import './components/reviews.js';
+import './components/deleteItems.js';
+import './components/verification.js';
 
 
 

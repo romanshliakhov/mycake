@@ -5,6 +5,7 @@ const mobileAccountNavBtns = [...document?.querySelectorAll('[data-mobile-tabs]'
 mobileAccountNavBtns.map(function(btn) {
   btn.addEventListener('click', function () {
     const tabsContent = [...document?.querySelectorAll('[tabs-content]')];
+
     tabsContent.map(function(i) {
       i.classList.remove('active');
     })
