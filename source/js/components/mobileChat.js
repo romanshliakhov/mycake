@@ -1,46 +1,25 @@
-const chat = document.querySelectorAll('.authorization__btn');
-// let pageWidth = document.documentElement.scrollWidth;
-let pageWidth = document.documentElement.clientWidth;
+const chat = document.querySelectorAll(".authorization__btn");
 
-// let replaceSettings = {
-//   smallTablet: 768
-// }
-
-const replaceChat = (breakpointSetting) => {
-  let pageWidth = document.documentElement.scrollWidth;
-
+const replaceChat = () => {
   chat.forEach(function (btn) {
-    btn.addEventListener('click', (e) => {
-      if (pageWidth >= '768px') {
-        e.preventDefault();
+    btn.removeAttribute('data-path');
 
-        console.log('mobile');
-      } else {
+    btn.addEventListener("click", function (e) {
+      let pageWidth = document.documentElement.clientWidth;
+
+      if (pageWidth <= 768) {
         e.preventDefault();
-        console.log('desctop');
+        this.setAttribute('data-path', 'chat');
       }
-    })
-  })
-}
-
-replaceChat();
-
-//   (function() {
-//     if (chat) {
-//       pageWidth <= breakpointSetting ?
-//       myMobile.insertAdjacentElement(mobileSetting, myElement) :
-//       myDesktop.insertAdjacentElement(desktopSetting, myElement);
-//     }
-//   }());
-// }
+    });
+  });
+};
 
 
+window.addEventListener("resize", () => {
+  replaceChat();
+});
 
-
-// window.addEventListener('resize', () => {
-//   replaceChat(replaceSettings.mobile);
-// });
-
-// window.addEventListener('DOMContentLoaded', () => {
-//   replaceChat(replaceSettings.mobile);
-// });
+window.addEventListener("DOMContentLoaded", () => {
+  replaceChat();
+});
