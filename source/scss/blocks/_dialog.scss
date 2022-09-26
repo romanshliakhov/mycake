@@ -37,6 +37,12 @@
 
   &__search-input {
     padding: 11.5px 20px;
+    font-size: 14px;
+    color: #43607C;
+
+    &::placeholder {
+      color: #84A6C2;
+    }
   }
 
   &__label {
@@ -124,6 +130,7 @@
 
   &__chats-preview {
     flex-grow: 1;
+    text-align: left;
   }
 
   &__nickname {
@@ -162,6 +169,7 @@
     text-overflow: ellipsis;
     font-size: 14px;
     color: #84A6C2;
+
 
     @media (max-width: 1024px) {
       -webkit-line-clamp: 2;
@@ -286,9 +294,11 @@
     flex-direction: column;
     grid-gap: 5px;
     width: 100%;
+    text-align: left;
 
     &--send {
       align-items: flex-end;
+      text-align: right;
 
       .dialog__message {
         border: 1px solid #DCEBF8;
@@ -437,10 +447,12 @@
 
   &__chat-settings {
     position: relative;
+    display: flex;
 
     &:hover {
       .dialog__settings-hover{
         display: block;
+        z-index: 10;
       }
     }
   }
@@ -471,6 +483,26 @@
     font-size: 14px;
     line-height: 171%;
     color: #43607C;
+    background-color: #fff;
+    border-radius: 50px;
+
+    &--delete {
+      color: #84A6C2;
+
+      &:hover {
+        color: #A63A50;
+      }
+    }
+
+    &:hover {
+      background-color: #F9F9F9;
+    }
+  }
+
+  &__search-btn {
+    svg {
+      fill: #84A6C2;
+    }
   }
 
 }

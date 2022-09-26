@@ -1,0 +1,40 @@
+.chat {
+  padding: 0;
+
+  &__dialogs {
+    min-height: 600px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 16px;
+    border-bottom: 1px solid #DCEBF8;
+    grid-gap: 15px;
+  }
+
+  &__search {
+    padding: 25px 26px 15px;
+  }
+
+  &__head-dialog {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+
+    .dialog__settings-hover {
+      padding-top: 30px;
+    }
+  }
+
+  &__close {
+    display: flex;
+  }
+
+  &__dialog {
+    .dialog__chat-window {
+      height: 485px;
+    }
+  }
+}
