@@ -218,10 +218,24 @@
                 </div>
 
                 <div class="dialog__chat-settings">
-                  <div class="diaglog__settings-btn">
+                  <button class="diaglog__settings-btns">
                     <svg width='24' height='24'>
-                      <use href='img/sprite/sprite.svg#chat-settings'></use>
-                      </svg>
+                    <use href='img/sprite/sprite.svg#hover'></use>
+                    </svg>
+                  </button>
+
+                  <div class="dialog__settings-hover">
+                    <ul class="dialog__settings-items">
+                      <li class="dialog__settings-item">
+                        <button class="dialog__settings-btn dialog__settings-btn--block">Заблокувати</button>
+                      </li>
+                      <li class="dialog__settings-item">
+                        <button class="dialog__settings-btn dialog__settings-btn--complain">Поскаржитися</button>
+                      </li>
+                      <li class="dialog__settings-item">
+                        <button class="dialog__settings-btn dialog__settings-btn--delete">Видалити чат</button>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -409,6 +423,7 @@
     </main>
 
     @include('partials/footer.html',{})
+    @include('partials/modals.html',{})
   </div>
 
   <script type="text/javascript" src="js/main.js"></script>

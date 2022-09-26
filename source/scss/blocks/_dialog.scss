@@ -248,7 +248,7 @@
 
   &__chat-window {
     height: 380px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   &__chat-messages {
@@ -435,5 +435,42 @@
     grid-gap: 20px;
   }
 
+  &__chat-settings {
+    position: relative;
+
+    &:hover {
+      .dialog__settings-hover{
+        display: block;
+      }
+    }
+  }
+
+  &__settings-hover {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+  }
+
+  &__settings-items {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 0px 10px rgba(67, 96, 124, 0.05)) drop-shadow(4px 2px 8px rgba(67, 96, 124, 0.1));
+    border-radius: 10px;
+  }
+
+  &__settings-btn {
+    width: 140px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 171%;
+    color: #43607C;
+  }
 
 }
