@@ -1,12 +1,8 @@
 .mobile {
   display: none;
-  opacity: 0;
-  visibility: hidden;
 
   @media (max-width: 768px) {
     display: block;
-    opacity: 1 !important;
-    visibility: visible;
   }
 
   &__menu {
@@ -31,7 +27,7 @@
     &.active {
       transform: translate(0);
       visibility: visible;
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
 
