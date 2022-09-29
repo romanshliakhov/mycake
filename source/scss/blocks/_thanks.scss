@@ -34,7 +34,7 @@
   }
 
   &__text {
-    max-width: 345px;
+    max-width: 380px;
     font-size: 20px;
     line-height: 140%;
     color: #43607C;
@@ -47,5 +47,9 @@
     @media (max-width: 576px) {
       font-size: 16px;
     }
+
+    // &--delete {
+    //   max-width: 380px;
+    // }
   }
 }

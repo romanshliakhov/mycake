@@ -110,6 +110,10 @@
     &--registration {
       border: 1px solid #DFDFDF;
     }
+
+    &.hide {
+      pointer-events: none;
+    }
   }
 
   &__btn {
@@ -189,7 +193,6 @@
     display: none;
     flex-direction: column;
     max-height: 186px;
-    // height: 100%;
     width: 100%;
     margin-top: 10px;
     background-color: var(--color-white);
@@ -331,6 +334,41 @@
     &::-webkit-scrollbar {
       width: 0;
       background-color: transparent;
+    }
+  }
+
+  &__categories-edit {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #FFE2CA;
+    border-radius: 50px;
+    transition: all 0.4s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--eye);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__categories-label {
+    &.label-disable {
+      pointer-events: initial;
+
+      .form__categories-edit {
+        background-color: #FFE2CA;
+
+        &::before {
+          background-image: var(--eye-hide);
+        }
+      }
     }
   }
 }

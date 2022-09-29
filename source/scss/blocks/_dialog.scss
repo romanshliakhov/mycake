@@ -79,6 +79,10 @@
     &::-webkit-scrollbar-thumb {
       background-color: #84A6C2;
     }
+
+    @media (max-width: 768px) {
+      margin-left: 5px;
+    }
   }
 
   &__chats-item {
@@ -173,7 +177,7 @@
 
     @media (max-width: 1024px) {
       -webkit-line-clamp: 2;
-      max-width: 200px;
+      max-width: 100%;
       font-size: 12px;
       line-height: 133%;
     }
@@ -290,6 +294,7 @@
   }
 
   &__messages-wrapp {
+    position: relative;
     display: flex;
     flex-direction: column;
     grid-gap: 5px;
@@ -298,7 +303,6 @@
 
     &--send {
       align-items: flex-end;
-      text-align: right;
 
       .dialog__message {
         border: 1px solid #DCEBF8;
@@ -368,6 +372,11 @@
         color: #A63A50;
       }
     }
+
+    @media (max-width: 768px) {
+      padding: 10px 15px;
+      grid-gap: 10px;
+    }
   }
 
   &__product-watch {
@@ -404,6 +413,14 @@
 
   &__product-name {
     line-height: 143%;
+
+    @media (max-width: 768px) {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
   }
 
   &__product-price {
@@ -428,6 +445,11 @@
     &--send {
       border: 1px solid #FFE1E1;
       box-shadow: none;
+    }
+
+    @media (max-width: 768px) {
+      padding: 10px 15px;
+      grid-gap: 10px;
     }
   }
 
@@ -461,7 +483,7 @@
     display: none;
     position: absolute;
     right: 0;
-    padding-top: 10px;
+    padding-top: 30px;
   }
 
   &__settings-items {

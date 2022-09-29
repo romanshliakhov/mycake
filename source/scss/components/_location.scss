@@ -1,4 +1,35 @@
 .location {
+  padding: 40px;
+
+  @media (max-width: 576px) {
+    padding: 20px;
+  }
+
+  &__districts,
+  &__towns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+
+  // &__towns {
+  //   position: absolute;
+  // }
+
+  &__head {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      .modal__close {
+        position: relative;
+        top: initial;
+        right: initial;
+      }
+    }
+  }
+
   &__current-btn {
     display: flex;
     align-items: center;
@@ -33,6 +64,10 @@
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     grid-gap: 10px 20px;
+
+    @media (max-width: 576px) {
+      grid-template-columns: 100%;
+    }
   }
 
   &__list-btn {
@@ -40,6 +75,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    grid-gap: 10px;
     background-color: #DCEBF8;
     border-radius: 30px;
     padding: 8px 20px;
@@ -75,6 +111,23 @@
 
     &:hover {
       background-color: #BEDBF2;
+    }
+
+    &--back {
+      justify-content: flex-start;
+      border: 1px solid #84A6C2;
+      border-radius: 50px;
+      background-color: #fff;
+
+      svg {
+        transform: rotate(0deg);
+        fill: #2E3A59;
+      }
+
+      &:hover {
+        color: #43607C;
+        border: 1px solid transparent;
+      }
     }
   }
 

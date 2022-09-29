@@ -2144,7 +2144,7 @@
             </div>
             <div class="constructor__form-weight">
               <label class="constructor__form-label">
-                <input class="form__input" type="text" name="weight">
+                <input class="form__input" type="text" name="weight" value="0.5">
               </label>
               <span>шт</span>
             </div>
@@ -2156,7 +2156,7 @@
             </div>
             <div class="constructor__form-weight">
               <label class="constructor__form-label">
-                <input class="form__input" type="text" name="weight">
+                <input class="form__input" type="text" name="weight" value="15">
               </label>
               <span>шт</span>
             </div>
@@ -2170,11 +2170,13 @@
           <div class="constructor__form-descr">Додайте усі варіанти начинок для тортів, які ви пропонуєте</div>
 
           <ul class="form__categories-list">
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="taste">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="taste" value="Бісквітна з манговим мусом із дзеркальною глазуррю" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2198,11 +2200,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="taste">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="taste" value="Бісквітна з лохиновим конфітюром" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2226,11 +2230,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="taste">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="taste" value="Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2272,11 +2278,13 @@
           <div class="constructor__form-descr">Укажіть усі додаткові послуги, що можуть впливати на ціну <br> Наприклад: “Святкове пакування”, “Прикраси з мастики”, тощо</div>
 
           <ul class="form__categories-list">
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="service">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="service" value="Прикраси з мастики" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2300,11 +2308,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="service">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label label-disable" data-form-label>
+                <input class="form__input" type="text" name="service" value="Шоколадні сфери" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2328,11 +2338,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="service">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="service" value="Живі квіти" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2356,11 +2368,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="service">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label label-disable" data-form-label>
+                <input class="form__input" type="text" name="service" value="Святкова упаковка" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2384,11 +2398,13 @@
                 </div>
               </label>
             </li>
-            <li class="form__categories-item">
-              <label class="constructor__form-label">
-                <input class="form__input" type="text" name="service">
+            <li class="form__categories-item" data-form-edit>
+              <label class="form__categories-label constructor__form-label" data-form-label>
+                <input class="form__input" type="text" name="service" value="Фото на торті" data-edit-input>
 
-                <button class="form__categories-delete sample__btn-delete">
+                <button class="form__categories-edit" data-edit></button>
+
+                <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
                   <use href='img/sprite/sprite.svg#delete'></use>
                   </svg>
@@ -2433,231 +2449,544 @@
 
   <div class="modal__container" data-target="location">
     <div class="modal__wrapper location">
-      <div class="modal__head">
-        <div class="modal__title">Оберіть область</div>
-        <div class="modal__close modal-close">
-          <svg width='18' height='18'>
-            <use href='img/sprite/sprite.svg#close'></use>
-          </svg>
+      <div class="location__districts">
+        <div class="location__head">
+          <div class="location__title modal__title">Оберіть область</div>
+          <div class="modal__close modal-close">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#close'></use>
+            </svg>
+          </div>
         </div>
+
+        <ul class="location__list">
+          <li class="location__list-item">
+            <button class="location__list-btn location__list-btn--trigger">
+              <span>Вся Україна</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Львівська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Вінницька</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Миколаївська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Волинська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Одеська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Дніпропетровська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Полтавська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Донецька</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Рівненська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Житомирська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Сумська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Закарпатська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Тернопільська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Запорізька</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Харківська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Івано-Франківська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Херсонська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Київська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Хмельницька</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Кіровоградська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Черкаська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Крим</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Чернігівська</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Луганська</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Чернівецька</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
       </div>
 
-      <ul class="location__list disctricts">
-        <li class="location__list-item">
-          <button class="location__list-btn location__list-btn--trigger">
-            <span>Вся Україна</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
+      <!-- <div class="location__towns">
+        <div class="location__head">
+          <div class="location__title modal__title">Оберіть місто</div>
+          <div class="modal__close modal-close">
+            <svg width='18' height='18'>
+              <use href='img/sprite/sprite.svg#close'></use>
             </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Львівська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Вінницька</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Миколаївська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Волинська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Одеська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Дніпропетровська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Полтавська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Донецька</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Рівненська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Житомирська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Сумська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Закарпатська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Тернопільська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Запорізька</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Харківська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Івано-Франківська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Херсонська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Київська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Хмельницька</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Кіровоградська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Черкаська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Крим</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span><b>Чернігівська</b></span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Луганська</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-        <li class="location__list-item">
-          <button class="location__list-btn">
-            <span>Чернівецька</span>
-            <svg width='20' height='20'>
-            <use href='img/sprite/sprite.svg#arrow-left'></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
+          </div>
+        </div>
+
+        <ul class="location__list">
+          <li class="location__list-item">
+            <button class="location__list-btn location__list-btn--back">
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#chat-back'></use>
+              </svg>
+              <span>Повернутися назад</span>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Київ</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn location__list-btn--trigger">
+              <span>Вся київська область</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Коцюбинське</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Баришівка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Макарів</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Біла Церква</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Миронівка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Березань</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Обухів</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Бориспіль</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Переяслав-Хмельницький</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Бородянка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Прип'ять</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Боярка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Ржищів</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Бровари</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Рокитне</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Буча</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Сквира</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Васильків</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Славутич</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Вишневе</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Тараща</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Володарка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Тетіїв</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Вишгород</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Узин</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Глеваха</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Українка</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Гостомель</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Фастів</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Іванків</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Чорнобиль</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span><b>Ірпінь</b></span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Яготин</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+          <li class="location__list-item">
+            <button class="location__list-btn">
+              <span>Кагарлик</span>
+              <svg width='20' height='20'>
+              <use href='img/sprite/sprite.svg#arrow-left'></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div> -->
+
     </div>
   </div>
 
   <div class="modal__container" data-target="chat">
     <div class="modal__wrapper chat">
-      <div class="chat__dialogs">
+      <!-- <div class="chat__dialogs">
         <div class="chat__head">
           <div class="modal__title">Чати</div>
           <div class="chat__close modal-close">
@@ -2796,9 +3125,9 @@
             </div>
           </li>
         </ul>
-      </div>
+      </div> -->
 
-      <!-- <div class="chat__dialog">
+      <div class="chat__dialog">
         <div class="chat__head">
           <div class="chat__head-dialog">
             <a class="chat__back" href="#">
@@ -3025,7 +3354,7 @@
             </button>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 

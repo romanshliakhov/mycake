@@ -9,6 +9,7 @@ import './components/filter.js';
 import './components/imagesblock.js';
 import './components/replaceEl.js';
 import './components/editInputValue.js';
+import './components/editCategoriesValue.js';
 import './components/filterCounter.js';
 import './components/search.js';
 import './components/progressbar.js';
