@@ -320,7 +320,7 @@
         </div>
       </div>
 
-      <form class="feedback__form" action="#">
+      <form class="feedback__form">
         <fieldset class="feedback__fieldset">
           <div class="feedback__form-title">
             <span>Ім’я та прізвище</span>
@@ -345,8 +345,8 @@
       </form>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--send" data-animation="fade" data-speed="300" data-path="thanks">Відправити звернення</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати</button>
+        <button class="modal__btn modal__btn-red modal__btn--send" data-path="thanks">Відправити звернення</button>
+        <button class="modal__btn modal__btn--cancel modal-close">Скасувати</button>
       </div>
     </div>
   </div>
@@ -383,7 +383,7 @@
         </div>
       </div>
 
-      <form class="feedback__form form" action="#">
+      <form class="feedback__form form">
         <fieldset class="form__fieldset">
           <input class="form__input form__input--product" type="text" name="product-name" placeholder="Торт “Червоний оксамит">
         </fieldset>
@@ -399,7 +399,7 @@
 
       <div class="modal__btns">
         <button class="modal__btn modal__btn-red modal__btn--send" data-path="thanks-feedback">Відправити відгук</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати</button>
+        <button class="modal__btn modal__btn--cancel modal-close">Скасувати</button>
       </div>
     </div>
   </div>
@@ -421,7 +421,7 @@
         <span>Дякуємо за відгук!</span> Він стане доступним на сторінці одразу після перевірки
       </div>
 
-      <button class="modal__btn modal__btn-red modal__btn--confirm">Зрозуміло</button>
+      <button class="modal__btn modal__btn-red modal__btn--confirm modal-close">Зрозуміло</button>
     </div>
   </div>
 
@@ -478,8 +478,6 @@
         <p class="contacts__text">Передплата 50%</p>
       </div>
 
-
-
       <ul class="socials">
         <li class="socials__item">
           <a class="socials__link" href="#">
@@ -504,11 +502,7 @@
         </li>
       </ul>
 
-
-
-
-
-      <button class="modal__btn modal__btn-red">Написати кондитеру</button>
+      <a href="../dialog.html" class="modal__btn modal__btn-red">Написати кондитеру</a>
     </div>
   </div>
 
@@ -672,8 +666,8 @@
       </div>
 
       <div class="modal__btns modal__btns--row">
-        <button class="modal__btn modal__btn--apply">Назад до оголошення</button>
-        <button class="modal__btn modal__btn-red modal__btn--apply">Написати продавцю</button>
+        <button class="modal__btn modal__btn--apply modal-close">Назад до оголошення</button>
+        <a href="../dialog.html" class="modal__btn modal__btn-red modal__btn--apply">Написати продавцю</a>
       </div>
     </div>
   </div>
@@ -692,7 +686,7 @@
         </div>
       </div>
 
-      <form class="constructor__form form" action="#">
+      <form class="constructor__form form">
         <div class="constructor__form-head">
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
@@ -774,7 +768,7 @@
       </form>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--send">Написати кондитеру</button>
+        <a class="modal__btn modal__btn-red modal__btn--send" href="../dialog-confectioner.html">Написати кондитеру</a>
         <button class="modal__btn modal__btn--cancel" data-path="feedback">Додати відгук </button>
       </div>
     </div>
@@ -1022,7 +1016,7 @@
       </form>
 
       <div class="modal__btns modal__btns--row">
-        <button class="modal__btn modal__btn-cancel">Скасувати</button>
+        <button class="modal__btn modal__btn-cancel modal-close">Скасувати</button>
         <button class="modal__btn modal__btn-orange">Зберегти</button>
       </div>
     </div>

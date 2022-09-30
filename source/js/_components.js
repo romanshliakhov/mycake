@@ -19,6 +19,7 @@ import './components/reviews.js';
 import './components/deleteItems.js';
 import './components/codeVerification.js';
 import './components/mobileChat.js';
+import './components/emptyGreatings.js';
 
 
 

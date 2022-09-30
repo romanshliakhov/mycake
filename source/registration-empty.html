@@ -7,10 +7,10 @@
       @include('partials/header-account.html',{})
 
       <main class="main">
-        <section class="applications">
+        <section class="applications empty__bg">
           <div class="container">
             <div class="details__wrapper tabs">
-              <div class="aside">
+              <div class="applications__aside aside">
                 <div class="details__wrapper-controls">
                   <div class="details__controls-general">
                     <div class="details__controls-title">Загальне</div>
@@ -33,20 +33,32 @@
                       </li>
                     </ul>
                   </div>
-
                   <div class="details__controls-categories">
                     <div class="details__controls-title">Категорії</div>
                     <ul class="details__controls">
-                      <li class="details__controls-btns tablinks">
-                        <button class="details__categories-btn details__categories-btn--add tabs__btn" data-path="add-new-categories">
+                      <li class="details__controls-btns tablinks empty">
+                        <button class="details__categories-btn details__categories-btn--add tabs__btn" data-path="add-categories">
                           <svg width='20' height='20'>
                             <use href='img/sprite/sprite.svg#add-plus'></use>
                           </svg>
                           <span>Додати категорію</span>
                         </button>
+                        <div class="empty__content">
+                          <div class="empty__head">
+                            <div class="registration__greeating-title">Готово!</div>
+                            <div class="empty__close">
+                              <svg width='25' height='25'>
+                                <use href='img/sprite/sprite.svg#close'></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="registration__greeating-description">Розкажи про себе як можна більше. Це допоможе клієнту сформувати довіру до тебе.</div>
+                          <div class="registration__greeating-title">Для того, щоб додати товар необхідно спочатку створити категорію</div>
+                        </div>
                       </li>
                     </ul>
                   </div>
+
                 </div>
               </div>
 
@@ -62,15 +74,28 @@
                           </div>
 
                           <div class="applications__photo-details">
+                            <div class="applications__photo-image">
+                              <picture>
+                                <source type='image/webp' srcset='img/cook/cook1.webp'>
+                                <img class="applications__photo-img" width='200' height='200' src='img/cook/cook1.png' alt='cook 1'>
+                              </picture>
+                            </div>
                             <div class="applications__photo-btns">
-                              <button class="applications__photo-btn applications__photo-btn--new">
+                              <button class="applications__photo-btn applications__photo-btn--change">
                                 <svg width='20' height='20'>
                                   <use href='img/sprite/sprite.svg#add-photo-alternate'></use>
                                 </svg>
-                                <span>Завантажити фото</span>
+                                <span>Замінити фото</span>
+                              </button>
+                              <button class="applications__photo-btn applications__photo-btn--delete">
+                                <svg width='20' height='20'>
+                                  <use href='img/sprite/sprite.svg#delete'></use>
+                                </svg>
+                                <span>Видалити</span>
                               </button>
                             </div>
                           </div>
+
                         </div>
                       </li>
 
@@ -122,9 +147,23 @@
                           </div>
 
                           <fieldset class="applications__fieldset">
+                            <div class="applications__fieldset-title">Адреса</div>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="adress" value="Київ, Правди 15">
+                            </label>
+                          </fieldset>
+
+                          <fieldset class="applications__fieldset">
                             <div class="applications__fieldset-title">Номер телефону</div>
                             <label class="constructor__form-label label-disable" data-form-label>
                               <input class="form__input" type="tel" name="phone" value="+56 085 345 76 34">
+                            </label>
+                          </fieldset>
+
+                          <fieldset class="applications__fieldset">
+                            <div class="applications__fieldset-title">Пошта</div>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="email" name="email" value="Mail@example.com">
                             </label>
                           </fieldset>
 
@@ -138,55 +177,110 @@
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Доставка</span>
-                            <button class="edit__icon">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#plus'></use>
+                              <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
                             </button>
                           </div>
-                        </div>
+
+                          <fieldset class="applications__fieldset">
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="adress" value="● Cамовивіз, Київ, Симиренка 23а ● Власна доставка, 150 грн">
+                            </label>
+                          </fieldset>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Оплата</span>
-                            <button class="edit__icon">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#plus'></use>
+                              <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
                             </button>
                           </div>
-                        </div>
+
+                          <fieldset class="applications__fieldset">
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="pay" value="● Передплата 50%">
+                            </label>
+                          </fieldset>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
-                        <div class="applications__list-wrapper">
+                        <form class="applications__list-wrapper" data-form-parent>
                           <div class="applications__heading heading">
                             <span>Соціальні мережі</span>
-                            <button class="edit__icon">
+                            <button class="edit__icon" data-edit>
                               <svg width='20' height='20'>
-                              <use href='img/sprite/sprite.svg#plus'></use>
+                              <use href='img/sprite/sprite.svg#edit'></use>
                               </svg>
                             </button>
                           </div>
-                        </div>
+
+                          <fieldset class="applications__fieldset">
+                            <div class="applications__fieldset-title">Instagram</div>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="instagram" value="www.instagram.com">
+                            </label>
+                          </fieldset>
+
+                          <fieldset class="applications__fieldset">
+                            <div class="applications__fieldset-title">Facebook</div>
+                            <label class="constructor__form-label label-disable" data-form-label>
+                              <input class="form__input" type="text" name="facebook" value="www.facebook.com">
+                            </label>
+                          </fieldset>
+
+                          <div class="edit__btns" data-edit-btns>
+                            <div class="edit__btns-inner">
+                              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                              <button class="edit__btn edit__btn--save">Зберегти</button>
+                            </div>
+                          </div>
+                        </form>
                       </li>
 
                       <li class="applications__list-item">
                         <div class="applications__banner">
                           <div class="applications__banner-info">
-                            <div class="applications__banner-title applications__banner-title--bold">Ваш профіль заповнений на <span>29</span>% </div>
+                            <div class="applications__banner-title applications__banner-title--bold">Ваш профіль заповнений на <span>83</span>% </div>
                             <div class="applications__progressbar progressbar">
-                              <div class="progressbar__done" data-progressbar-done="29"></div>
+                              <div class="progressbar__done" data-progressbar-done="83"></div>
                             </div>
                             <div class="applications__banner-descr">Розкажіть про себе все, що може бути цікаво користувачам <br> Заповнені профілі користуються більшою популярністю </div>
                           </div>
                           <button class="reg">Заповнити поле “Опис”</button>
                         </div>
+
+                        <!-- Profile full -->
+                        <!-- <div class="applications__banner">
+                          <div class="applications__banner-info applications__banner-info--full">
+                            <div class="applications__banner-title applications__banner-title--bold">Ваш профіль заповнений на <span>100</span>% </div>
+                            <div class="applications__banner-descr">Ви - молодець! Тепер клієнти зможуть дізнатися про вас усе, що знадобиться </div>
+                          </div>
+                        </div> -->
                       </li>
                     </ul>
                   </div>
@@ -197,7 +291,7 @@
                     <div class="applications__lists">
                       <div class="applications__head">
                         <div class="applications__head-title subtitle">Заявки</div>
-                        <button class="applications__add sample__apply">
+                        <button class="applications__add applications__add--full sample__apply">
                           <svg width='20' height='20'>
                             <use href='img/sprite/sprite.svg#add-plus'></use>
                           </svg>
@@ -207,7 +301,7 @@
 
                       <ul class="applications__list-items applications__list-items--small">
                         <li class="applications__list-item">
-                          <div class="application application--new application__sample application__sample--new">
+                          <div class="application application--new application__sample application__sample--new" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -227,7 +321,7 @@
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
 
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -237,7 +331,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample application--new">
+                          <div class="application application__sample application--new" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -257,7 +351,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -267,7 +361,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample application--new">
+                          <div class="application application__sample application--new" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -287,7 +381,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -297,7 +391,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -325,7 +419,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -335,7 +429,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -363,7 +457,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -373,7 +467,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -393,7 +487,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -403,7 +497,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -423,7 +517,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -433,7 +527,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -461,7 +555,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -471,7 +565,7 @@
                         </li>
 
                         <li class="applications__list-item">
-                          <div class="application application__sample">
+                          <div class="application application__sample" data-delete-item>
                             <div class="application__sample-product sample__product">
                               <div class="sample__product-image">
                                 <picture>
@@ -491,7 +585,7 @@
                               </div>
 
                               <button class="sample__apply" data-path="apply-confectioner">Переглянути</button>
-                              <button class="sample__btn-delete">
+                              <button class="sample__btn-delete" data-delete-btn>
                                 <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#delete'></use>
                                 </svg>
@@ -576,7 +670,7 @@
                               </div>
 
                               <div class="sample__review-head sample__review-head sample__info-head">
-                                <div class="application__product-title">Весільний триярусний торт з фруктами та квітами</div>
+                                <div class="sample__product-title">Весільний триярусний торт з фруктами та квітами</div>
                               </div>
 
                               <div class="sample__product-price">520 грн</div>
@@ -590,9 +684,39 @@
                               </svg>
                             </button>
                           </div>
+
+                          <ul class="application__reviews">
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Анна Щедріна</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="reviews__text">Заказывали на мой День рождения муссовый торт с маракуйей и остались очень довольны. Тортик получился очень вкусный, с приятной кислинкой за счëт маракуйи и невероятно нежной и лëгкой текстурой. Начинка, на мой вкус, просто шикарная: желе маракуйи, бисквит, хрустящий слой и мусс из манго и маракуйи.</p>
+                              </div>
+                            </li>
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Олександр Ольцев</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Супер десерты для дома и хореки. Круассаны  волшебные. Торты, кейки и муссовые десерты - это любовь</p>
+                              </div>
+                            </li>
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Тарас Коломієць</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Самые вкусные торты и пирожные , сказочные эклеры . В восторге от десертов . Кондитера - волшебницы,  доставка всегда на высшем уровне!!!!! Всей семьёй обожаем Вашу кондитерскую , спасибо за ваш труд и вкуснотищу!!!!</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
 
-                        <div class="filter__product" data-filter-product="cupcakes">
+                        <div class="filter__product active" data-filter-product="cakes">
                           <div class="application application__sample">
                             <div class="sample__review sample__product">
                               <div class="sample__product-image">
@@ -603,7 +727,7 @@
                               </div>
 
                               <div class="sample__review-head sample__info-head">
-                                <div class="application__product-title">Весільний триярусний торт з фруктами та квітами</div>
+                                <div class="sample__product-title">Торт рожевий з макарунами</div>
                               </div>
 
                               <div class="sample__product-price">520 грн</div>
@@ -611,42 +735,42 @@
 
                             <button class="sample__btn-reviews">
                               <span>3</span>
-                              <span>відгуки</span>
+                              <span>відгук</span>
                               <svg width='20' height='20'>
                                 <use href='img/sprite/sprite.svg#arrow-prev'></use>
                               </svg>
                             </button>
                           </div>
-                        </div>
 
-                        <div class="filter__product active" data-filter-product="cakes">
-                          <div class="application application__sample accordion" data-spollers data-one-spoller>
-                            <div class="sample__review sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake2.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake2.png' alt='cake 2'>
-                                </picture>
+                          <ul class="application__reviews">
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Анна Щедріна</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Заказывали на мой День рождения муссовый торт с маракуйей и остались очень довольны. Тортик получился очень вкусный, с приятной кислинкой за счëт маракуйи и невероятно нежной и лëгкой текстурой. Начинка, на мой вкус, просто шикарная: желе маракуйи, бисквит, хрустящий слой и мусс из манго и маракуйи.</p>
                               </div>
-
-                              <div class="sample__review-head sample__info-head">
-                                <div class="application__product-title">Весільний триярусний торт з фруктами та квітами</div>
+                            </li>
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Олександр Ольцев</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Супер десерты для дома и хореки. Круассаны  волшебные. Торты, кейки и муссовые десерты - это любовь</p>
                               </div>
-
-                              <div class="sample__product-price">520 грн</div>
-                            </div>
-
-                            <div class="sample__btn-accordion" >
-                              <button class="sample__btn-reviews" data-spoller>
-                                <span>3</span>
-                                <span>відгуки</span>
-                                <svg width='20' height='20'>
-                                  <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                                </svg>
-                              </button>
-                              <div class="sample__reviews-body">text</div>
-                            </div>
-                          </div>
+                            </li>
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Тарас Коломієць</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Самые вкусные торты и пирожные , сказочные эклеры . В восторге от десертов . Кондитера - волшебницы,  доставка всегда на высшем уровне!!!!! Всей семьёй обожаем Вашу кондитерскую , спасибо за ваш труд и вкуснотищу!!!!</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
 
                         <div class="filter__product active" data-filter-product="cakes">
@@ -697,6 +821,17 @@
                               </svg>
                             </button>
                           </div>
+                          <ul class="application__reviews">
+                            <li class="application__reviews-list">
+                              <div class="application__review review">
+                                <div class="review__info-head">
+                                  <div class="review__name">Олександр Ольцев</div>
+                                  <div class="review__datetime">15.11.2020</div>
+                                </div>
+                                <p class="review__text">Супер десерты для дома и хореки. Круассаны  волшебные. Торты, кейки и муссовые десерты - это любовь</p>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
 
                         <div class="filter__product" data-filter-product="macarons">
@@ -704,51 +839,20 @@
                             <div class="sample__review sample__product">
                               <div class="sample__product-image">
                                 <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
+                                  <source type='image/webp' srcset='img/cakes/cake4.webp'>
+                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake4.png' alt='cake 4'>
                                 </picture>
                               </div>
 
                               <div class="sample__review-head sample__info-head">
-                                <div class="sample__product-title">Торт рожевий з макарунами</div>
+                                <div class="sample__product-title">Ванільно-карамельний торт з печивом Орео</div>
                               </div>
 
                               <div class="sample__product-price">520 грн</div>
                             </div>
 
-                            <button class="sample__btn-reviews">
-                              <span>1</span>
-                              <span>відгук</span>
-                              <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
-                            </button>
-                          </div>
-                        </div>
-
-                        <div class="filter__product" data-filter-product="macarons">
-                          <div class="application application__sample">
-                            <div class="sample__review sample__product">
-                              <div class="sample__product-image">
-                                <picture>
-                                  <source type='image/webp' srcset='img/cakes/cake3.webp'>
-                                  <img class="sample__product-img" width='100' height='100' src='img/cakes/cake3.png' alt='cake 3'>
-                                </picture>
-                              </div>
-
-                              <div class="sample__review-head sample__info-head">
-                                <div class="sample__product-title">Торт рожевий з макарунами</div>
-                              </div>
-
-                              <div class="sample__product-price">520 грн</div>
-                            </div>
-
-                            <button class="sample__btn-reviews">
-                              <span>1</span>
-                              <span>відгук</span>
-                              <svg width='20' height='20'>
-                                <use href='img/sprite/sprite.svg#arrow-prev'></use>
-                              </svg>
+                            <button class="sample__btn-reviews sample__btn-reviews--none">
+                              <span>Немає відгуків</span>
                             </button>
                           </div>
                         </div>
@@ -804,6 +908,12 @@
 
       @include('partials/footer.html',{})
       @include('partials/modals.html',{})
+
+      <div class="delete-popup" data-delete-alert>
+        <span class="delete-popup__count">1</span>
+        <p class="delete-popup__text">Заявку видалено</p>
+        <button class="delete-popup__cancel" data-delete-cancel>Скасувати</button>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>
