@@ -787,7 +787,7 @@
         </div>
       </div>
 
-      <form class="constructor__form form" action="#">
+      <form class="constructor__form form">
         <div class="constructor__form-head">
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
@@ -1036,7 +1036,7 @@
         </div>
       </div>
 
-      <form class="constructor__form form" action="#">
+      <form class="constructor__form form">
         <div class="constructor__form-head constructor__apply">
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
@@ -1158,13 +1158,11 @@
             <textarea class="constructor__textarea" name="constructor-text"></textarea>
           </label>
         </div>
-
-
       </form>
 
       <div class="modal__btns">
         <button class="modal__btn modal__btn-red modal__btn--save">Зберегти зміни</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати </button>
+        <button class="modal__btn modal__btn--cancel modal-close">Скасувати </button>
       </div>
     </div>
   </div>
@@ -1677,7 +1675,7 @@
       </div>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--apply">Зрозуміло</button>
+        <a class="modal__btn modal__btn-red modal__btn--apply" href="../account.html">Зрозуміло</a>
       </div>
     </div>
   </div>
@@ -1700,8 +1698,8 @@
       </div>
 
       <div class="modal__btns modal__btns--row">
-        <button class="creating__btn modal__btn">Скасувати зміни</button>
-        <button class="creating__btn modal__btn modal__btn-red">Продовжити редагування</button>
+        <a class="creating__btn modal__btn" href="../account.html">Скасувати зміни</a>
+        <button class="creating__btn modal__btn modal__btn-red modal-close">Продовжити редагування</button>
       </div>
     </div>
   </div>
@@ -1970,39 +1968,42 @@
       </form>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--save">Додати замовлення</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати </button>
+        <button class="modal__btn modal__btn-red modal__btn--save" data-path="apply-created">Додати замовлення</button>
+        <button class="modal__btn modal__btn--cancel modal-close">Скасувати </button>
       </div>
     </div>
   </div>
 
   <div class="modal__container" data-target="apply-created">
     <div class="modal__wrapper constructor">
-      <div class="modal__head">
-        <div class="modal__title">
-          <span>Торт “Червоний оксамит”</span>
-          <button class="edit__icon">
-            <svg width='18' height='18'>
-            <use href='img/sprite/sprite.svg#edit'></use>
-            </svg>
-          </button>
-        </div>
-
-        <div class="modal__close modal-close">
-          <svg width='30' height='30'>
-            <use href='img/sprite/sprite.svg#close'></use>
-          </svg>
-        </div>
-      </div>
-
       <form class="constructor__form form">
-        <div class="constructor__form-head constructor__apply">
+        <div class="constructor__form-head constructor__apply" data-form-parent>
+          <div class="constructor__created-head modal__head">
+            <div class="constructor__edit-head">
+              <div class="modal__title">
+                <span>Торт “Червоний оксамит”</span>
+              </div>
+
+              <button class="edit__icon" data-edit>
+                <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#edit'></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="modal__close modal-close">
+              <svg width='30' height='30'>
+                <use href='img/sprite/sprite.svg#close'></use>
+              </svg>
+            </div>
+          </div>
+
           <fieldset class="constructor__fieldset">
             <div class="constructor__form-title">
               <span>Вага</span>
             </div>
             <div class="constructor__form-weight">
-              <label class="constructor__form-label label-disable">
+              <label class="constructor__form-label label-disable" data-form-label>
                 <input class="form__input" type="text" name="weight" value="2">
               </label>
               <span>кг</span>
@@ -2010,14 +2011,12 @@
           </fieldset>
 
           <fieldset class="constructor__fieldset constructor__fieldset--start">
-            <fieldset class="constructor__fieldset constructor__fieldset--start">
-              <div class="constructor__form-title">
-                <span>Начинка</span>
-              </div>
-              <label class="constructor__form-label label-disable">
-                <textarea class="form__textarea" type="text" name="filling" placeholder="Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям"></textarea>
-              </label>
-            </fieldset>
+            <div class="constructor__form-title">
+              <span>Начинка</span>
+            </div>
+            <label class="constructor__form-label label-disable" data-form-label>
+              <textarea class="form__textarea" type="text" name="filling" placeholder="Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям"></textarea>
+            </label>
           </fieldset>
 
           <fieldset class="constructor__fieldset constructor__fieldset--start">
@@ -2028,24 +2027,42 @@
             </div>
             <ul class="constructor__form-labels">
               <li class="constructor__labels-item">
-                <label class="constructor__form-label label-disable">
+                <label class="constructor__form-label label-disable" data-form-label>
                   <input class="form__input" type="text" name="extra" value="Прикраси з мастики">
                 </label>
               </li>
               <li class="constructor__labels-item">
-                <label class="constructor__form-label label-disable">
+                <label class="constructor__form-label label-disable" data-form-label>
                   <input class="form__input" type="text" name="extra" value="Живі квіти">
                 </label>
               </li>
             </ul>
           </fieldset>
+
+          <div class="constructor__created-btns">
+            <button class="modal__btn modal__btn-edit" data-edit>
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#edit'></use>
+              </svg>
+              <span>Редагувати</span>
+            </button>
+
+            <div class="edit__btns" data-edit-btns>
+              <div class="edit__btns-inner">
+                <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                <button class="edit__btn edit__btn--save">Зберегти зміни</button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="constructor__form-mid constructor__apply">
-          <div class="modal__title">
-            <span>Інформація про клієнта</span>
-            <button class="edit__icon">
-              <svg width='18' height='18'>
+        <div class="constructor__form-mid constructor__apply" data-form-parent>
+          <div class="constructor__edit-head">
+            <div class="modal__title">
+              <span>Інформація про клієнта</span>
+            </div>
+            <button class="edit__icon" data-edit>
+              <svg width='20' height='20'>
               <use href='img/sprite/sprite.svg#edit'></use>
               </svg>
             </button>
@@ -2055,7 +2072,7 @@
             <div class="constructor__form-title">
               <span>Ім’я та прізвище</span>
             </div>
-            <label class="constructor__form-label label-disable">
+            <label class="constructor__form-label label-disable" data-form-label>
               <input class="form__input" type="text" name="name" value="Анна Василенко">
             </label>
           </fieldset>
@@ -2064,10 +2081,33 @@
             <div class="constructor__form-title">
               <span>Номер телефону</span>
             </div>
-            <label class="constructor__form-label label-disable">
+            <label class="constructor__form-label label-disable" data-form-label>
               <input class="form__input form__input--disable" type="tel" name="phone" value="+56 085 345 76 34">
             </label>
           </fieldset>
+
+          <!-- <div class="edit__btns" data-edit-btns>
+            <div class="edit__btns-inner">
+              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+              <button class="edit__btn edit__btn--save">Зберегти зміни</button>
+            </div>
+          </div> -->
+
+          <div class="constructor__created-btns">
+            <button class="modal__btn modal__btn-edit" data-edit>
+              <svg width='20' height='20'>
+                <use href='img/sprite/sprite.svg#edit'></use>
+              </svg>
+              <span>Редагувати</span>
+            </button>
+
+            <div class="edit__btns" data-edit-btns>
+              <div class="edit__btns-inner">
+                <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
+                <button class="edit__btn edit__btn--save">Зберегти зміни</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="modal__title">
@@ -2110,8 +2150,8 @@
       </form>
 
       <div class="modal__btns">
-        <button class="modal__btn modal__btn-red modal__btn--save">Додати замовлення</button>
-        <button class="modal__btn modal__btn--cancel">Скасувати </button>
+        <button class="modal__btn modal__btn-red modal__btn--save">Зберегти зміни</button>
+        <button class="modal__btn modal__btn--cancel modal-close">Скасувати </button>
       </div>
     </div>
   </div>
@@ -2435,7 +2475,7 @@
 
         <div class="modal__btns">
           <button class="modal__btn modal__btn-red modal__btn--save">Зберегти зміни</button>
-          <button class="modal__btn modal__btn--cancel">Скасувати </button>
+          <button class="modal__btn modal__btn--cancel modal-close">Скасувати </button>
         </div>
       </div>
     </div>

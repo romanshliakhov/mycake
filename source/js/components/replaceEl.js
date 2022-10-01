@@ -23,13 +23,10 @@ let elementName = {
   sampleDesctop: '.sample__product-image',
   sampleMobile: '.sample__filling',
 
-
-
-  // --------------------------- новое
+  // ---------------------------
   sampleApply: '.sample__apply',
   sampleApplyDesctop: '.sample__product',
   sampleApplyMobile: '.sample__btns',
-
 
   // ---------------------------
   pubtimeDate: '.application__pubtime',
@@ -60,25 +57,15 @@ const replaceElements = (elements, elementClass, desktopClass, mobileClass, mobi
 window.addEventListener('resize', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-
-
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
-  // новое
   replaceElements(items, elementName.sampleApply, elementName.sampleApplyDesctop, elementName.sampleApplyMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-
-
   replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.beforebegin, replaceSettings.smallTablet);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   replaceElements(items, elementName.sortingBtn, elementName.formParentBtn, elementName.mobileSiblingstBtn, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
   replaceElements(items, elementName.sampleBtn, elementName.sampleBtnDesktop, elementName.sampleBtnMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-
-
   replaceElements(items, elementName.sampleTitle, elementName.sampleDesctop, elementName.sampleMobile, replaceSettings.afterbegin, replaceSettings.afterend, replaceSettings.mobile);
-  // новое
   replaceElements(items, elementName.sampleApply, elementName.sampleApplyDesctop, elementName.sampleApplyMobile, replaceSettings.afterbegin, replaceSettings.beforeend, replaceSettings.mobile);
-
-
   replaceElements(items, elementName.pubtimeDate, elementName.pubtimeDesctop, elementName.pubtimeMobile, replaceSettings.afterbegin, replaceSettings.beforebegin, replaceSettings.smallTablet);
 });
