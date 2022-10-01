@@ -1769,8 +1769,8 @@
       </div>
 
       <div class="modal__btns modal__btns--row">
-        <button class="creating__btn modal__btn">Скасувати</button>
-        <button class="creating__btn modal__btn modal__btn-red">Видалити</button>
+        <button class="creating__btn modal__btn modal-close">Скасувати</button>
+        <button class="creating__btn modal__btn modal__btn-red" data-path="edit-category">Видалити</button>
       </div>
     </div>
   </div>
@@ -1793,8 +1793,8 @@
       </div>
 
       <div class="modal__btns modal__btns--row">
-        <button class="creating__btn modal__btn">Скасувати</button>
-        <button class="creating__btn modal__btn modal__btn-red">Приховати</button>
+        <button class="creating__btn modal__btn modal-close">Скасувати</button>
+        <button class="creating__btn modal__btn modal__btn-red" data-path="edit-category">Приховати</button>
       </div>
     </div>
   </div>
@@ -2086,13 +2086,6 @@
             </label>
           </fieldset>
 
-          <!-- <div class="edit__btns" data-edit-btns>
-            <div class="edit__btns-inner">
-              <button class="edit__btn edit__btn--cancel" data-edit>Скасувати</button>
-              <button class="edit__btn edit__btn--save">Зберегти зміни</button>
-            </div>
-          </div> -->
-
           <div class="constructor__created-btns">
             <button class="modal__btn modal__btn-edit" data-edit>
               <svg width='20' height='20'>
@@ -2208,7 +2201,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="taste" value="Бісквітна з манговим мусом із дзеркальною глазуррю" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2238,7 +2231,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="taste" value="Бісквітна з лохиновим конфітюром" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2268,7 +2261,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="taste" value="Шоколадний бісквіт з крем-чізом, горіховим праліне і велюровим покриттям" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2316,7 +2309,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="service" value="Прикраси з мастики" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2346,7 +2339,7 @@
               <label class="form__categories-label constructor__form-label label-disable" data-form-label>
                 <input class="form__input" type="text" name="service" value="Шоколадні сфери" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2376,7 +2369,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="service" value="Живі квіти" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2406,7 +2399,7 @@
               <label class="form__categories-label constructor__form-label label-disable" data-form-label>
                 <input class="form__input" type="text" name="service" value="Святкова упаковка" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2436,7 +2429,7 @@
               <label class="form__categories-label constructor__form-label" data-form-label>
                 <input class="form__input" type="text" name="service" value="Фото на торті" data-edit-input>
 
-                <button class="form__categories-edit" data-edit></button>
+                <button class="form__categories-edit" data-edit data-path="hide"></button>
 
                 <button class="form__categories-delete sample__btn-delete" data-path="delete">
                   <svg width='20' height='20'>
@@ -2475,7 +2468,7 @@
 
         <div class="modal__btns">
           <button class="modal__btn modal__btn-red modal__btn--save">Зберегти зміни</button>
-          <button class="modal__btn modal__btn--cancel modal-close">Скасувати </button>
+          <button class="modal__btn modal__btn--cancel" data-path="changes-save-cancel">Скасувати </button>
         </div>
       </div>
     </div>
